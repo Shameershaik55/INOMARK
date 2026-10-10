@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#001e2c","tertiary":"#006387","on-secondary-fixed":"#25005a","on-secondary-container":"#fffbff","tertiary-fixed":"#c4e7ff","primary-container":"#6063ee","on-error":"#ffffff","outline-variant":"#c7c4d7","tertiary-fixed-dim":"#7bd0ff","primary":"#4648d4","surface-dim":"#d2d9f4","primary-fixed":"#e1e0ff","on-secondary-fixed-variant":"#5a00c6","background":"#faf8ff","surface-container-high":"#e2e7ff","surface":"#faf8ff","inverse-surface":"#283044","outline":"#767586","surface-container":"#eaedff","on-primary":"#ffffff","error-container":"#ffdad6","on-primary-fixed":"#07006c","on-tertiary-container":"#fcfcff","on-surface-variant":"#464554","secondary-fixed":"#eaddff","on-secondary":"#ffffff","inverse-primary":"#c0c1ff","tertiary-container":"#007da9","secondary-fixed-dim":"#d2bbff","on-surface":"#131b2e","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-container":"#8a4cfc","on-tertiary":"#ffffff","surface-bright":"#faf8ff","secondary":"#712ae2","surface-variant":"#dae2fd","surface-container-low":"#f2f3ff","surface-container-highest":"#dae2fd","surface-tint":"#494bd6","on-tertiary-fixed-variant":"#004c69","on-background":"#131b2e","error":"#ba1a1a","primary-fixed-dim":"#c0c1ff","on-primary-fixed-variant":"#2f2ebe","on-primary-container":"#fffbff","inverse-on-surface":"#eef0ff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","gutter":"1.5rem","space-3xl":"6rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-lg":"1.5rem","space-sm":"0.5rem","margin":"4rem","space-xs":"0.25rem","space-md":"1rem","space-2xl":"4rem"},"fontFamily":{"headline-lg-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"label-badge":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-caption":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"body-sm":["Plus Jakarta Sans"],"label-button":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"headline-md":["Playfair Display"]},"fontSize":{"headline-lg-mobile":["2rem",{"lineHeight":"1.25","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["3rem",{"lineHeight":"1.2","letterSpacing":"-0.015em","fontWeight":"600"}],"label-badge":["0.75rem",{"lineHeight":"1","letterSpacing":"0.06em","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5","fontWeight":"400"}],"headline-sm":["1.25rem",{"lineHeight":"1.4","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.6","fontWeight":"400"}],"label-caption":["0.75rem",{"lineHeight":"1.4","fontWeight":"500"}],"display-hero-mobile":["2.75rem",{"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.5","fontWeight":"400"}],"label-button":["0.9375rem",{"lineHeight":"1","fontWeight":"600"}],"display-hero":["4.5rem",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["2rem",{"lineHeight":"1.3","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg px-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-sm"><div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-[0_4px_20px_-2px_rgba(113,42,226,0.25)]"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-sm text-on-surface tracking-tight font-bold leading-none">Inomark</span><span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold mt-0.5">Creator Hub</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-secondary-container text-on-secondary-container shadow-[0_8px_24px_-4px_rgba(138,76,252,0.35)] font-semibold"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full text-on-surface-variant font-label-button text-label-button hover:bg-surface-container hover:text-on-surface transition-all duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full text-on-surface-variant font-label-button text-label-button hover:bg-surface-container hover:text-on-surface transition-all duration-200" data-path="my-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span>My Profile</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full text-on-surface-variant font-label-button text-label-button hover:bg-surface-container hover:text-on-surface transition-all duration-200" data-path="my-portfolio" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span>My Portfolio</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full text-on-surface-variant font-label-button text-label-button hover:bg-surface-container hover:text-on-surface transition-all duration-200" data-path="explore-brands" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span>Explore Brands</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full text-on-surface-variant font-label-button text-label-button hover:bg-surface-container hover:text-on-surface transition-all duration-200" data-path="brand-briefs" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Brand Briefs</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full transition-all duration-200 bg-secondary-container text-on-secondary-container shadow-[0_8px_24px_-4px_rgba(138,76,252,0.35)] font-semibold" data-path="my-applications" href="#"><span class="material-symbols-outlined text-[20px]">send</span><span>My Applications</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md"><div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span class="font-label-badge text-label-badge text-on-surface font-semibold">Escrow Protected</span></div><span class="font-label-caption text-label-caption text-secondary font-semibold">Active</span></div><p class="font-label-caption text-label-caption text-on-surface-variant">All client payouts held safely in milestone escrow.</p></div><div class="flex items-center justify-between px-space-sm pt-space-xs"><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-caption text-label-caption" data-path="creator-settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Preferences</span></a><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-error transition-colors font-label-caption text-label-caption" data-path="logout" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-xl flex items-center justify-between"><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-12 pr-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search briefs, brands, or submissions..." type="text"/></div><div class="flex items-center gap-space-md"><button class="relative p-2.5 rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-sm py-1.5 pr-space-md rounded-full bg-surface-container-low"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-low"></span></div><div class="flex flex-col text-left"><span class="font-label-button text-body-sm font-semibold text-on-surface leading-tight">Elena Vance</span><span class="font-label-caption text-label-caption text-secondary font-medium leading-none">Top AI Director</span></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive View State Bar (Fixed Preview / Demo Controls) -->
+<aside aria-label="Interactive Prototype Controller" class="sticky top-20 z-30 w-full px-space-xl py-space-sm bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_2px_12px_rgba(19,27,46,0.03)]">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2 w-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider">Prototype States:</span>
+</div>
+<div class="flex flex-wrap items-center gap-2" role="tablist">
+<button class="px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caption text-label-caption font-semibold transition-all shadow-[0_2px_10px_rgba(138,76,252,0.2)]" id="btn-state-standard" onclick="switchState('standard')">
+          Standard Applications (Active)
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-caption text-label-caption font-medium transition-all" id="btn-state-modal" onclick="openDetailsModal()">
+          Full Application Details Modal
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-caption text-label-caption font-medium transition-all" id="btn-state-withdraw" onclick="openWithdrawModal('Autonomous Hypercar Anamorphic 4K Billboard')">
+          Withdrawal Confirmation Modal
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-caption text-label-caption font-medium transition-all" id="btn-state-empty" onclick="switchState('empty')">
+          First-Time Empty State
+        </button>
+</div>
+</div>
+</aside>
+<!-- Main Canvas Container -->
+<div class="max-w-7xl mx-auto w-full px-space-xl py-space-xl flex flex-col gap-space-xl">
+<!-- Editorial Page Header -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-2">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 font-label-caption text-label-caption text-on-surface-variant uppercase tracking-widest">
+<span>Creator Portal</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span>Campaign Pipeline</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-secondary font-semibold">My Applications</span>
+</nav>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+          My <span class="italic font-normal text-secondary">Applications</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+          Track your submitted briefs, revisit your generative proposals, and monitor milestone commissioning in real time.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface hover:text-secondary shadow-[0_4px_20px_-2px_rgba(99,102,241,0.06)] hover:shadow-[0_8px_24px_-4px_rgba(113,42,226,0.15)] font-label-button text-label-button transition-all group" data-path="brand-briefs" href="#">
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:rotate-45 transition-transform duration-300">add</span>
+<span>Browse Brand Briefs</span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</header>
+<!-- Application Summary Row (Compact Metric Cards) -->
+<section aria-label="Application Metrics" class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<!-- Metric: All -->
+<button class="stat-card active-stat text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_16px_rgba(19,27,46,0.03)] flex flex-col justify-between gap-3 group" onclick="filterStatus('all')">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant group-hover:text-primary transition-colors">All Applications</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[18px]">layers</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">6</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">total</span>
+</div>
+</button>
+<!-- Metric: Submitted -->
+<button class="stat-card text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_16px_rgba(19,27,46,0.03)] flex flex-col justify-between gap-3 group" onclick="filterStatus('submitted')">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant group-hover:text-tertiary transition-colors">Submitted</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">schedule</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">2</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">queued</span>
+</div>
+</button>
+<!-- Metric: In Review -->
+<button class="stat-card text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_16px_rgba(19,27,46,0.03)] flex flex-col justify-between gap-3 group" onclick="filterStatus('review')">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant group-hover:text-secondary transition-colors">In Review</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">visibility</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-secondary">2</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">active</span>
+</div>
+</button>
+<!-- Metric: Accepted -->
+<button class="stat-card text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_16px_rgba(19,27,46,0.03)] flex flex-col justify-between gap-3 group" onclick="filterStatus('accepted')">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant group-hover:text-emerald-600 transition-colors">Accepted</span>
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">check_circle</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">1</span>
+<span class="font-label-caption text-label-caption text-emerald-600 font-semibold">$4.5k Escrow</span>
+</div>
+</button>
+<!-- Metric: Declined -->
+<button class="stat-card text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-[0_4px_16px_rgba(19,27,46,0.03)] flex flex-col justify-between gap-3 group" onclick="filterStatus('declined')">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant group-hover:text-outline transition-colors">Declined</span>
+<span class="material-symbols-outlined text-outline text-[18px]">archive</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-on-surface-variant">1</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">archived</span>
+</div>
+</button>
+</section>
+<!-- Filters, Search & View Controls -->
+<section class="flex flex-col gap-space-md">
+<!-- Status Tabs -->
+<div class="flex items-center overflow-x-auto no-scrollbar gap-2 pb-1">
+<button class="tab-btn px-5 py-2 rounded-full bg-secondary text-on-secondary font-label-button text-body-sm shadow-[0_4px_12px_rgba(113,42,226,0.25)] transition-all" onclick="filterStatus('all')">
+          All <span class="ml-1 opacity-80">(6)</span>
+</button>
+<button class="tab-btn px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-body-sm transition-all" onclick="filterStatus('submitted')">
+          Submitted <span class="ml-1 opacity-70">(2)</span>
+</button>
+<button class="tab-btn px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-body-sm transition-all" onclick="filterStatus('review')">
+          In Review <span class="ml-1 opacity-70">(2)</span>
+</button>
+<button class="tab-btn px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-body-sm transition-all" onclick="filterStatus('accepted')">
+          Accepted <span class="ml-1 opacity-70">(1)</span>
+</button>
+<button class="tab-btn px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-body-sm transition-all" onclick="filterStatus('declined')">
+          Declined <span class="ml-1 opacity-70">(1)</span>
+</button>
+<button class="tab-btn px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-body-sm transition-all" onclick="filterStatus('withdrawn')">
+          Withdrawn <span class="ml-1 opacity-70">(0)</span>
+</button>
+</div>
+<!-- Advanced Filter & Search Bar -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-[0_2px_14px_rgba(19,27,46,0.03)] flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-12 pr-4 py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/20 transition-all" id="search-input" onkeyup="handleSearch()" placeholder="Search applications by brief title, brand name, or keywords..." type="text"/>
+</div>
+<!-- Filter Selects -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative">
+<select aria-label="Filter by Content Type" class="appearance-none pl-4 pr-10 py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Content Type: All</option>
+<option>AI Video (9:16 ProRes)</option>
+<option>3D Packshot &amp; Volumetric</option>
+<option>Virtual Fashion</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select aria-label="Filter by Industry" class="appearance-none pl-4 pr-10 py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer hover:bg-surface-container transition-colors">
+<option>Industry: All</option>
+<option>Beauty &amp; Skincare</option>
+<option>Luxury Fashion</option>
+<option>Automotive &amp; Tech</option>
+<option>Food &amp; Beverage</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select aria-label="Sort Applications" class="appearance-none pl-4 pr-10 py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer hover:bg-surface-container transition-colors font-medium">
+<option>Sort: Newest First</option>
+<option>Sort: Oldest First</option>
+<option>Sort: Brief Deadline</option>
+<option>Sort: Title A–Z</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Active Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 px-1">
+<span class="font-label-badge text-label-badge text-on-surface-variant uppercase tracking-wider mr-1">Active Filters:</span>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-caption text-label-caption">
+<span>Discipline: AI Video 9:16</span>
+<button aria-label="Remove discipline filter" class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-caption text-label-caption">
+<span>Status: Active Pipeline</span>
+<button aria-label="Remove status filter" class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</div>
+<button class="text-secondary hover:underline font-label-caption text-label-caption ml-2">Clear all filters</button>
+</div>
+</section>
+<!-- APPLICATIONS FEED -->
+<div class="flex flex-col gap-space-lg" id="applications-feed">
+<!-- CARD 1: ACCEPTED -->
+<article class="application-card p-space-xl rounded-2xl bg-surface-container-lowest shadow-[0_6px_28px_-4px_rgba(19,27,46,0.04)] hover:shadow-[0_16px_40px_-6px_rgba(113,42,226,0.08)] transition-all duration-300 flex flex-col gap-space-lg group" data-status="accepted">
+<!-- Status Banner Notification -->
+<div class="p-space-md rounded-xl bg-emerald-500/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-emerald-600 text-[22px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-emerald-900 font-bold uppercase tracking-wider">Milestone Funded &amp; Escrow Activated</span>
+<p class="font-body-sm text-body-sm text-emerald-900/90">
+                Your application has been accepted. The brand has funded the <strong class="font-semibold text-emerald-950">$4,500 USD</strong> milestone in escrow.
+              </p>
+</div>
+</div>
+<button class="whitespace-nowrap px-4 py-1.5 rounded-full bg-emerald-600 text-white font-label-caption text-label-caption font-semibold shadow-[0_4px_12px_rgba(5,150,105,0.25)] hover:bg-emerald-700 transition-colors" onclick="alert('Proceeding to contract and milestone workspace...')">
+            Open Agreement &amp; Milestones →
+          </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Media Preview Thumbnail (Aspect 4:5 / 16:9 responsive) -->
+<div class="lg:col-span-4 relative rounded-xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/3] bg-surface-container-high group-hover:scale-[1.01] transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Close up cinematic macro of luxury golden serum droplet falling from minimalist frosted amber glass dropper into crystalline clear water rippling with optical caustics, Nordic botanical aesthetic, soft natural daylight, hyper-detailed generative 4K realism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxM1GuyB3TkVRf6P7oIcsUWN-SpOUHaY8PdSOWus6VhVJoHHTjRiIjT0ys8yeAMYEnLOsNFiJ8F9Ehf5MOePiq3nM09ZTlBChEbEYmHPP6QRtowNSRfw6hvJfbx4kWZtYxTTtZOjJ72RidZZAuWD46G97uUOlbOqw3krL6EHJ4BYVSzFpJrv4JH8uZAFCcBHgQ0ePoMlI4nfvXJe8fMBtHw1TAqX91tyyCmGrzEyaB7lCZvfAG54FZ"/>
+<!-- Badges -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption font-semibold text-on-surface shadow-sm">
+                4K ProRes Reel
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 p-2 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-semibold uppercase">Runway Gen-3 + ComfyUI</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">9:16 Aspect</span>
+</div>
+</div>
+<!-- Main Application Content & Metadata -->
+<div class="lg:col-span-8 flex flex-col justify-between h-full gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Aura Botanica (Nordic Laboratories)</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Beauty &amp; Skincare</span>
+</div>
+<!-- Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-label-badge text-label-badge uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                  Accepted
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md font-bold text-on-surface tracking-tight">
+                Nordic Botanical Serum — Specular Video Reel
+              </h2>
+</div>
+<!-- Creator Proposal Snippet -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-secondary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+                Your Submitted Concept Proposal
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed">
+                "For Nordic Botanical Serum, I propose an ultra-precise macro fluid simulation pipeline using ComfyUI LoRAs trained on Nordic flora caustics combined with Runway Gen-3 camera controls. Will deliver 3 distinct 15s cuts with seamless looping droplets..."
+              </p>
+</div>
+<!-- Attached Portfolio Proofs -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Attached Portfolio Proofs (2):</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[16px]">play_circle</span>
+<span class="font-label-caption text-label-caption font-semibold text-on-surface">0:15 Reel Alpine Flora</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">Video</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-tertiary text-[16px]">image</span>
+<span class="font-label-caption text-label-caption font-semibold text-on-surface">FLUX.1 Serum Fluid Dynamics</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">3D LoRA</span>
+</div>
+</div>
+</div>
+<!-- Meta Details & Bottom Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Submitted</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Oct 12, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Allocated Budget</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface">$4,500 USD</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Brand Decision</span>
+<span class="font-body-sm text-body-sm font-semibold text-emerald-700">Oct 15, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Deadline</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Oct 24, 2025</span>
+</div>
+</div>
+<!-- Action Pills -->
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-button text-label-button shadow-[0_4px_16px_rgba(70,72,212,0.3)] hover:opacity-95 transition-all" onclick="openDetailsModal()">
+                  View Application
+                </button>
+<button class="p-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Brief Details">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 2: IN REVIEW -->
+<article class="application-card p-space-xl rounded-2xl bg-surface-container-lowest shadow-[0_6px_28px_-4px_rgba(19,27,46,0.04)] hover:shadow-[0_16px_40px_-6px_rgba(113,42,226,0.08)] transition-all duration-300 flex flex-col gap-space-lg group" data-status="review">
+<!-- Status Banner Notification -->
+<div class="p-space-md rounded-xl bg-secondary/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] animate-pulse">visibility</span>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-wider">Active Creative Review</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                The brand is currently reviewing your proposal, prompt deck, and sample lookbook. Creative Director viewed yesterday.
+              </p>
+</div>
+</div>
+<span class="font-label-caption text-label-caption font-semibold text-secondary px-3 py-1 rounded-full bg-secondary-fixed/50">
+            Awaiting Final Decision
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Media Preview Thumbnail -->
+<div class="lg:col-span-4 relative rounded-xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/3] bg-surface-container-high group-hover:scale-[1.01] transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="High-fashion model walking an ethereal translucent runway draped in bioluminescent flowing silk fabric glowing with electric violet and deep indigo caustics, surreal neon iridescence, Paris fashion week avant-garde aesthetics, cinematic volumetric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZbi--5J0bUPaaAmMRrdXQsKzMLCIsdnwFi2I0dxtWE8M4TfFUGsKD7-sQ_DLfTJAedr4K_Rfb1FxSVNE7IBI_jslmbIUo6g0pEQ1WM5_DSpnvbk_GV2HPxpCc5fI827V84GdHlMFJhimOf8p9SehMOVEUJdChiTJujyyd_J3UkS2WJS5WTmP-kPDcN-k94j5vL42FiGZKQR51dP_Fo7M1Lz8J9p5n05_VfOWz8xPg6KtPpOENR6Js"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption font-semibold text-on-surface shadow-sm">
+                Haute Couture Reel
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 p-2 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary font-semibold uppercase">Kling 1.5 + Midjourney v6.1</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">4K UHD Master</span>
+</div>
+</div>
+<!-- Main Application Content & Metadata -->
+<div class="lg:col-span-8 flex flex-col justify-between h-full gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Lumina Atelier</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Luxury &amp; Haute Couture</span>
+</div>
+<!-- Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+                  In Review
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md font-bold text-on-surface tracking-tight">
+                Ethereal Silk &amp; Bioluminescent Flora — Runway Concept
+              </h2>
+</div>
+<!-- Creator Proposal Snippet -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-secondary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+                Your Submitted Concept Proposal
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed">
+                "Leveraging Kling 1.5 Pro with customized cloth dynamics LoRA for ethereal weightless movement. Includes custom color grading in DaVinci with uncompressed master files..."
+              </p>
+</div>
+<!-- Attached Portfolio Proofs -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Attached Portfolio Proofs (2):</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[16px]">auto_awesome</span>
+<span class="font-label-caption text-label-caption font-semibold text-on-surface">Iridescent Cyber Couture</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">Video</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-tertiary text-[16px]">nature</span>
+<span class="font-label-caption text-label-caption font-semibold text-on-surface">Volumetric Flora Nodes</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">Lookbook</span>
+</div>
+</div>
+</div>
+<!-- Meta Details & Bottom Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Submitted</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Oct 14, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Proposed Budget</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface">$5,000 USD</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Brand Status</span>
+<span class="font-body-sm text-body-sm font-semibold text-secondary">Reviewing Lookbook</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Deadline</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Nov 05, 2025 (18d)</span>
+</div>
+</div>
+<!-- Action Pills -->
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-4 py-2.5 rounded-full text-outline hover:text-error font-label-button text-label-caption transition-colors" onclick="openWithdrawModal('Ethereal Silk &amp; Bioluminescent Flora')">
+                  Withdraw
+                </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-button text-label-button transition-all" onclick="openDetailsModal()">
+                  View Application
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 3: SUBMITTED (PENDING BRAND REVIEW) -->
+<article class="application-card p-space-xl rounded-2xl bg-surface-container-lowest shadow-[0_6px_28px_-4px_rgba(19,27,46,0.04)] hover:shadow-[0_16px_40px_-6px_rgba(113,42,226,0.08)] transition-all duration-300 flex flex-col gap-space-lg group" data-status="submitted">
+<!-- Status Banner Notification -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[22px]">hourglass_top</span>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface-variant font-bold uppercase tracking-wider">Awaiting Initial Brand Review</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                The brand has received your proposal. Review window closes in 5 business days.
+              </p>
+</div>
+</div>
+<span class="font-label-caption text-label-caption text-outline px-3 py-1 rounded-full bg-surface-container">
+            Position #3 in Brief Queue
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Media Preview Thumbnail -->
+<div class="lg:col-span-4 relative rounded-xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/3] bg-surface-container-high group-hover:scale-[1.01] transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Futuristic dark carbon-fiber autonomous hypercar driving along curved neon-lit Tokyo expressway at midnight, optical flare reflections on matte black bodywork, high-end CGI automotive lighting, anamorphic perspective distortion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9h81dyPkpMaQb8sOs-jawD3v6pPp6WteZJFhIZTr0wG65SqGeEjn1YaDVBoVXCcyqiPI2XFbzJgNnKzFhr2dNk0XXd0Z5l5caS0fKdzjga5qHAVMZgl82IEGUsjjrenV_LStk7-TbHKQv9_8s28vyw-LxneKHIuPFmnZRz4b6TjESkzJRZN69SUb2ZfaqNOUOIHOj8hZc01A8BrjcrgoEPB8tDZgpx9ADmKQ2renyuGYqJ0IWXwvD"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption font-semibold text-on-surface shadow-sm">
+                3D Volumetric CGI
+              </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 p-2 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-primary font-semibold uppercase">Unreal Engine 5.4 + ControlNet</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">32:9 Anamorphic</span>
+</div>
+</div>
+<!-- Main Application Content & Metadata -->
+<div class="lg:col-span-8 flex flex-col justify-between h-full gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">KURA Automotive Dynamics</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Tech &amp; Mobility</span>
+</div>
+<!-- Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-badge text-label-badge uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  Submitted
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md font-bold text-on-surface tracking-tight">
+                Autonomous Hypercar Anamorphic 4K Billboard
+              </h2>
+</div>
+<!-- Creator Proposal Snippet -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-secondary font-semibold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+                Your Submitted Concept Proposal
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed">
+                "Combining Unreal Engine 5.4 Lumen render passes with ControlNet depth conditioning to deliver distortion-free anamorphic billboard perspective..."
+              </p>
+</div>
+<!-- Attached Portfolio Proofs -->
+<div class="flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Attached Portfolio Proofs (1):</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[16px]">directions_car</span>
+<span class="font-label-caption text-label-caption font-semibold text-on-surface">Tokyo Night Kinetic Drift</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">3D Billboard</span>
+</div>
+</div>
+</div>
+<!-- Meta Details & Bottom Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Submitted</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Oct 16, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Proposed Budget</span>
+<span class="font-body-sm text-body-sm font-bold text-on-surface">$6,200 USD</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Review Status</span>
+<span class="font-body-sm text-body-sm font-semibold text-outline">Queued</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Deadline</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Nov 12, 2025</span>
+</div>
+</div>
+<!-- Action Pills -->
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-4 py-2.5 rounded-full text-outline hover:text-error font-label-button text-label-caption transition-colors" onclick="openWithdrawModal('Autonomous Hypercar Anamorphic 4K Billboard')">
+                  Withdraw
+                </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-button text-label-button transition-all" onclick="openDetailsModal()">
+                  View Application
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 4: DECLINED -->
+<article class="application-card p-space-xl rounded-2xl bg-surface-container-lowest/70 opacity-90 hover:opacity-100 shadow-[0_4px_20px_rgba(19,27,46,0.02)] transition-all duration-300 flex flex-col gap-space-lg group" data-status="declined">
+<!-- Status Banner Notification -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[22px]">info</span>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-on-surface-variant font-bold uppercase tracking-wider">Campaign Decision Finalized</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                The brand selected an alternate aesthetic direction for this campaign. Thank you for your generative pitch.
+              </p>
+</div>
+</div>
+<span class="font-label-caption text-label-caption text-outline">Archived to Creator Record</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Media Preview Thumbnail -->
+<div class="lg:col-span-4 relative rounded-xl overflow-hidden aspect-[16/10] sm:aspect-[4/3] lg:aspect-[4/3] bg-surface-container-high grayscale group-hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Sparkling botanical elixir aluminum can surrounded by floating fresh mint leaves, sliced blood oranges, effervescent bubbles rising against a minimal pastel lavender studio backdrop, crisp advertising product render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpWwxZZuKa1BcPU5wl6hD0didlb-1w-v0hN2Pw0A56VhjLs6WCU3RVYksxUT0HGBe4qY2xQAwPCAXrSy6-DzqJYOkzxRDnciDZAv4RvYVWJnKg160MKlcQmqi93WRNaiM8Rob2Ltc0lMlsaItsG6vgwu6R_XS_juFuf1i2wDl5EqJjm6NEun2Ai0neGmCJwFVB0CWCiuUjLRAo_vex0dVqpm7eQZ6FEn7pUloN6dDlFe3q7pSFQ1w5"/>
+<div class="absolute bottom-3 left-3 right-3 p-2 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-on-surface-variant font-semibold uppercase">AI Product Motion</span>
+<span class="font-label-caption text-label-caption text-outline">9:16 Social Cut</span>
+</div>
+</div>
+<!-- Main Application Content & Metadata -->
+<div class="lg:col-span-8 flex flex-col justify-between h-full gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline font-semibold">Vespera Botanical Drinks</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Food &amp; Beverage</span>
+</div>
+<!-- Status Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-badge text-label-badge uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                  Declined
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md font-bold text-on-surface tracking-tight">
+                Sparkling Botanical Elixir — Social Can Launch
+              </h2>
+</div>
+<!-- Creator Proposal Snippet -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-caption text-label-caption text-outline font-semibold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+                Your Submitted Concept Proposal
+              </span>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2 leading-relaxed">
+                "Rapid generative motion iteration showcasing fizzy carbonation macro shots, fruit slices bursting with moisture droplets..."
+              </p>
+</div>
+<!-- Meta Details & Bottom Actions -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Submitted</span>
+<span class="font-body-sm text-body-sm font-semibold text-outline">Oct 04, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Pitch Budget</span>
+<span class="font-body-sm text-body-sm font-bold text-outline">$2,400 USD</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Archived Date</span>
+<span class="font-body-sm text-body-sm font-semibold text-outline">Oct 08, 2025</span>
+</div>
+<div>
+<span class="block font-label-caption text-label-caption text-outline">Status</span>
+<span class="font-body-sm text-body-sm font-semibold text-outline">Brief Closed</span>
+</div>
+</div>
+<!-- Action Pills -->
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-button text-label-button transition-all" onclick="openDetailsModal()">
+                  View Archive
+                </button>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- FIRST-TIME EMPTY STATE CONTAINER (Hidden by default, triggered by toggle) -->
+<div class="hidden flex-col items-center justify-center p-space-3xl rounded-3xl bg-surface-container-lowest shadow-[0_8px_30px_rgba(19,27,46,0.03)] text-center my-space-md" id="empty-state-container">
+<div class="relative w-28 h-28 mb-space-md flex items-center justify-center">
+<!-- Decorative Ambient Rings -->
+<div class="absolute inset-0 rounded-full bg-secondary-fixed/40 animate-ping opacity-25"></div>
+<div class="w-24 h-24 rounded-full bg-surface-container-low flex items-center justify-center text-secondary shadow-[0_8px_24px_rgba(113,42,226,0.12)]">
+<span class="material-symbols-outlined text-[44px]">auto_awesome_motion</span>
+</div>
+</div>
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-secondary font-semibold mb-2">Campaign Pipeline Empty</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-3 max-w-md">
+        Your next milestone commission starts here.
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mb-space-lg leading-relaxed">
+        Explore open creative briefs from global brands, pitch bespoke AI workflows with your generative portfolio, and manage escrow contracts directly.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm">
+<a class="px-8 py-3.5 rounded-full bg-secondary text-on-secondary font-label-button text-label-button shadow-[0_8px_24px_-4px_rgba(113,42,226,0.35)] hover:bg-secondary-container transition-all" data-path="brand-briefs" href="#">
+          Explore Brand Briefs →
+        </a>
+<button class="px-6 py-3.5 rounded-full bg-surface-container-low text-on-surface font-label-button text-label-button hover:bg-surface-container transition-all" onclick="switchState('standard')">
+          Reset View Filters
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 1: FULL APPLICATION DETAILS MODAL / DRAWER -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 overflow-y-auto" id="modal-details">
+<div class="relative w-full max-w-3xl my-8 rounded-3xl bg-surface-container-lowest shadow-[0_24px_60px_-12px_rgba(19,27,46,0.2)] overflow-hidden flex flex-col animate-in fade-in zoom-in duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low/70 flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Aura Botanica</span>
+<span class="text-outline text-xs">•</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-badge text-label-badge uppercase font-bold">
+              Accepted
+            </span>
+</div>
+<h2 class="font-headline-md text-headline-sm font-bold text-on-surface">
+            Nordic Botanical Serum — Specular Video Reel
+          </h2>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Submitted on Oct 12, 2025 at 14:32 UTC</span>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="closeDetailsModal()">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-lg max-h-[70vh] overflow-y-auto">
+<!-- Timeline Stage Track -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-[0_2px_12px_rgba(19,27,46,0.03)] flex flex-col gap-3">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline font-semibold">Application Pipeline Journey</span>
+<div class="flex items-center justify-between relative">
+<div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-0.5 bg-emerald-200 -z-0"></div>
+<div class="flex flex-col items-center gap-1.5 z-10 bg-surface-container-lowest px-2">
+<span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[12px]"><span class="material-symbols-outlined text-[14px]">check</span></span>
+<span class="font-label-caption text-label-caption text-on-surface font-semibold">Submitted</span>
+<span class="font-label-badge text-[10px] text-outline">Oct 12</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10 bg-surface-container-lowest px-2">
+<span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[12px]"><span class="material-symbols-outlined text-[14px]">check</span></span>
+<span class="font-label-caption text-label-caption text-on-surface font-semibold">In Review</span>
+<span class="font-label-badge text-[10px] text-outline">Oct 13</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10 bg-surface-container-lowest px-2">
+<span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[12px]"><span class="material-symbols-outlined text-[14px]">check</span></span>
+<span class="font-label-caption text-label-caption text-emerald-700 font-bold">Accepted</span>
+<span class="font-label-badge text-[10px] text-emerald-700">Oct 15</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 z-10 bg-surface-container-lowest px-2 opacity-50">
+<span class="w-6 h-6 rounded-full bg-surface-container text-outline flex items-center justify-center text-[12px]"><span class="material-symbols-outlined text-[14px]">lock</span></span>
+<span class="font-label-caption text-label-caption text-outline font-semibold">Delivery</span>
+<span class="font-label-badge text-[10px] text-outline">Oct 24</span>
+</div>
+</div>
+</div>
+<!-- Full Pitch Statement -->
+<div class="flex flex-col gap-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Full Proposal Pitch</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed p-space-md rounded-2xl bg-surface-container-low">
+            For Nordic Botanical Serum, I propose an ultra-precise macro fluid simulation pipeline using ComfyUI LoRAs trained on Nordic flora caustics combined with Runway Gen-3 camera controls. Will deliver 3 distinct 15s cuts with seamless looping droplets. All sequences will be natively mastered at 4K in DaVinci Resolve with rec.709 color managed outputs and custom generative sound design passes.
+          </p>
+</div>
+<!-- Brief Specific Q&A -->
+<div class="flex flex-col gap-3">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Brief Questionnaire Responses</span>
+<div class="p-4 rounded-xl bg-surface-container-low/60 flex flex-col gap-1.5">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Q: Can you provide uncompressed 4K master ProRes with color grading?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">A: Yes, mastered directly in DaVinci Resolve Studio 19 with custom LUT deliverables and full stems.</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low/60 flex flex-col gap-1.5">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Q: What is your estimated turnaround for First Cut Review?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">A: 4 business days from kickoff lock, allowing 2 rounds of iteration before final delivery.</span>
+</div>
+</div>
+<!-- Attached Work Sample Previews -->
+<div class="flex flex-col gap-3">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary font-semibold">Submitted Portfolios</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">play_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">0:15 Reel Alpine Flora</span>
+<span class="font-label-caption text-label-caption text-outline">ProRes 422 HQ • 3840×2160</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">view_in_ar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">FLUX.1 Fluid Caustics</span>
+<span class="font-label-caption text-label-caption text-outline">Custom ComfyUI Workflow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial Breakdown -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge uppercase text-outline">Escrow Budget Secured</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$4,500.00 USD</span>
+</div>
+<span class="px-4 py-1.5 rounded-full bg-emerald-600 text-white font-label-caption text-label-caption font-semibold">
+            Status: Fully Funded in Escrow
+          </span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low/70 flex items-center justify-between">
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-button text-label-button hover:bg-surface-container-highest transition-colors" onclick="closeDetailsModal()">
+          Close Window
+        </button>
+<div class="flex items-center gap-2">
+<button class="px-6 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-label-button text-label-button shadow-[0_4px_16px_rgba(138,76,252,0.3)] hover:opacity-95 transition-all">
+            Open Milestone Workspace →
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL 2: WITHDRAW APPLICATION CONFIRMATION -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="modal-withdraw">
+<div class="relative w-full max-w-lg rounded-3xl bg-surface-container-lowest p-space-xl shadow-[0_24px_60px_-12px_rgba(19,27,46,0.2)] flex flex-col gap-space-md animate-in fade-in zoom-in duration-200">
+<div class="w-14 h-14 rounded-full bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-sm font-bold text-on-surface">
+          Withdraw this application?
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          You may no longer be considered for this creative brief once withdrawn. Are you sure you want to retract your proposal for <span class="font-semibold text-on-surface" id="withdraw-brief-title">"Autonomous Hypercar Anamorphic 4K Billboard"</span>?
+        </p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low text-on-surface-variant font-label-caption text-label-caption">
+<strong>Notice:</strong> Your pitch deck and attached references will be archived and removed from the brand reviewer queue immediately.
+      </div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface font-label-button text-label-button hover:bg-surface-container transition-colors" onclick="closeWithdrawModal()">
+          Keep Application
+        </button>
+<button class="px-6 py-2.5 rounded-full bg-error text-on-error font-label-button text-label-button shadow-[0_4px_16px_rgba(186,26,26,0.3)] hover:opacity-90 transition-all" onclick="confirmWithdrawAction()">
+          Confirm Withdrawal
+        </button>
+</div>
+</div>
+</div>
+<!-- Vanilla State Switcher Script -->
+<script>
+    function switchState(state) {
+      const feed = document.getElementById('applications-feed');
+      const empty = document.getElementById('empty-state-container');
+      const btnStandard = document.getElementById('btn-state-standard');
+      const btnEmpty = document.getElementById('btn-state-empty');
+
+      if (state === 'empty') {
+        feed.classList.add('hidden');
+        empty.classList.remove('hidden');
+        empty.classList.add('flex');
+        
+        btnEmpty.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+        btnEmpty.classList.remove('bg-surface-container-low', 'text-on-surface');
+        
+        btnStandard.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+        btnStandard.classList.add('bg-surface-container-low', 'text-on-surface');
+      } else {
+        empty.classList.add('hidden');
+        empty.classList.remove('flex');
+        feed.classList.remove('hidden');
+
+        btnStandard.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+        btnStandard.classList.remove('bg-surface-container-low', 'text-on-surface');
+
+        btnEmpty.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+        btnEmpty.classList.add('bg-surface-container-low', 'text-on-surface');
+      }
+    }
+
+    function openDetailsModal() {
+      document.getElementById('modal-details').classList.remove('hidden');
+      document.getElementById('modal-details').classList.add('flex');
+    }
+
+    function closeDetailsModal() {
+      document.getElementById('modal-details').classList.add('hidden');
+      document.getElementById('modal-details').classList.remove('flex');
+    }
+
+    let activeWithdrawTarget = null;
+    function openWithdrawModal(title) {
+      if (title) {
+        document.getElementById('withdraw-brief-title').innerText = `"${title}"`;
+      }
+      document.getElementById('modal-withdraw').classList.remove('hidden');
+      document.getElementById('modal-withdraw').classList.add('flex');
+    }
+
+    function closeWithdrawModal() {
+      document.getElementById('modal-withdraw').classList.add('hidden');
+      document.getElementById('modal-withdraw').classList.remove('flex');
+    }
+
+    function confirmWithdrawAction() {
+      alert('Application withdrawn successfully. Your pipeline stats have updated.');
+      closeWithdrawModal();
+    }
+
+    function filterStatus(status) {
+      const cards = document.querySelectorAll('.application-card');
+      switchState('standard');
+
+      cards.forEach(card => {
+        if (status === 'all' || card.getAttribute('data-status') === status) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update Tab Styles
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-[0_4px_12px_rgba(113,42,226,0.25)]');
+        tab.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+      event.currentTarget.classList.add('bg-secondary', 'text-on-secondary', 'shadow-[0_4px_12px_rgba(113,42,226,0.25)]');
+      event.currentTarget.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('search-input').value.toLowerCase();
+      const cards = document.querySelectorAll('.application-card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</div></main></div></body></html>

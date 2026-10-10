@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e2e7ff", "tertiary": "#006387", "on-primary-fixed-variant": "#2f2ebe", "surface-variant": "#dae2fd", "on-primary": "#ffffff", "background": "#faf8ff", "inverse-primary": "#c0c1ff", "outline-variant": "#c7c4d7", "outline": "#767586", "surface-dim": "#d2d9f4", "tertiary-fixed-dim": "#7bd0ff", "on-secondary-container": "#fffbff", "secondary-fixed-dim": "#d2bbff", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-surface": "#131b2e", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#5a00c6", "on-surface-variant": "#464554", "on-tertiary-container": "#fcfcff", "primary-fixed-dim": "#c0c1ff", "secondary-container": "#8a4cfc", "primary-fixed": "#e1e0ff", "primary-container": "#6063ee", "surface-container-low": "#f2f3ff", "on-primary-container": "#fffbff", "tertiary-fixed": "#c4e7ff", "inverse-surface": "#283044", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#004c69", "on-secondary-fixed": "#25005a", "on-primary-fixed": "#07006c", "surface-bright": "#faf8ff", "surface-tint": "#494bd6", "on-secondary": "#ffffff", "surface-container": "#eaedff", "secondary": "#712ae2", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#eaddff", "on-tertiary-fixed": "#001e2c", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary": "#4648d4", "tertiary-container": "#007da9" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin": "4rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-3xl": "6rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "label-caption": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-button": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["2rem", { "lineHeight": "1.3", "fontWeight": "500" }], "headline-lg": ["3rem", { "lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }], "label-caption": ["0.75rem", { "lineHeight": "1.4", "fontWeight": "500" }], "display-hero": ["4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-button": ["0.9375rem", { "lineHeight": "1", "fontWeight": "600" }], "display-hero-mobile": ["2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }], "label-badge": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between p-space-lg"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">INOMARK</span><span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase mt-0.5">Creator Hub</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-secondary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-button text-label-button">Home</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="discover-creators" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-button text-label-button">Discover Creators</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-briefs" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-button text-label-button">My Briefs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-creators" href="#"><span class="material-symbols-outlined text-[20px]">bookmark_border</span><span class="font-label-button text-label-button">Saved Creators</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="brand-profile" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-button text-label-button">Brand Profile</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm font-semibold"><span class="material-symbols-outlined text-[18px]">spa</span></div><div class="flex flex-col min-w-0"><span class="font-label-button text-label-button text-on-surface truncate">Aura Botanica</span><span class="font-label-caption text-label-caption text-secondary truncate">Enterprise Brand</span></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-button text-label-button">Settings</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-button text-label-button">Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex-1 max-w-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-4 text-outline text-[20px]">search</span><input class="w-full pl-11 pr-4 py-space-sm bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-full focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Search creators, briefs, skills..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-sm rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-button text-label-button text-on-surface">Aura Botanica</span><span class="font-label-caption text-label-caption text-secondary">Verified Partner</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Ambient Aura Backdrop (Pure CSS Glows) -->
+<div class="relative w-full overflow-hidden px-space-xl py-space-xl">
+<div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-secondary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -left-32 w-80 h-80 rounded-full bg-primary-fixed opacity-30 blur-3xl pointer-events-none"></div>
+<!-- Editorial Page Header -->
+<header class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-lg mb-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary text-label-badge font-label-badge tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Campaigns &amp; Briefs • Brand Dashboard
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+          My Briefs <span class="italic font-display-hero text-secondary font-normal">&amp;</span> Campaigns
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Commission world-class AI creators, manage generative production pipelines, and review vetted portfolio proposals in real time.
+        </p>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center gap-space-sm self-start md:self-end">
+<button class="px-space-md py-space-sm rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container text-label-button font-label-button transition-all flex items-center gap-2 shadow-sm" id="toggleEmptyStateBtn">
+<span class="material-symbols-outlined text-[18px]">preview</span>
+<span id="toggleEmptyText">Preview Empty State</span>
+</button>
+<button class="px-space-lg py-space-sm rounded-full bg-gradient-to-r from-primary via-secondary to-secondary-container text-on-primary hover:shadow-lg hover:shadow-secondary/20 hover:scale-[1.02] active:scale-[0.98] text-label-button font-label-button transition-all flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ Create a Brief</span>
+</button>
+</div>
+</header>
+<!-- Content Stage (Populated View vs Empty View) -->
+<div class="flex flex-col gap-space-xl relative z-10" id="briefsContainer">
+<!-- 4 Compact Stat Metrics Cards -->
+<section aria-label="Brief Overview Metrics" class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">All Briefs</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">7</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Total lifetime</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">Published</span>
+<span class="w-8 h-8 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-secondary font-semibold">4</span>
+<span class="font-label-caption text-label-caption text-secondary">Active &amp; receiving pitches</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-tertiary">Drafts</span>
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed/60 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">2</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Private drafts in progress</span>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between transition-transform duration-200 hover:-translate-y-0.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Closed</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">1</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Archived &amp; completed</span>
+</div>
+</div>
+</section>
+<!-- Status Tabs & Filter Toolbar -->
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<!-- Horizontal Status Filter Tabs -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-full gap-1" role="tablist">
+<button aria-selected="true" class="tab-button active-tab px-space-md py-1.5 rounded-full text-label-button font-label-button text-on-surface bg-surface-container-lowest shadow-sm transition-all" data-filter="all" role="tab">
+              All <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-high text-label-caption text-secondary font-semibold">7</span>
+</button>
+<button aria-selected="false" class="tab-button px-space-md py-1.5 rounded-full text-label-button font-label-button text-on-surface-variant hover:text-on-surface transition-all" data-filter="published" role="tab">
+              Published <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-label-caption text-on-surface-variant">4</span>
+</button>
+<button aria-selected="false" class="tab-button px-space-md py-1.5 rounded-full text-label-button font-label-button text-on-surface-variant hover:text-on-surface transition-all" data-filter="draft" role="tab">
+              Drafts <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-label-caption text-on-surface-variant">2</span>
+</button>
+<button aria-selected="false" class="tab-button px-space-md py-1.5 rounded-full text-label-button font-label-button text-on-surface-variant hover:text-on-surface transition-all" data-filter="closed" role="tab">
+              Closed <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-label-caption text-on-surface-variant">1</span>
+</button>
+</div>
+<!-- Total results tracker indicator -->
+<div class="flex items-center gap-space-xs text-label-caption font-label-caption text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span id="resultsCount">Showing 5 briefs</span>
+</div>
+</div>
+<!-- Filter & Search Controls Bar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm pt-space-xs items-center">
+<!-- Live Search Input -->
+<div class="relative md:col-span-5">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-12 py-2.5 rounded-full bg-surface-container-low text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" id="briefSearchInput" placeholder="Search briefs by title, discipline, or keyword..." type="text"/>
+<span class="absolute right-3.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded text-[10px] font-mono uppercase bg-surface-container-high text-outline">⌘K</span>
+</div>
+<!-- Content Type Filter -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full appearance-none px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 cursor-pointer transition-all pr-8" id="contentTypeFilter">
+<option value="">All Disciplines</option>
+<option value="video">AI-Generated Video</option>
+<option value="3d">3D &amp; Packshots</option>
+<option value="fashion">Fashion &amp; Haute Couture</option>
+<option value="stills">Commercial Stills</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Industry Filter -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full appearance-none px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 cursor-pointer transition-all pr-8" id="industryFilter">
+<option value="">All Industries</option>
+<option value="beauty">Beauty &amp; Skincare</option>
+<option value="fashion">Luxury Fashion</option>
+<option value="cosmetics">Cosmetics</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Sort Filter -->
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full appearance-none px-4 py-2.5 rounded-full bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/30 cursor-pointer transition-all pr-8">
+<option>Sort: Most Recently Updated</option>
+<option>Sort: Newest Created</option>
+<option>Sort: Deadline Approaching</option>
+<option>Sort: Title A–Z</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">sort</span>
+</div>
+</div>
+</div>
+<!-- Filter Tags Bar -->
+<div class="hidden flex-wrap items-center gap-space-xs pt-space-xs text-label-caption font-label-caption" id="activeTagsRow">
+<span class="text-outline">Active Filters:</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed" id="activeFilterBadge">
+<span id="activeFilterText">Filtered</span>
+<button class="material-symbols-outlined text-[14px] hover:text-error transition-colors" id="clearFiltersBtn">close</button>
+</span>
+<button class="text-secondary hover:underline ml-2" id="resetAllBtn">Clear all filters</button>
+</div>
+</section>
+<!-- Brief Cards List -->
+<section aria-label="Creative Briefs" class="flex flex-col gap-space-lg" id="briefCardsList">
+<!-- Card 1: Nordic Botanical Serum -->
+<article class="brief-card group relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-industry="beauty" data-status="published" data-type="video">
+<div class="flex flex-col lg:flex-row gap-space-lg justify-between items-start">
+<!-- Left Info & Synopsis -->
+<div class="flex flex-col gap-space-md max-w-3xl">
+<!-- Top Row: Status Badge & Meta Chips -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Published • Accepting Applications
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+                  AI Video (9:16 Reel)
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Beauty &amp; Skincare</span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-outline">Updated 2h ago</span>
+</div>
+<!-- Title & Synopsis -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors cursor-pointer">
+                  Nordic Botanical Serum — Specular Video Reel
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Cinematic commercial video showcase featuring macro liquid droplet dynamics, morning mist lighting, and photorealistic Nordic glass flacon aesthetics.
+                </p>
+</div>
+<!-- Tech, Deliverables & Budget Pills -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">Runway Gen-3 Alpha</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">ComfyUI LoRA</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">4K Master EXR</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-caption font-label-caption font-semibold">
+                  Budget: $4,500 USD
+                </span>
+<span class="text-label-caption font-label-caption text-outline flex items-center gap-1 ml-1">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                  Deadline: Oct 24, 2025
+                </span>
+</div>
+</div>
+<!-- Right Visual & Application Mini-Section -->
+<div class="flex flex-col lg:items-end justify-between self-stretch gap-space-md pt-2 lg:pt-0">
+<!-- Visual Thumbnail preview -->
+<div class="w-full lg:w-44 h-24 rounded-xl overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro high-definition shot of Nordic amber glass bottle with morning mist and pristine dew drops in a Scandinavian moss forest, cinematic lighting, hyperrealistic, soft lavender aura" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpBk_CmC61ZgYq6CtJ5t9kT8TjAu7k118C4RyVe0HPJTdHqxpRuyuJPDMmAxICX-E-xyJUq8kuKDrlNeC2wYyAsoJ95F1V9TEoFdUMd8irQt8g6Qtx9kMm0SwZmeXPQeBSxfjwNjD_O_wlpETg45CVz6jK-rPHiwINa_T8XYo1qpeOesJARRiZostxWl1TYd_PBm90rVqiSviKt57OJs5it0GXPA9lPcsMGivlb0s-eRcuSVn-TGzS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<span class="absolute bottom-1.5 right-2 text-[10px] text-white/90 font-mono tracking-wide px-1.5 py-0.5 rounded bg-black/40 backdrop-blur-sm">4K VIDEO</span>
+</div>
+<!-- Applications Count & Avatars -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-3 py-1.5 rounded-full">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of digital creator Elena Vance, subtle cinematic lighting, clean backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASPRAMRX2_77EbwJkyL4bBXgZIJJIqrC1frxmKWdx2e026kObr5Tcaf4WXhdt9AR6h_PK6q_e3tijy4zdF5MXEZSM818EnYRP-CAgT6XakeqBdnhFT0UIF8-BpSsylVNZRs-J3Q4G2ojOKLxA98R0nllJj6UxietXTNl9Hf1q1p5_RzNsuWflvz1SNC9561dkUtGzLd8AbPHDgB7cI8qr7p54w8Dp-YtPuFP5HbPJk_IckbPiumOMY"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of generative AI artist Devon Chen, modern studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1FKOPn4oCLKrP-ewGnYbdfAx_JhAPKowstUKTF6c4dD-V76Xy_hD1rpbuqH5pFQfCRgtWzw2lC1ujwWLE7WhyHINWyHRAtFvDkWU__uBjnWU1Fyxx4e2OGiTQuF7sCqQYTkEt4Y-S_rxn-K0tMLN3kyK9HTl_k1UBoOXluyS1Y5bJ7EMbIhYJx64ETW5IFqO0vvSLlHp4GVUKpAER-F4hKKZ7WV5wUdzliRrPA3H5Spysue8JTIag"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of 3D designer Maya Lin, soft pastel periwinkle aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrhh8PWNilLhOpij4iWFbfIL_8EI5rg8ZeUCvmDmsbDAOIIuxSRULyRsl5Pdc5WpUIiESs0F-Lnk59dRsGVeQMTd6n8cPXKGVpddGzasGXIIqlzoi3c9YwBrFFPlmm-mGFUzQ0PppyIqlvbZvy6Fhe_s22QVYcMpcjhGA-ZAv8sbmKEgHKBYFWRXMdGAVNJtVfXQOz54NN6j7azG6IHVkZk2JADQg0vImwbj2CTGICKgbXVlqCkKmy"/>
+</div>
+<span class="text-label-caption font-label-caption text-secondary font-semibold">14 Applications</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Deck -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>100% Escrow Protected • 3 shortlist recommendations ready for review</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-secondary text-on-secondary hover:bg-secondary/90 text-label-button font-label-button shadow-sm hover:shadow transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>View Applications (14)</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-button font-label-button transition-all">
+                View Brief
+              </button>
+<div class="relative group/menu">
+<button aria-label="More options" class="w-9 h-9 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden group-hover/menu:block absolute right-0 bottom-full mb-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-20">
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Edit Brief</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Duplicate Brief</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-error hover:bg-error-container" href="#">Close Submissions</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Alpine Hydration Elixir -->
+<article class="brief-card group relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-industry="cosmetics" data-status="published" data-type="3d">
+<div class="flex flex-col lg:flex-row gap-space-lg justify-between items-start">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Published • Accepting Applications
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">view_in_ar</span>
+                  Product Visuals &amp; 3D
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Cosmetics</span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-outline">Updated Yesterday</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors cursor-pointer">
+                  Alpine Hydration Elixir — Macro 3D Packshots
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Ultra-consistent synthetic packaging mockups with FLUX.1 LoRA training on Nordic packaging materials and frosted bottle caustics.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">FLUX.1 Dev</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">Blender 4.2 Cycles</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-secondary text-label-caption font-label-caption font-semibold">
+                  Budget: $2,800 USD
+                </span>
+<span class="text-label-caption font-label-caption text-outline flex items-center gap-1 ml-1">
+<span class="material-symbols-outlined text-[15px]">event</span>
+                  Deadline: Nov 02, 2025
+                </span>
+</div>
+</div>
+<div class="flex flex-col lg:items-end justify-between self-stretch gap-space-md pt-2 lg:pt-0">
+<div class="w-full lg:w-44 h-24 rounded-xl overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end cosmetic glass bottle on carved alpine slate rock with water ripples, caustic light refraction, clean studio render, editorial minimalism" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBygpVWu4xJ_ht0y1OlqOumNyQueMRa1SiavTDMEqdK3tSGMbvXgi_3ZHlHMVR67sAl60PLv9M-YEZgylIZMKHxXZKPsQWBwUYsGMRuL6u0RQihZQPMZEIJOfL1Ch0bPcplFK3yS0OBuhsrf8ue2KSQwWWqLzGeIwjFzQ_v6TQmK9Y98JS7bjFCRkkvxG55d_DjMw0HWs8pwqz71ozYE9tFH6mwXZ2AlV03UVCqYVGYKOUtaHb81Asg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<span class="absolute bottom-1.5 right-2 text-[10px] text-white/90 font-mono tracking-wide px-1.5 py-0.5 rounded bg-black/40 backdrop-blur-sm">3D PACKSHOT</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-3 py-1.5 rounded-full">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait avatar of 3D stylist Kaito Sato, soft rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs7lrp7LdKhrTMauGvp3h9ExZDhl6YGZUbuQGjteJ2buM0e7LFFQax42GqESt1LdMRaTsuBVC2RkqyWjhuTkzC-Ul0bz9SKfNbc08De-Gsv2LQvfRX8g9Uv9e4JdnOqEEH1opePwJKg3kmwTcw7-WmlFfbusW9DVzRygtk9G3d5_cE-K6sn3P2k_tuK-N4qxJwvww4n5DYHm6PCaRAB-9qrLH8aR84I-8HvhSwbbZubw2fbUX-0BQP"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait avatar of synthetic photographer Clara Moreau, studio aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbWZVrUe9rXelK373j_bEzh5MT4qb8gMV6dVqpR7TVWkw5StcTw5-KmYAmhWb1G98YP81svXOUpHj_B5mZlILamFRrHku218fkx7-asmJDPaXsFmk4dzXDZ9bmxmKeWatKOO14KEXeJyZLHjylMwLR5VOz1B6Pab3NALPaUIjVDRiZ2tWjeqSEnxeQgBdKo2iUSuOFx5uXJsgbe4PvoshCyzzm6o5BwGum7jiE4k7IuTMPNw9w9C_7"/>
+</div>
+<span class="text-label-caption font-label-caption text-secondary font-semibold">8 Applications</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">auto_awesome</span>
+<span>Lora training dataset zip attached (84 high-res reference assets)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-secondary text-on-secondary hover:bg-secondary/90 text-label-button font-label-button shadow-sm hover:shadow transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>View Applications (8)</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-button font-label-button transition-all">
+                View Brief
+              </button>
+<div class="relative group/menu">
+<button aria-label="More options" class="w-9 h-9 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden group-hover/menu:block absolute right-0 bottom-full mb-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-20">
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Edit Brief</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Duplicate Brief</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-error hover:bg-error-container" href="#">Close Submissions</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Ethereal Botanica (Draft) -->
+<article class="brief-card group relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-industry="fashion" data-status="draft" data-type="fashion">
+<div class="flex flex-col lg:flex-row gap-space-lg justify-between items-start">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Draft • In Review
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">styler</span>
+                  Fashion &amp; Haute Couture
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Luxury Fashion</span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-outline">Updated 3 days ago</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors cursor-pointer">
+                  Ethereal Botanica — AI Runway Concept
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Experimental surreal haute couture runway presentation featuring bioluminescent flora garments, flowing organza silk physics, and dynamic volumetric lighting.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">Kling 1.5 Pro</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">Midjourney v6.1</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant text-label-caption font-label-caption font-medium">
+                  Est. Budget: $5,000 USD
+                </span>
+<span class="text-label-caption font-label-caption text-outline flex items-center gap-1 ml-1">
+<span class="material-symbols-outlined text-[15px]">hourglass_empty</span>
+                  Unscheduled Draft
+                </span>
+</div>
+</div>
+<div class="flex flex-col lg:items-end justify-between self-stretch gap-space-md pt-2 lg:pt-0">
+<div class="w-full lg:w-44 h-24 rounded-xl overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-fashion AI runway model in luminous violet translucent floral gown, surreal botanicals, high editorial fashion lighting, runway catwalk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCamuPj7vYaC0SQRRhnevwaunN7Upzo64yHbSyG6Jb3Frd5wj4Fj4EfnPY_ZTNlikHmkjmUCub-B5H4MXilrwq5W3iHjFSQwMP_jw3of5hIEjGqZazrWBMScPN11_TFuC4oD6rDRQjGjZ-0RCJE3Xnqw7s93kDS_GbaCqAOFRIOz9CeS73LSdy2AZaSxr4Kk3yF2jzd6rgnZRz8MZXERI27cbQL17MZAxMPlcdVNyjrVBJeefJkfaiU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<span class="absolute bottom-1.5 right-2 text-[10px] text-white/90 font-mono tracking-wide px-1.5 py-0.5 rounded bg-black/40 backdrop-blur-sm">EDITORIAL</span>
+</div>
+<div class="flex items-center gap-1.5 text-label-caption font-label-caption text-outline bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">visibility_off</span>
+<span>Private Draft • Invisible to creators</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">pending_actions</span>
+<span>Draft contains 4 suggested AI creator matches based on required aesthetic tags</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container text-label-button font-label-button shadow-sm transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Continue Editing</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-secondary hover:bg-secondary-fixed text-label-button font-label-button transition-all">
+                Publish Brief
+              </button>
+<div class="relative group/menu">
+<button aria-label="More options" class="w-9 h-9 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden group-hover/menu:block absolute right-0 bottom-full mb-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-20">
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Duplicate Draft</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-error hover:bg-error-container" href="#">Delete Draft</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Botanical Serum Stills (Draft) -->
+<article class="brief-card group relative p-space-xl rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300" data-industry="beauty" data-status="draft" data-type="stills">
+<div class="flex flex-col lg:flex-row gap-space-lg justify-between items-start">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Draft • In Progress
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">photo_camera</span>
+                  Commercial Stills
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Beauty &amp; Skincare</span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-outline">Updated 5 days ago</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors cursor-pointer">
+                  Botanical Serum Stills — E-Commerce Packshots
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Set of 12 white-background and stylized marble pedestal e-commerce packshots with clean shadow falloff and transparent PNG alphas.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">FLUX.1 Schnell</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">Photoroom API</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant text-label-caption font-label-caption font-medium">
+                  Budget: $1,600 USD
+                </span>
+</div>
+</div>
+<div class="flex flex-col lg:items-end justify-between self-stretch gap-space-md pt-2 lg:pt-0">
+<div class="w-full lg:w-44 h-24 rounded-xl overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist marble pedestal with Nordic cosmetic glass droppers in soft diffuse studio lighting, subtle shadow falloff, pristine clean product styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDymzKsmDaWh9yfKLlillJJGlIZRKILxnKzkT1g5Yjd17pGImDRXRD1Ih_pl6JQVbkuMgsS22AP72Q3DBG_foWaNhd9JDbuF8F-Wwq14CwMeacvzSK4TIdMinULDd8cbozuqjyPlGy15l6jWy11bZAo6Dpo_vwND_COzKNDaMOn86-X5Dcm0FU_d4LuROWbA1AwsiGtpYaY8150bDS0DvR5WXjYUrPN8eYPZRRtTDUMM7dlAlxXHGhg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<span class="absolute bottom-1.5 right-2 text-[10px] text-white/90 font-mono tracking-wide px-1.5 py-0.5 rounded bg-black/40 backdrop-blur-sm">STILLS</span>
+</div>
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-outline bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="w-2.5 h-2.5 rounded-full border-2 border-primary border-t-transparent animate-spin"></span>
+<span>4 of 6 required fields filled</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 px-space-md py-space-sm rounded-xl">
+<div class="w-full sm:w-64 bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full w-2/3"></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container text-label-button font-label-button shadow-sm transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Continue Editing</span>
+</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-secondary hover:bg-secondary-fixed text-label-button font-label-button transition-all">
+                Publish Brief
+              </button>
+<div class="relative group/menu">
+<button aria-label="More options" class="w-9 h-9 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden group-hover/menu:block absolute right-0 bottom-full mb-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-20">
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Duplicate Draft</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-error hover:bg-error-container" href="#">Delete Draft</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 5: Q3 Arctic Glow Seasonal Teaser (Closed) -->
+<article class="brief-card group relative p-space-xl rounded-2xl bg-surface-container-lowest/80 shadow-sm hover:shadow-md transition-all duration-300" data-industry="beauty" data-status="closed" data-type="video">
+<div class="flex flex-col lg:flex-row gap-space-lg justify-between items-start">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-outline text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Closed • Completed Campaign
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">movie</span>
+                  Cinematic Campaign
+                </span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Beauty &amp; Skincare</span>
+<span class="text-outline text-label-caption">•</span>
+<span class="text-label-caption font-label-caption text-outline">Closed on Sep 30, 2025</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors cursor-pointer">
+                  Q3 Arctic Glow Seasonal Teaser
+                </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Seasonal autumn launch campaign focused on arctic wilderness biomes and botanical ingredients. Completed deliverables delivered ahead of schedule.
+                </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">2x 15s Cinematic Cuts</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface text-label-caption font-label-caption">4K Pro Res</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-outline text-label-caption font-label-caption">
+                  Completed • $3,800 Released to Elena Vance
+                </span>
+</div>
+</div>
+<div class="flex flex-col lg:items-end justify-between self-stretch gap-space-md pt-2 lg:pt-0">
+<div class="w-full lg:w-44 h-24 rounded-xl overflow-hidden relative grayscale contrast-90 group-hover:grayscale-0 transition-all duration-500 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Cinematic shot of Arctic glacier blue waters and frozen botanical berries glowing softly under northern lights aura, deep rich contrast, high fashion mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3GHWtnd7nv9Ob6sF0vCKw_ngtBeD_8Zyj6zYCMYAWA964kbWfJwme9cmDzskP3FH5YFhfaruZ53It2725IbK9i3G7jrCgtV2dKnzvx9iEnRzrh5gSsQp47GhlXLhploY75bwJvG4jLHFxcQjg7FpAjxM08rRy9mLieb4JG7cYpcKKzfNDN4bHZmEhsMLq0fQBVulrm-diFgmnkOnM6Zxx0cl384a679_4S7OcA6yJsA4iv57JMVvD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+<span class="absolute bottom-1.5 right-2 text-[10px] text-white/90 font-mono tracking-wide px-1.5 py-0.5 rounded bg-black/40 backdrop-blur-sm">ARCHIVED</span>
+</div>
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-outline bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px]">folder_zip</span>
+<span>22 Applications Archived</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/40 px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-2 text-label-caption font-label-caption text-outline">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Final deliverables verified and added to Aura Botanica Asset Vault</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-button font-label-button transition-all">
+                View Brief
+              </button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container text-label-button font-label-button transition-all">
+                View Applications (Archived)
+              </button>
+<div class="relative group/menu">
+<button aria-label="More options" class="w-9 h-9 rounded-full flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+<div class="hidden group-hover/menu:block absolute right-0 bottom-full mb-1 w-44 rounded-xl bg-surface-container-lowest shadow-xl py-1 z-20">
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Reopen Brief</a>
+<a class="block px-4 py-2 text-body-sm font-body-sm text-on-surface hover:bg-surface-container" href="#">Duplicate Brief</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Pagination / Footer Metadata Bar -->
+<footer class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md text-label-caption font-label-caption text-outline">
+<div>Showing 1–5 of 7 total briefs across 3 active campaigns</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-outline hover:text-on-surface cursor-not-allowed opacity-60">Previous</button>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-semibold">1</span>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors">2</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors">Next</button>
+</div>
+</footer>
+</div>
+<!-- First-Time Friendly Empty State View (Toggled via button or zero state) -->
+<div class="hidden relative z-10 flex-col items-center justify-center py-space-3xl px-space-xl bg-surface-container-lowest rounded-3xl shadow-sm text-center max-w-3xl mx-auto my-space-xl" id="emptyStateContainer">
+<div class="w-20 h-20 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary mb-space-lg shadow-sm">
+<span class="material-symbols-outlined text-[36px]">auto_awesome_motion</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary text-label-badge font-label-badge uppercase tracking-wider mb-2">
+        Creative Commissioning Engine
+      </span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-semibold">
+        Your next great AI campaign starts here
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md leading-relaxed mb-space-xl">
+        Create your first brief to tell world-class generative creators what you need. Set your budget, attach LoRA reference datasets, and receive production-ready pitches within hours.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<button class="px-space-xl py-3 rounded-full bg-gradient-to-r from-primary via-secondary to-secondary-container text-on-primary hover:shadow-xl hover:shadow-secondary/25 hover:scale-[1.02] text-label-button font-label-button transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Create Your First Brief</span>
+</button>
+<button class="px-space-lg py-3 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-button font-label-button transition-all" id="exitEmptyStateBtn">
+          Back to Active Briefs
+        </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-3xl w-full text-left pt-space-xl">
+<div class="p-space-md rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-2">shield_with_heart</span>
+<h3 class="font-headline-sm text-[1rem] text-on-surface font-semibold mb-1">Escrow Safety</h3>
+<p class="text-label-caption font-label-caption text-on-surface-variant">Funds are only released once high-res masters meet brand specs.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-2">hotel_class</span>
+<h3 class="font-headline-sm text-[1rem] text-on-surface font-semibold mb-1">Vetted Creators</h3>
+<p class="text-label-caption font-label-caption text-on-surface-variant">Access top 1% artists trained in Runway, FLUX.1, Midjourney &amp; ComfyUI.</p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-2">copyright</span>
+<h3 class="font-headline-sm text-[1rem] text-on-surface font-semibold mb-1">Commercial IP Rights</h3>
+<p class="text-label-caption font-label-caption text-on-surface-variant">Full generative licensing models pre-baked into every Inomark brief.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Status Tabs, Live Filters, and Empty State Simulation -->
+<script>
+    (function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const cards = document.querySelectorAll('.brief-card');
+      const searchInput = document.getElementById('briefSearchInput');
+      const contentTypeFilter = document.getElementById('contentTypeFilter');
+      const industryFilter = document.getElementById('industryFilter');
+      const resultsCount = document.getElementById('resultsCount');
+      const activeTagsRow = document.getElementById('activeTagsRow');
+      const activeFilterText = document.getElementById('activeFilterText');
+      const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+      const resetAllBtn = document.getElementById('resetAllBtn');
+      const toggleEmptyStateBtn = document.getElementById('toggleEmptyStateBtn');
+      const toggleEmptyText = document.getElementById('toggleEmptyText');
+      const exitEmptyStateBtn = document.getElementById('exitEmptyStateBtn');
+      const briefsContainer = document.getElementById('briefsContainer');
+      const emptyStateContainer = document.getElementById('emptyStateContainer');
+
+      let currentStatusFilter = 'all';
+
+      function applyFilters() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const selectedType = contentTypeFilter ? contentTypeFilter.value : '';
+        const selectedIndustry = industryFilter ? industryFilter.value : '';
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardStatus = card.dataset.status;
+          const cardType = card.dataset.type;
+          const cardIndustry = card.dataset.industry;
+          const cardText = card.innerText.toLowerCase();
+
+          const matchesStatus = (currentStatusFilter === 'all') || (cardStatus === currentStatusFilter);
+          const matchesQuery = !query || cardText.includes(query);
+          const matchesType = !selectedType || (cardType === selectedType);
+          const matchesIndustry = !selectedIndustry || (cardIndustry === selectedIndustry);
+
+          if (matchesStatus && matchesQuery && matchesType && matchesIndustry) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (resultsCount) {
+          resultsCount.textContent = `Showing ${visibleCount} brief${visibleCount === 1 ? '' : 's'}`;
+        }
+
+        // Active tags indication
+        const hasFilters = Boolean(query || selectedType || selectedIndustry || (currentStatusFilter !== 'all'));
+        if (activeTagsRow) {
+          if (hasFilters) {
+            activeTagsRow.classList.remove('hidden');
+            let desc = [];
+            if (currentStatusFilter !== 'all') desc.push('Status: ' + currentStatusFilter);
+            if (selectedType) desc.push('Type: ' + selectedType);
+            if (selectedIndustry) desc.push('Industry: ' + selectedIndustry);
+            if (query) desc.push('"' + query + '"');
+            activeFilterText.textContent = desc.join(' &bull; ');
+          } else {
+            activeTagsRow.classList.add('hidden');
+          }
+        }
+      }
+
+      // Tab Filtering
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+          btn.setAttribute('aria-selected', 'true');
+
+          currentStatusFilter = btn.dataset.filter || 'all';
+          applyFilters();
+        });
+      });
+
+      // Filter events
+      if (searchInput) searchInput.addEventListener('input', applyFilters);
+      if (contentTypeFilter) contentTypeFilter.addEventListener('change', applyFilters);
+      if (industryFilter) industryFilter.addEventListener('change', applyFilters);
+
+      function resetFilters() {
+        if (searchInput) searchInput.value = '';
+        if (contentTypeFilter) contentTypeFilter.value = '';
+        if (industryFilter) industryFilter.value = '';
+        currentStatusFilter = 'all';
+        tabButtons.forEach((b, i) => {
+          if (i === 0) {
+            b.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+            b.classList.remove('text-on-surface-variant');
+            b.setAttribute('aria-selected', 'true');
+          } else {
+            b.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+            b.setAttribute('aria-selected', 'false');
+          }
+        });
+        applyFilters();
+      }
+
+      if (clearFiltersBtn) clearFiltersBtn.addEventListener('click', resetFilters);
+      if (resetAllBtn) resetAllBtn.addEventListener('click', resetFilters);
+
+      // Empty State Simulation Toggle
+      function toggleEmpty() {
+        const isEmptyHidden = emptyStateContainer.classList.contains('hidden');
+        if (isEmptyHidden) {
+          emptyStateContainer.classList.remove('hidden');
+          emptyStateContainer.classList.add('flex');
+          briefsContainer.classList.add('hidden');
+          toggleEmptyText.textContent = 'Show Active Briefs';
+        } else {
+          emptyStateContainer.classList.add('hidden');
+          emptyStateContainer.classList.remove('flex');
+          briefsContainer.classList.remove('hidden');
+          toggleEmptyText.textContent = 'Preview Empty State';
+        }
+      }
+
+      if (toggleEmptyStateBtn) toggleEmptyStateBtn.addEventListener('click', toggleEmpty);
+      if (exitEmptyStateBtn) exitEmptyStateBtn.addEventListener('click', toggleEmpty);
+
+      // Keyboard shortcut helper for Cmd+K
+      window.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          if (searchInput) {
+            searchInput.focus();
+          }
+        }
+      });
+    })();
+  </script>
+</div></main></div></body></html>

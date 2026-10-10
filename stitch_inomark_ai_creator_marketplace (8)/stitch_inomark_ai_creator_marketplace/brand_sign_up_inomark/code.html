@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-highest": "#dae2fd", "primary": "#4648d4", "error-container": "#ffdad6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary-fixed": "#25005a", "tertiary-fixed-dim": "#7bd0ff", "on-surface": "#131b2e", "surface-container-low": "#f2f3ff", "on-secondary-fixed-variant": "#5a00c6", "on-background": "#131b2e", "on-primary-fixed-variant": "#2f2ebe", "secondary-container": "#8a4cfc", "secondary": "#712ae2", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#004c69", "surface-container": "#eaedff", "tertiary-container": "#007da9", "tertiary-fixed": "#c4e7ff", "surface-dim": "#d2d9f4", "on-secondary-container": "#fffbff", "on-secondary": "#ffffff", "on-primary-container": "#fffbff", "primary-fixed": "#e1e0ff", "background": "#faf8ff", "on-surface-variant": "#464554", "on-tertiary-fixed": "#001e2c", "inverse-surface": "#283044", "surface": "#faf8ff", "surface-variant": "#dae2fd", "on-primary-fixed": "#07006c", "on-error": "#ffffff", "primary-fixed-dim": "#c0c1ff", "secondary-fixed": "#eaddff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "inverse-primary": "#c0c1ff", "on-tertiary-container": "#fcfcff", "outline-variant": "#c7c4d7", "primary-container": "#6063ee", "surface-container-high": "#e2e7ff", "outline": "#767586", "surface-tint": "#494bd6", "secondary-fixed-dim": "#d2bbff", "inverse-on-surface": "#eef0ff", "tertiary": "#006387" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-3xl": "6rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "margin": "4rem" }, "fontFamily": { "headline-lg": [ "Playfair Display" ], "label-button": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "display-hero": [ "Playfair Display" ], "display-hero-mobile": [ "Playfair Display" ], "label-caption": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "label-badge": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg": [ "3rem", { "lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "label-button": [ "0.9375rem", { "lineHeight": "1", "fontWeight": "600" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.4", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "1.3", "fontWeight": "500" } ], "body-md": [ "1rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "display-hero": [ "4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "display-hero-mobile": [ "2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-caption": [ "0.75rem", { "lineHeight": "1.4", "fontWeight": "500" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "headline-lg-mobile": [ "2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-badge": [ "0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased relative min-h-screen flex flex-col justify-between selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-surface-container-highest/60 blur-[130px]"></div><div class="absolute top-1/3 -right-32 w-[550px] h-[550px] rounded-full bg-secondary-fixed/40 blur-[140px]"></div><div class="absolute -bottom-40 left-1/3 w-[650px] h-[650px] rounded-full bg-tertiary-fixed/30 blur-[150px]"></div></div><header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-margin flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs" data-path="brand-sign-up" href="#"><span class="font-headline-md text-headline-md tracking-tight text-on-surface font-semibold">Inomark</span><span class="w-2 h-2 rounded-full bg-primary mb-2"></span></a><div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed-variant border border-primary-fixed"><span class="font-label-badge text-label-badge uppercase tracking-wider">Enterprise Brand Portal</span></div></div><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5 group" data-path="creator-portal" href="#"><span>Are you an AI Creator? Join as a Creator</span><span class="transition-transform group-hover:translate-x-1">→</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></nav></div></header><main class="w-full pt-20 flex-1 relative flex flex-col justify-center"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-xl">
+<!-- State Switcher / Interactive Preview Demonstration Ribbon -->
+<div class="w-full mb-space-xl p-space-md bg-surface-container-low/90 backdrop-blur-xl rounded-2xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-badge text-label-badge text-on-surface uppercase tracking-wider">Interactive Flow Preview</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">| Select simulated system status:</span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5" id="state-selector-container">
+<button class="state-btn active-state px-3 py-1.5 rounded-full font-label-caption text-label-caption bg-primary text-on-primary shadow-sm transition-all" data-state="default" type="button">Default State</button>
+<button class="state-btn px-3 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-state="errors" type="button">Validation Errors</button>
+<button class="state-btn px-3 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-state="submitting" type="button">Submitting...</button>
+<button class="state-btn px-3 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-state="verify" type="button">Verify Email Notice</button>
+<button class="state-btn px-3 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" data-state="success" type="button">Success Modal</button>
+</div>
+</div>
+<!-- Main 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-2xl items-start">
+<!-- LEFT COLUMN: Brand Registration Engine -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Header & Editorial Lead -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-badge text-label-badge tracking-widest uppercase">BRAND REGISTRATION</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+            Create Your <span class="italic font-display-hero text-headline-lg bg-gradient-to-r from-primary via-secondary to-tertiary-container bg-clip-text text-transparent">Brand Account</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Connect with vetted AI directors, publish verified milestone briefs, and elevate your campaign velocity with studio-grade generative assets.
+          </p>
+</div>
+<!-- Global Error Banner (Controlled via JS) -->
+<div class="hidden p-space-md rounded-2xl bg-error-container text-on-error-container flex items-start gap-space-sm shadow-sm transition-all duration-300" id="error-alert-banner">
+<span class="material-symbols-outlined text-[20px] text-error">error</span>
+<div class="flex-1">
+<h4 class="font-headline-sm text-headline-sm text-error">Please review highlighted fields</h4>
+<p class="font-body-sm text-body-sm text-on-error-container">One or more required fields are missing or contain unverified data. Please check business email and password security.</p>
+</div>
+</div>
+<!-- Form Shell -->
+<form class="flex flex-col gap-space-xl" id="brand-signup-form" onsubmit="return false;">
+<!-- SECTION A: Account Information -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest/80 backdrop-blur-xl rounded-3xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center font-label-badge text-label-badge text-on-primary-fixed">1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Account Information</h3>
+</div>
+<span class="font-label-caption text-label-caption text-primary">Required Step</span>
+</div>
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface flex items-center justify-between" for="contact-name">
+<span>Contact Person's Full Name <span class="text-error">*</span></span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">person</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all placeholder:text-outline-variant" id="contact-name" placeholder="e.g. Sophia Sterling" type="text" value="Sophia Sterling"/>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error pl-4" id="error-name">Contact name is required.</span>
+</div>
+<!-- Business Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface flex items-center justify-between" for="business-email">
+<span>Business Email Address <span class="text-error">*</span></span>
+<span class="font-label-caption text-label-caption text-on-surface-variant font-normal">Domain Verification Required</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">mail</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all placeholder:text-outline-variant" id="business-email" placeholder="sophia@aurabotanica.com" type="email" value="sophia@aurabotanica.com"/>
+</div>
+<p class="font-label-caption text-label-caption text-on-surface-variant pl-4">We authenticate corporate domain reputation for escrow protection and brand licensing.</p>
+<span class="hidden font-body-sm text-body-sm text-error pl-4" id="error-email">Please provide a valid company domain email.</span>
+</div>
+<!-- Passwords Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Create Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface" for="password-input">Create Password <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">lock</span>
+<input class="w-full pl-12 pr-12 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all" id="password-input" type="password" value="AuraBotanica#2025!"/>
+<button class="absolute right-4 text-outline-variant hover:text-on-surface transition-colors flex items-center" id="toggle-pw-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="pw-icon">visibility</span>
+</button>
+</div>
+<!-- Strength indicator -->
+<div class="flex items-center gap-1.5 px-3 pt-1">
+<div class="h-1.5 flex-1 rounded-full bg-secondary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-secondary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-secondary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-high"></div>
+<span class="font-label-caption text-label-caption text-secondary font-semibold ml-1">Strong</span>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error pl-4" id="error-password">Password must be at least 8 characters.</span>
+</div>
+<!-- Confirm Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface" for="confirm-password-input">Confirm Password <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">verified_user</span>
+<input class="w-full pl-12 pr-12 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all" id="confirm-password-input" type="password" value="AuraBotanica#2025!"/>
+<button class="absolute right-4 text-outline-variant hover:text-on-surface transition-colors flex items-center" id="toggle-conf-pw-btn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="conf-pw-icon">visibility</span>
+</button>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error pl-4" id="error-confirm-password">Passwords must match.</span>
+</div>
+</div>
+</div>
+<!-- SECTION B: Company Identity -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest/80 backdrop-blur-xl rounded-3xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center font-label-badge text-label-badge text-on-primary-fixed">2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Company &amp; Brand Identity</h3>
+</div>
+<span class="font-label-caption text-label-caption text-primary">Required Step</span>
+</div>
+<!-- Brand Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface" for="company-name">Brand or Company Name <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">domain</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all" id="company-name" placeholder="e.g. Aura Botanica" type="text" value="Aura Botanica Nordic Laboratories"/>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error pl-4" id="error-company">Brand or company name is required.</span>
+</div>
+<!-- Business Type & Industry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Business Type -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface" for="business-type">Business Type <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<select class="w-full pl-4 pr-10 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner appearance-none cursor-pointer" id="business-type">
+<option selected="" value="Consumer Brand">Consumer Brand (D2C / Retail)</option>
+<option value="Startup">Early-Stage High Growth Startup</option>
+<option value="Small or Medium Business">Small or Medium Business</option>
+<option value="Marketing Agency">Marketing Agency</option>
+<option value="Creative Agency">Creative Agency / Production House</option>
+<option value="E-commerce Business">E-commerce Marketplace</option>
+<option value="Enterprise Company">Global Enterprise</option>
+<option value="Other">Other Organization</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 text-outline-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Industry -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface" for="industry-select">Primary Industry <span class="text-error">*</span></label>
+<div class="relative flex items-center">
+<select class="w-full pl-4 pr-10 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner appearance-none cursor-pointer" id="industry-select">
+<option selected="" value="Beauty and Skincare">Beauty and Skincare</option>
+<option value="Fashion and Apparel">Fashion and Luxury Apparel</option>
+<option value="Consumer Electronics">Consumer Electronics &amp; Hardware</option>
+<option value="Food and Beverage">Food, Beverage &amp; Culinary</option>
+<option value="Gaming and Entertainment">Gaming, Cinema &amp; Entertainment</option>
+<option value="Technology and SaaS">Technology &amp; SaaS</option>
+<option value="Automotive">Automotive &amp; Mobility</option>
+<option value="Health and Wellness">Health, Longevity &amp; Wellness</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 text-outline-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Website & Region -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface flex items-center justify-between" for="company-url">
+<span>Company Website</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant font-normal">Optional</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline-variant text-[20px] pointer-events-none">language</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner transition-all placeholder:text-outline-variant" id="company-url" placeholder="https://aurabotanica.com" type="url" value="https://aurabotanica.com"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-button text-label-button text-on-surface flex items-center justify-between" for="region-select">
+<span>Operating Region</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant font-normal">Optional</span>
+</label>
+<div class="relative flex items-center">
+<select class="w-full pl-4 pr-10 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner appearance-none cursor-pointer" id="region-select">
+<option selected="" value="Global">United States / Global Headquarters</option>
+<option value="EU">European Union &amp; UK</option>
+<option value="APAC">Asia-Pacific</option>
+<option value="LATAM">Latin America</option>
+<option value="MEA">Middle East &amp; Africa</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 text-outline-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION C: Initial Creative Requirements -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest/80 backdrop-blur-xl rounded-3xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center font-label-badge text-label-badge text-on-surface">3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Creative Requirements &amp; Focus</h3>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Recommended for Matchmaking</span>
+</div>
+<!-- Content Needed Multi-select Chips -->
+<div class="flex flex-col gap-2">
+<span class="font-label-button text-label-button text-on-surface">What kind of content are you looking for?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tap to select all disciplines matching your upcoming initiatives:</p>
+<div class="flex flex-wrap gap-2 pt-1" id="creative-chips-group">
+<button class="chip-item active-chip px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-primary-fixed text-on-primary-fixed-variant shadow-sm" data-selected="true" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>AI-Generated Video Ads</span>
+</button>
+<button class="chip-item active-chip px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-primary-fixed text-on-primary-fixed-variant shadow-sm" data-selected="true" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Product Visuals</span>
+</button>
+<button class="chip-item px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+<span>Social Media Creatives</span>
+</button>
+<button class="chip-item active-chip px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-primary-fixed text-on-primary-fixed-variant shadow-sm" data-selected="true" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Cinematic Campaigns</span>
+</button>
+<button class="chip-item px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+<span>Character Consistency LoRAs</span>
+</button>
+<button class="chip-item px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+<span>Animation &amp; Motion</span>
+</button>
+<button class="chip-item px-3.5 py-2 rounded-full font-label-caption text-label-caption flex items-center gap-1.5 transition-all bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">
+<span class="material-symbols-outlined text-[16px] hidden">check</span>
+<span>3D Key Visuals</span>
+</button>
+</div>
+</div>
+<!-- Campaign Category -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-button text-label-button text-on-surface">Preferred Campaign Velocity</span>
+<div class="flex flex-wrap gap-2" id="velocity-chips-group">
+<button class="velocity-chip active-chip px-3.5 py-1.5 rounded-full font-label-caption text-label-caption bg-secondary-fixed text-on-secondary-fixed-variant shadow-sm" data-selected="true" type="button">Launch Campaigns</button>
+<button class="velocity-chip px-3.5 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">Seasonal Rebrands</button>
+<button class="velocity-chip px-3.5 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">Always-On Social</button>
+<button class="velocity-chip px-3.5 py-1.5 rounded-full font-label-caption text-label-caption bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-selected="false" type="button">E-Commerce Packshots</button>
+</div>
+</div>
+<!-- Short Company Description -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="flex items-center justify-between">
+<label class="font-label-button text-label-button text-on-surface" for="company-desc">Brief Brand Synopsis</label>
+<span class="font-label-caption text-label-caption text-on-surface-variant" id="char-counter">118 / 300</span>
+</div>
+<textarea class="w-full p-4 rounded-2xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner resize-none transition-all placeholder:text-outline-variant" id="company-desc" maxlength="300" rows="3">Clean Nordic bio-skincare crafting cold-pressed restorative botanical elixirs for conscious dermatological wellness.</textarea>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Helps creators customize moodboards and seed proposals specifically for your tone.</p>
+</div>
+</div>
+<!-- SECTION D: Agreement & Submission -->
+<div class="p-space-lg md:p-space-xl bg-surface-container-lowest/80 backdrop-blur-xl rounded-3xl shadow-sm flex flex-col gap-space-lg">
+<!-- Checkbox Terms -->
+<div class="flex items-start gap-3">
+<input checked="" class="mt-1 h-5 w-5 rounded-lg text-primary focus:ring-primary cursor-pointer border-0 bg-surface-container-high" id="terms-agree" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none" for="terms-agree">
+                I agree to Inomark's 
+                <a class="text-primary underline hover:text-primary-container font-semibold transition-colors" href="#">Enterprise Terms of Service</a>, 
+                <a class="text-primary underline hover:text-primary-container font-semibold transition-colors" href="#">Milestone Escrow Rules</a>, and 
+                <a class="text-primary underline hover:text-primary-container font-semibold transition-colors" href="#">Brand Privacy Policy</a>.
+              </label>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error pl-8" id="error-terms">You must accept the terms to register your brand.</span>
+<!-- Submit Primary CTA -->
+<button class="w-full py-4 px-8 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary font-label-button text-label-button tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 hover:scale-[1.008] active:scale-[0.99] transition-all duration-200 group" id="submit-account-btn" type="button">
+<span class="hidden animate-spin h-5 w-5 border-2 border-on-primary border-t-transparent rounded-full" id="btn-spinner"></span>
+<span id="btn-text">Create Brand Account</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1" id="btn-arrow">arrow_forward</span>
+</button>
+<!-- Bottom Navigation Links -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs border-t-0">
+<a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Already have an account? Sign In to Brand Portal</span>
+<span>→</span>
+</a>
+<a class="font-label-button text-label-button text-primary hover:text-primary-container transition-colors flex items-center gap-1 font-semibold" href="#">
+<span>Are you an AI Creator? Apply on Creator Portal</span>
+<span>→</span>
+</a>
+</div>
+</div>
+</form>
+</div>
+<!-- RIGHT COLUMN: Brand-Focused Visual Showcase & Live Overlays -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl lg:sticky lg:top-28">
+<!-- Editorial Header Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="font-label-badge text-label-badge uppercase tracking-wider">CREATIVE PRODUCTION STANDARD</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+            Bring your brand’s next idea to life.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Discover premier creative talent, share your bespoke campaign vision, and deploy ultra-consistent generative commercial pipelines with certified milestone escrow protection.
+          </p>
+</div>
+<!-- Curated Commercial Showcase Card -->
+<div class="relative rounded-3xl overflow-hidden bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl shadow-secondary/5 flex flex-col">
+<!-- Image Asset Container with Overlay Tags -->
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="High-fashion luxury product shot of an amber botanical facial serum bottle surrounded by frosted Scandinavian alpine moss, delicate morning frost crystals, and soft luminous morning studio lighting with lavender and periwinkle reflections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD906noxdN0kaMW2G_3vybG1q1zmQRLXalCJtwW5DaCAUimHHk45jkgvPG_lqs3GYxvJMYibVNlYiph3gJIlaszQq8ARg0K2ne_8KkjuNyrp7jLu4wswv3NP1UZNj9dtBNSpIOSqQeO19_LAB_1ycR2j4YMpR90eeMGeOujYzgXyu28xs8z6Rho0PsXEa9XS4f_aWHzwB5FD86Apak0Fzpx7VrxWlvtfR4m6M7r10ReRtbH0v0c7erm')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<!-- Top Badges -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<span class="px-3 py-1 rounded-full bg-on-surface/70 backdrop-blur-md text-surface-bright font-label-badge text-label-badge uppercase tracking-wider">
+                4K CINEMA COMMERCIAL • $12,000 MILESTONE ESCROW
+              </span>
+<span class="w-7 h-7 rounded-full bg-surface/90 backdrop-blur-md flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<!-- Bottom Floating Asset Node Tag -->
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-surface-bright drop-shadow-sm font-semibold">Nordic Botanical Serum Launch</p>
+<p class="font-body-sm text-body-sm text-surface-container-highest">AI Direction by Elena Vance (Top 1% Director)</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md text-primary font-label-caption text-label-caption font-semibold">
+                FLUX.1 + LoRA
+              </span>
+</div>
+</div>
+<!-- Showcase Details Bar -->
+<div class="p-space-md bg-surface-container-low/70 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Verified Commercial Node Graph</span>
+</div>
+<a class="font-label-button text-label-button text-primary hover:text-secondary transition-colors flex items-center gap-1 font-semibold" href="#">
+<span>View Node Graph</span>
+<span class="text-xs">↗</span>
+</a>
+</div>
+</div>
+<!-- Dual Glass Enterprise Guarantee Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Card 1: Vetted AI Directors -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest/80 backdrop-blur-lg shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Vetted AI Directors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pre-qualified talent rigorously evaluated in custom LoRA architectures, ComfyUI, Runway Gen-3, and full frame coherence.
+            </p>
+</div>
+<!-- Card 2: Escrow-Backed Safety -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest/80 backdrop-blur-lg shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Escrow-Backed Safety</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Capital held in secure bank-grade escrow. Funds only release when deliverables match your approval criteria with 100% IP buyout.
+            </p>
+</div>
+</div>
+<!-- Trust Badges Strip -->
+<div class="p-space-md rounded-2xl bg-surface-container-high/60 backdrop-blur-md flex items-center justify-around gap-2 text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span class="font-label-caption text-label-caption font-semibold">SOC2 Compliant</span>
+</div>
+<span class="h-3 w-px bg-outline-variant/40"></span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">copyright</span>
+<span class="font-label-caption text-label-caption font-semibold">Worldwide IP Rights</span>
+</div>
+<span class="h-3 w-px bg-outline-variant/40"></span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-caption text-label-caption font-semibold">Stripe Escrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- OVERLAY 1: Verify Email Notice Modal (State Controlled) -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-md flex items-center justify-center p-gutter hidden transition-all duration-300" id="modal-verify-email">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-3xl shadow-2xl p-space-xl flex flex-col items-center text-center gap-space-md">
+<button class="close-modal-btn absolute top-5 right-5 text-outline-variant hover:text-on-surface p-1 rounded-full transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[32px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-wider">Step 2 of 2: Corporate Verification</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Verify Your Business Email</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            We sent an enterprise verification link to:
+          </p>
+<div class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface font-label-button text-label-button mt-1 select-all inline-block">
+            sophia@aurabotanica.com
+          </div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low text-left w-full flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[20px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Please check your company inbox and spam folder. Once clicked, your Brand Dashboard will unlock immediate creator hiring privileges.
+          </p>
+</div>
+<div class="w-full flex flex-col gap-2 pt-2">
+<button class="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-label-button text-label-button flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm" id="resend-email-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span id="resend-text">Resend Verification Email (in 48s)</span>
+</button>
+<button class="close-modal-btn w-full py-2.5 px-6 rounded-full bg-transparent text-on-surface-variant hover:text-on-surface font-label-button text-label-button transition-colors" type="button">
+            Return to Sign Up Form
+          </button>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- OVERLAY 2: Registration Success Onboarding Modal (State Controlled) -->
+<!-- ========================================================================= -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-md flex items-center justify-center p-gutter hidden transition-all duration-300" id="modal-success-welcome">
+<div class="relative w-full max-w-2xl bg-surface-container-lowest rounded-3xl shadow-2xl p-space-xl flex flex-col gap-space-lg">
+<button class="close-modal-btn absolute top-5 right-5 text-outline-variant hover:text-on-surface p-1 rounded-full transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<!-- Top Celebratory Header -->
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-on-primary shadow-md shrink-0">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-wider">Account Active</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Welcome to Inomark, Aura Botanica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your enterprise account is verified. Choose your immediate next step:</p>
+</div>
+</div>
+<!-- 3 Quick Next Steps Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Path 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-primary-fixed/40 transition-all cursor-pointer flex flex-col justify-between group">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">post_add</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Post First Brief</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Publish requirements to receive curated visual pitches within 24 hours.</p>
+</div>
+<span class="font-label-caption text-label-caption text-primary font-bold mt-4 flex items-center gap-1">Create Brief →</span>
+</div>
+<!-- Path 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-primary-fixed/40 transition-all cursor-pointer flex flex-col justify-between group">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">manage_search</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Discover Directors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Filter top 1% generative talent by model toolchain (FLUX, Midjourney v6).</p>
+</div>
+<span class="font-label-caption text-label-caption text-secondary font-bold mt-4 flex items-center gap-1">Browse Gallery →</span>
+</div>
+<!-- Path 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low hover:bg-primary-fixed/40 transition-all cursor-pointer flex flex-col justify-between group">
+<div class="flex flex-col gap-2">
+<span class="material-symbols-outlined text-tertiary text-[24px]">badge</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">Brand Profile</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload brand visual guidelines, color HEX codes, and logo assets.</p>
+</div>
+<span class="font-label-caption text-label-caption text-tertiary font-bold mt-4 flex items-center gap-1">Setup Profile →</span>
+</div>
+</div>
+<!-- Dashboard Action -->
+<div class="pt-space-xs flex items-center justify-end gap-space-md border-t-0">
+<button class="close-modal-btn px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-label-button text-label-button hover:text-on-surface transition-colors" type="button">
+            Dismiss
+          </button>
+<a class="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary font-label-button text-label-button shadow-md hover:shadow-lg transition-all flex items-center gap-1.5" href="#">
+<span>Enter Enterprise Brand Hub</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initBrandSignUp() {
+    // DOM References
+    const stateButtons = document.querySelectorAll('.state-btn');
+    const submitBtn = document.getElementById('submit-account-btn');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const btnText = document.getElementById('btn-text');
+    const btnArrow = document.getElementById('btn-arrow');
+    const errorBanner = document.getElementById('error-alert-banner');
+    
+    // Error field references
+    const errorName = document.getElementById('error-name');
+    const errorEmail = document.getElementById('error-email');
+    const errorPassword = document.getElementById('error-password');
+    const errorConfirm = document.getElementById('error-confirm-password');
+    const errorCompany = document.getElementById('error-company');
+    const errorTerms = document.getElementById('error-terms');
+    
+    // Modals
+    const modalVerify = document.getElementById('modal-verify-email');
+    const modalSuccess = document.getElementById('modal-success-welcome');
+    const closeButtons = document.querySelectorAll('.close-modal-btn');
+    
+    // Password toggles
+    const togglePw = document.getElementById('toggle-pw-btn');
+    const pwInput = document.getElementById('password-input');
+    const pwIcon = document.getElementById('pw-icon');
+
+    const toggleConfPw = document.getElementById('toggle-conf-pw-btn');
+    const confPwInput = document.getElementById('confirm-password-input');
+    const confPwIcon = document.getElementById('conf-pw-icon');
+
+    // Description counter
+    const descInput = document.getElementById('company-desc');
+    const charCounter = document.getElementById('char-counter');
+
+    // Interactive Chips
+    const creativeChips = document.querySelectorAll('#creative-chips-group .chip-item');
+    const velocityChips = document.querySelectorAll('#velocity-chips-group .velocity-chip');
+
+    // Password Visibility Toggles
+    if (togglePw && pwInput && pwIcon) {
+      togglePw.addEventListener('click', () => {
+        const isPw = pwInput.getAttribute('type') === 'password';
+        pwInput.setAttribute('type', isPw ? 'text' : 'password');
+        pwIcon.textContent = isPw ? 'visibility_off' : 'visibility';
+      });
+    }
+
+    if (toggleConfPw && confPwInput && confPwIcon) {
+      toggleConfPw.addEventListener('click', () => {
+        const isPw = confPwInput.getAttribute('type') === 'password';
+        confPwInput.setAttribute('type', isPw ? 'text' : 'password');
+        confPwIcon.textContent = isPw ? 'visibility_off' : 'visibility';
+      });
+    }
+
+    // Character Counter
+    if (descInput && charCounter) {
+      descInput.addEventListener('input', () => {
+        charCounter.textContent = descInput.value.length + ' / 300';
+      });
+    }
+
+    // Toggle multi-select chips
+    creativeChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const isSelected = chip.getAttribute('data-selected') === 'true';
+        const icon = chip.querySelector('.material-symbols-outlined');
+        if (isSelected) {
+          chip.setAttribute('data-selected', 'false');
+          chip.classList.remove('bg-primary-fixed', 'text-on-primary-fixed-variant', 'shadow-sm');
+          chip.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          if (icon) icon.classList.add('hidden');
+        } else {
+          chip.setAttribute('data-selected', 'true');
+          chip.classList.add('bg-primary-fixed', 'text-on-primary-fixed-variant', 'shadow-sm');
+          chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          if (icon) icon.classList.remove('hidden');
+        }
+      });
+    });
+
+    velocityChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        velocityChips.forEach(c => {
+          c.setAttribute('data-selected', 'false');
+          c.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed-variant', 'shadow-sm');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        chip.setAttribute('data-selected', 'true');
+        chip.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed-variant', 'shadow-sm');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      });
+    });
+
+    // Close Modals handler
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalVerify.classList.add('hidden');
+        modalSuccess.classList.add('hidden');
+        setActiveStateBtn('default');
+      });
+    });
+
+    // Resend countdown simulation
+    const resendBtn = document.getElementById('resend-email-btn');
+    const resendText = document.getElementById('resend-text');
+    if (resendBtn && resendText) {
+      let count = 48;
+      let interval = null;
+      resendBtn.addEventListener('click', () => {
+        if (interval) clearInterval(interval);
+        count = 48;
+        resendBtn.disabled = true;
+        resendText.textContent = 'Email Sent! Cooldown (' + count + 's)';
+        interval = setInterval(() => {
+          count--;
+          if (count <= 0) {
+            clearInterval(interval);
+            resendText.textContent = 'Resend Verification Email';
+            resendBtn.disabled = false;
+          } else {
+            resendText.textContent = 'Email Sent! Cooldown (' + count + 's)';
+          }
+        }, 1000);
+      });
+    }
+
+    // State Switcher Master Controller
+    function setActiveStateBtn(stateName) {
+      stateButtons.forEach(btn => {
+        if (btn.getAttribute('data-state') === stateName) {
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        }
+      });
+    }
+
+    function applyState(state) {
+      setActiveStateBtn(state);
+
+      // Reset standard indicators
+      if (errorBanner) errorBanner.classList.add('hidden');
+      [errorName, errorEmail, errorPassword, errorConfirm, errorCompany, errorTerms].forEach(el => {
+        if (el) el.classList.add('hidden');
+      });
+
+      if (modalVerify) modalVerify.classList.add('hidden');
+      if (modalSuccess) modalSuccess.classList.add('hidden');
+
+      // Reset Submit Button
+      if (btnSpinner) btnSpinner.classList.add('hidden');
+      if (btnArrow) btnArrow.classList.remove('hidden');
+      if (btnText) btnText.textContent = 'Create Brand Account';
+      if (submitBtn) submitBtn.disabled = false;
+
+      switch(state) {
+        case 'default':
+          // Pure normal state
+          break;
+
+        case 'errors':
+          if (errorBanner) errorBanner.classList.remove('hidden');
+          [errorName, errorEmail, errorPassword, errorConfirm, errorCompany, errorTerms].forEach(el => {
+            if (el) el.classList.remove('hidden');
+          });
+          // Scroll slightly to error banner
+          errorBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          break;
+
+        case 'submitting':
+          if (btnSpinner) btnSpinner.classList.remove('hidden');
+          if (btnArrow) btnArrow.classList.add('hidden');
+          if (btnText) btnText.textContent = 'Authenticating Domain & Creating Escrow ID...';
+          if (submitBtn) submitBtn.disabled = true;
+          break;
+
+        case 'verify':
+          if (modalVerify) modalVerify.classList.remove('hidden');
+          break;
+
+        case 'success':
+          if (modalSuccess) modalSuccess.classList.remove('hidden');
+          break;
+      }
+    }
+
+    stateButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetState = btn.getAttribute('data-state');
+        applyState(targetState);
+      });
+    });
+
+    // Form button click triggering submission simulation
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        applyState('submitting');
+        setTimeout(() => {
+          applyState('verify');
+        }, 1200);
+      });
+    }
+
+  })();
+</script></main><footer class="w-full bg-surface-container-low/70 backdrop-blur-md shadow-[0_-1px_6px_rgba(0,0,0,0.02)] py-space-xl mt-auto"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Inomark Global Technologies Inc. All rights reserved.</p><nav class="flex flex-wrap items-center justify-center gap-x-space-lg gap-y-space-xs" data-active-classes="text-primary font-bold"><a class="font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-colors" data-path="enterprise-terms" href="#">Brand Enterprise Terms</a><a class="font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-colors" data-path="escrow-and-security" href="#">Escrow &amp; Security</a><a class="font-label-caption text-label-caption text-on-surface-variant hover:text-on-surface transition-colors" data-path="help-center" href="#">Help Center</a></nav></div></footer></body></html>

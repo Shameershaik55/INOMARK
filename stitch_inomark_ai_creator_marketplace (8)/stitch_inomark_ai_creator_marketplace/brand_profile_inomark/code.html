@@ -1,0 +1,802 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e2e7ff", "tertiary": "#006387", "on-primary-fixed-variant": "#2f2ebe", "surface-variant": "#dae2fd", "on-primary": "#ffffff", "background": "#faf8ff", "inverse-primary": "#c0c1ff", "outline-variant": "#c7c4d7", "outline": "#767586", "surface-dim": "#d2d9f4", "tertiary-fixed-dim": "#7bd0ff", "on-secondary-container": "#fffbff", "secondary-fixed-dim": "#d2bbff", "inverse-on-surface": "#eef0ff", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-surface": "#131b2e", "on-background": "#131b2e", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#5a00c6", "on-surface-variant": "#464554", "on-tertiary-container": "#fcfcff", "primary-fixed-dim": "#c0c1ff", "secondary-container": "#8a4cfc", "primary-fixed": "#e1e0ff", "primary-container": "#6063ee", "surface-container-low": "#f2f3ff", "on-primary-container": "#fffbff", "tertiary-fixed": "#c4e7ff", "inverse-surface": "#283044", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#004c69", "on-secondary-fixed": "#25005a", "on-primary-fixed": "#07006c", "surface-bright": "#faf8ff", "surface-tint": "#494bd6", "on-secondary": "#ffffff", "surface-container": "#eaedff", "secondary": "#712ae2", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#eaddff", "on-tertiary-fixed": "#001e2c", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary": "#4648d4", "tertiary-container": "#007da9" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin": "4rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-xl": "2.5rem", "gutter": "1.5rem", "space-md": "1rem", "space-3xl": "6rem", "margin-mobile": "1.25rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "label-caption": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-button": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["2rem", { "lineHeight": "1.3", "fontWeight": "500" }], "headline-lg": ["3rem", { "lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg-mobile": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }], "label-caption": ["0.75rem", { "lineHeight": "1.4", "fontWeight": "500" }], "display-hero": ["4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-button": ["0.9375rem", { "lineHeight": "1", "fontWeight": "600" }], "display-hero-mobile": ["2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "fontWeight": "600" }], "body-md": ["1rem", { "lineHeight": "1.5", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }], "label-badge": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between p-space-lg"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">INOMARK</span><span class="font-label-badge text-label-badge text-secondary tracking-widest uppercase mt-0.5">Creator Hub</span></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-high text-secondary font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-button text-label-button">Home</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="discover-creators" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-button text-label-button">Discover Creators</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-briefs" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-button text-label-button">My Briefs</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-creators" href="#"><span class="material-symbols-outlined text-[20px]">bookmark_border</span><span class="font-label-button text-label-button">Saved Creators</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-full transition-all bg-surface-container-high text-secondary font-semibold shadow-sm" data-path="brand-profile" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-button text-label-button">Brand Profile</span></a></nav></div><div class="flex flex-col gap-space-md pt-space-md"><div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low"><div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-sm font-semibold"><span class="material-symbols-outlined text-[18px]">spa</span></div><div class="flex flex-col min-w-0"><span class="font-label-button text-label-button text-on-surface truncate">Aura Botanica</span><span class="font-label-caption text-label-caption text-secondary truncate">Enterprise Brand</span></div></div><div class="flex flex-col gap-space-xs"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-button text-label-button">Settings</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-all" data-path="logout" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-button text-label-button">Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="h-20 w-full px-space-xl flex items-center justify-between gap-space-lg"><div class="flex-1 max-w-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-4 text-outline text-[20px]">search</span><input class="w-full pl-11 pr-4 py-space-sm bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm rounded-full focus:outline-none focus:ring-2 focus:ring-secondary/30 transition-all" placeholder="Search creators, briefs, skills..." type="text"></div></div><div class="flex items-center gap-space-md"><button class="relative p-space-sm rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-button text-label-button text-on-surface">Aura Botanica</span><span class="font-label-caption text-label-caption text-secondary">Verified Partner</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 py-8 flex flex-col gap-10">
+<!-- Top Breadcrumb & Status Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-caption text-label-caption tracking-wider uppercase">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline text-xs">/</span>
+<span class="text-secondary font-semibold">Brand Profile</span>
+</nav>
+<div class="flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant text-label-badge font-label-badge">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Auto-synced · Changes saved 2 mins ago</span>
+</div>
+</div>
+<!-- Header Section with Distinct Editorial Scale -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="flex flex-col gap-3 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/50 w-fit">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+<span class="text-secondary font-label-badge text-label-badge tracking-wider uppercase">Enterprise Brand Setup</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight">
+          Brand <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent italic">Profile</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Introduce your brand to the global creative community. Keep your company identity, aesthetic standards, and creative preferences up to date so AI directors and artists pitch with precision.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-3 shrink-0 flex-wrap">
+<button class="px-3 py-2 text-on-surface-variant hover:text-error transition-colors font-label-button text-label-button" type="button">
+          Discard Changes
+        </button>
+<button class="group flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-md text-on-surface font-label-button text-label-button hover:bg-surface-container-low transition-all" id="open-preview-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:scale-110 transition-transform">visibility</span>
+<span>Preview Public Profile</span>
+</button>
+<button class="flex items-center gap-2 px-7 py-3 rounded-full bg-primary hover:bg-secondary text-on-primary font-label-button text-label-button shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5" id="save-main-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Save Changes</span>
+</button>
+</div>
+</header>
+<!-- Two-Column Master Layout (68% / 32%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- ================= MAIN COLUMN (approx 68% -> 8 cols) ================= -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- BRAND HERO IDENTITY DISPLAY CARD -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm flex flex-col">
+<!-- Ethereal Nordic Mist Banner Image -->
+<div class="relative h-64 md:h-72 w-full bg-surface-container-high overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic wide panoramic view of misty Scandinavian pine forest morning frost ethereal dawn soft periwinkle ambient light high luxury skincare brand aesthetic minimalist pristine atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGDzQ_llBAEvbLJfq5JsivWDnJtuktV7scte3R9B8yJV68995RXAcALw065VoejIxyNATx53huDDqP_rUrezJJQYPF3G8y94snucD5z0Rw200zhLxv5Nn5Rca9x9s2418vAK5zc5yry46gI6se696VDr-7o68sSRT6uP62ql7iSW8te4sIYdOfZl5Jztn52fYdYvLHaQtNPXiO2DMQYiQFmax3SfmE6P3iGvtDaQSzhUtQceIn2OZb')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute top-4 right-4 flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-badge text-label-badge flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> Verified Media Cover
+              </span>
+</div>
+<!-- Overlaid Badge & Location Info on Mobile/Tablet -->
+<div class="absolute bottom-4 left-6 right-6 flex items-end justify-between text-on-secondary">
+<div class="flex items-center gap-2 font-label-caption text-label-caption text-on-secondary/90">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Stockholm, Sweden &amp; New York, USA</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary font-label-badge text-label-badge uppercase tracking-wider">
+                Direct-to-Consumer · Luxury
+              </span>
+</div>
+</div>
+<!-- Avatar & Meta Splice -->
+<div class="p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-end -mt-16 relative z-10">
+<!-- Circular High-Res Logo Badge -->
+<div class="relative group">
+<div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden bg-surface-container-lowest shadow-xl p-1 flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-surface-container-low flex items-center justify-center overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Minimalist luxury emblem for Aura Botanica high end Nordic gold typography geometric botanical branch icon clean white background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXUGOs9TZpfrabxCBNdPToKxEFjWDdppGEz1VcTzw_Up6STdcvFAshvJb_Cq4WfpFJKvthhYINvLdXXtjRpOZtWriIi-1kbbPTPQQi4DMZZsoPv74YRCp_i0KOiIJilxXwK4kuA896U-c_n_wl_VaNIM94nC7QLuSysSdEgDimmfk-L9sjcCLIbbFABAPL6d0LpDB-8apFDPU9Oq8f6AATTYaGBg5-zl_iLIiHzJlVPO54JBs4knB7')"></div>
+</div>
+</div>
+<button class="absolute bottom-1 right-1 w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg hover:scale-105 transition-all" title="Change Logo" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<!-- Core Details Text -->
+<div class="flex-1 flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-3 flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface">Aura Botanica</h2>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Partner
+                </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge">
+                  Beauty &amp; Luxury Skincare
+                </span>
+</div>
+<p class="font-headline-sm italic text-secondary text-body-lg">
+                “Formulating pure Nordic botanical care through ethereal cinematic storytelling.”
+              </p>
+<div class="flex items-center gap-4 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<a class="inline-flex items-center gap-1 text-primary hover:text-secondary font-label-button text-label-button transition-colors" href="https://aurabotanica.com" target="_blank">
+<span>https://aurabotanica.com</span>
+<span class="material-symbols-outlined text-[15px]">north_east</span>
+</a>
+<span class="text-outline">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">group</span> 48 AI Collaborations Completed
+                </span>
+</div>
+</div>
+<div class="flex flex-col gap-1 text-right shrink-0">
+<span class="text-label-caption font-label-caption text-outline">Account Tier</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Enterprise Studio</span>
+</div>
+</div>
+</div>
+<!-- ================= SECTION 01: ABOUT YOUR BRAND ================= -->
+<section class="rounded-2xl bg-surface-container-lowest p-6 md:p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center font-headline-sm text-primary font-bold">
+                01
+              </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">About Your Brand</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core company identity and contextual narrative for creators.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-badge text-label-badge">Public Overview</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Company Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Legal / Trade Name</label>
+<div class="relative">
+<input class="w-full px-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="text" value="Aura Botanica">
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-secondary text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Industry -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Industry Vertical</label>
+<div class="relative">
+<select class="w-full px-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none appearance-none transition-all cursor-pointer">
+<option selected="">Beauty &amp; Luxury Skincare</option>
+<option>High Fashion &amp; Apparel</option>
+<option>Consumer Technology &amp; Hardware</option>
+<option>Food, Beverage &amp; Fine Dining</option>
+<option>Gaming &amp; Virtual Experiences</option>
+<option>Architecture &amp; Spatial Living</option>
+<option>Marketing Agency &amp; Studio</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Tagline -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-button text-label-button text-on-surface">Company Tagline</label>
+<span class="font-label-caption text-label-caption text-outline">74 / 120 chars</span>
+</div>
+<input class="w-full px-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" maxlength="120" type="text" value="Formulating pure Nordic botanical care through ethereal cinematic storytelling.">
+</div>
+<!-- Rich Multiline Description -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Brand Story &amp; Creative Philosophy</label>
+<textarea class="w-full p-4 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md leading-relaxed focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all resize-y" rows="5">Founded between Stockholm and New York, Aura Botanica formulates clean, wildcrafted botanical treatments driven by glacial spring waters and cold-pressed Arctic cloudberry extracts. 
+
+We partner exclusively with forward-thinking generative AI artists, cinematic visualizers, and prompt architects who elevate our campaign narratives into museum-grade digital artwork. Our creative mandates focus on fluid motion, photorealistic specular lighting, macro dew textures, and organic elegance.</textarea>
+<p class="font-label-caption text-label-caption text-outline">This narrative is highlighted on your creator pitch portal so applicants understand your artistic caliber.</p>
+</div>
+<!-- Website and Locations -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 md:col-span-1">
+<label class="font-label-button text-label-button text-on-surface">Official Website</label>
+<div class="relative">
+<input class="w-full pl-9 pr-3 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="url" value="https://aurabotanica.com">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">language</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Headquarters City</label>
+<div class="relative">
+<input class="w-full pl-9 pr-3 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="text" value="Stockholm">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">apartment</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Country of Origin</label>
+<div class="relative">
+<input class="w-full pl-9 pr-3 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="text" value="Sweden">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">public</span>
+</div>
+</div>
+</div>
+<!-- Business Type Selection Segment -->
+<div class="flex flex-col gap-3 pt-2">
+<label class="font-label-button text-label-button text-on-surface">Business Classification</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+<label class="cursor-pointer p-4 rounded-xl bg-surface-container-high flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[22px]">shopping_bag</span>
+<input checked="" class="accent-secondary" name="biz_type" type="radio">
+</div>
+<span class="font-label-button text-label-button text-on-surface mt-2">Brand / Consumer</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">D2C, CPG, Fashion &amp; Luxury</span>
+</label>
+<label class="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[22px]">hub</span>
+<input class="accent-secondary" name="biz_type" type="radio">
+</div>
+<span class="font-label-button text-label-button text-on-surface mt-2">Agency / Studio</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Production house or firm</span>
+</label>
+<label class="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[22px]">rocket_launch</span>
+<input class="accent-secondary" name="biz_type" type="radio">
+</div>
+<span class="font-label-button text-label-button text-on-surface mt-2">Emerging Startup</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Early-stage venture</span>
+</label>
+<label class="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[22px]">storefront</span>
+<input class="accent-secondary" name="biz_type" type="radio">
+</div>
+<span class="font-label-button text-label-button text-on-surface mt-2">Independent Label</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Boutique producer</span>
+</label>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 02: BRAND ASSETS & VISUAL IDENTITY ================= -->
+<section class="rounded-2xl bg-surface-container-lowest p-6 md:p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-headline-sm text-secondary font-bold">
+                02
+              </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Brand Assets &amp; Visual Identity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Logos, banner media, guidelines, and core color tokens.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-tertiary font-label-badge text-label-badge">Creative Kit</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Brand Logo Asset Dropzone -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-button text-label-button text-on-surface">Vector Brand Emblem</span>
+<span class="font-label-caption text-label-caption text-outline">Max 5MB · SVG, PNG</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-xl bg-surface-container-lowest p-1 shadow-sm shrink-0 flex items-center justify-center">
+<div class="w-full h-full bg-cover bg-center rounded-lg" data-alt="Minimalist luxury gold circular monogram icon for skincare brand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCovnBXndg-jbDpOeFMT-ifkVMxQAds03hw0fkKS9mJdQyiCu_7UuRpc10E50rwhCOUMbi5MouAp1iWGGaINIlor_vhapsJoUuiYZdhhnqrTIuuXUtHq23XXu2_4MQ6H-T_l5Z0qcDwND3xCiS1-ROdQS57MqP6TSjjmRFeVTEetoA62NXbo-t2Mo5oClTNo_SK2iIqr2Wt7Hx98In98tiKRXgMFHAl54yQ1OGN1Y4zmhxPEOL-7rEu')"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-button text-label-button hover:bg-secondary transition-all text-xs" type="button">
+                      Replace Emblem
+                    </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-button text-label-button hover:bg-error-container hover:text-on-error-container transition-all text-xs" type="button">
+                      Remove
+                    </button>
+</div>
+<span class="font-label-caption text-label-caption text-outline">Aura_Botanica_Emblem_2025.svg</span>
+</div>
+</div>
+</div>
+<!-- Cover / Banner Asset Card -->
+<div class="flex flex-col gap-3 p-5 rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-button text-label-button text-on-surface">Profile Panorama Banner</span>
+<span class="font-label-caption text-label-caption text-outline">2400 × 600px recommended</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-24 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shadow-sm shrink-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Panoramic mist forest backdrop thumbnail high quality preview" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAogFjHe_qrStfBKjFBpJicLMtHdegbZsjNZ7YO0ARCn8GvzcEDRrp-kXbiQfWzqq9TZhT1PVA-kD-YtNjvgKhFsCoWthvI8gmadm2FyfNy3pu8nCgk2NZ2Gsvh9fsAG6SnAEkCEWfLUgQbmx_tSd82k5iUP8JO15aMB75hrKKhl0zVclGyv2BILcBLS1mzJyI54I3axf6IiCX7Q6vfIMT0vBPf13-aWgDpPy2_Dm5VQqthXR3hvKw6')"></div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-button text-label-button hover:bg-surface-container-high transition-all text-xs shadow-sm w-fit" type="button">
+                    Upload New Banner
+                  </button>
+<span class="font-label-caption text-label-caption text-outline">Nordic_Mist_Luminous_v4.jpg (3.2MB)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Brand Guidelines & Reference Link -->
+<div class="flex flex-col gap-3">
+<label class="font-label-button text-label-button text-on-surface">Style Guide &amp; AI Prompt Directive PDF</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="md:col-span-2 relative">
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="url" value="https://brand.aurabotanica.com/guidelines-2025">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">link</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high text-on-surface">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-secondary text-[20px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-label-button text-xs truncate">Aura_Botanica_Visual_Standards.pdf</span>
+<span class="font-label-caption text-label-caption text-outline text-[11px]">8.4 MB · Verified</span>
+</div>
+</div>
+<button class="p-1 rounded-full hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Color Tokens Palette -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex justify-between items-center">
+<label class="font-label-button text-label-button text-on-surface">Brand Color Architecture (Aesthetic Tokens)</label>
+<button class="font-label-caption text-label-caption text-primary hover:text-secondary flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> Add Custom Swatch
+              </button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<!-- Swatch 1 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shrink-0 shadow-sm" style="background-color: #2E3E34;"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-label-button text-xs text-on-surface truncate">Forest Pine</span>
+<span class="font-label-caption text-label-caption text-outline uppercase font-mono">#2E3E34</span>
+</div>
+</div>
+<!-- Swatch 2 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shrink-0 shadow-sm" style="background-color: #E8ECE9;"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-label-button text-xs text-on-surface truncate">Nordic Frost</span>
+<span class="font-label-caption text-label-caption text-outline uppercase font-mono">#E8ECE9</span>
+</div>
+</div>
+<!-- Swatch 3 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shrink-0 shadow-sm" style="background-color: #D4AF37;"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-label-button text-xs text-on-surface truncate">Champagne</span>
+<span class="font-label-caption text-label-caption text-outline uppercase font-mono">#D4AF37</span>
+</div>
+</div>
+<!-- Swatch 4 -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg shrink-0 shadow-sm" style="background-color: #712ae2;"></div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-label-button text-xs text-on-surface truncate">Radiant Violet</span>
+<span class="font-label-caption text-label-caption text-secondary uppercase font-mono">#712AE2</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 03: BUSINESS CONTACT & PRIVACY CONTROLS ================= -->
+<section class="rounded-2xl bg-surface-container-lowest p-6 md:p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center font-headline-sm text-tertiary font-bold">
+                03
+              </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Business Contact &amp; Privacy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage who can view your direct company contacts and representatives.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-outline font-label-badge text-label-badge">Security Guard</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">shield</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-secondary">Privacy Notice:</strong> These settings govern which details creators see when applying to published briefs versus what remains confidential to Inomark platform escrow agents.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Contact Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Primary Creative Director / Lead</label>
+<div class="relative">
+<input class="w-full pl-9 pr-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="text" value="Elin Lindqvist">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">badge</span>
+</div>
+<span class="font-label-caption text-label-caption text-outline">Title: Head of Brand Creative &amp; Digital Production</span>
+</div>
+<!-- Professional Email -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-button text-label-button text-on-surface">Professional Business Email</label>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-badge text-label-badge text-[10px]">Contracted Only</span>
+</div>
+<div class="relative">
+<input class="w-full pl-9 pr-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="email" value="creative@aurabotanica.com">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">mail</span>
+</div>
+<span class="font-label-caption text-label-caption text-outline">Hidden until an agreement is formally executed.</span>
+</div>
+<!-- Phone with Toggle -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="font-label-button text-label-button text-on-surface">Direct Telephone</label>
+<div class="flex items-center gap-2">
+<span class="font-label-caption text-label-caption text-outline">Keep Private</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<div class="relative">
+<input class="w-full pl-9 pr-4 py-3 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" type="text" value="+46 8 555 0192">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-outline text-[18px]">call</span>
+</div>
+</div>
+<!-- Preferred Communication Method -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Preferred Communication Protocol</label>
+<div class="grid grid-cols-1 gap-2">
+<button class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high text-on-surface text-left" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">mark_chat_read</span>
+<span class="font-label-button text-label-button text-xs">Inomark Brief Portal (Recommended)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION 04: CREATIVE PREFERENCES & AI TECH ================= -->
+<section class="rounded-2xl bg-surface-container-lowest p-6 md:p-8 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim flex items-center justify-center font-headline-sm text-primary font-bold">
+                04
+              </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">What Your Brand Looks For</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tag your aesthetic taste, media types, and generative AI pipelines.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-label-badge text-label-badge">Creator Matchmaker</span>
+</div>
+<!-- Preferred Content Types -->
+<div class="flex flex-col gap-3">
+<span class="font-label-button text-label-button text-on-surface">Preferred Content Deliverables</span>
+<div class="flex flex-wrap gap-2.5">
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge flex items-center gap-1.5 shadow-sm" type="button">
+<span>AI Video Commercials</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge flex items-center gap-1.5 shadow-sm" type="button">
+<span>Cinematic Filmmaking</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge flex items-center gap-1.5 shadow-sm" type="button">
+<span>Macro Product Packshots</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-badge text-label-badge flex items-center gap-1.5 shadow-sm" type="button">
+<span>3D Motion &amp; VFX</span>
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge flex items-center gap-1.5 transition-colors" type="button">
+<span>Social Reels</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge flex items-center gap-1.5 transition-colors" type="button">
+<span>Key Visual Posters</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Preferred Creative Styles -->
+<div class="flex flex-col gap-3">
+<span class="font-label-button text-label-button text-on-surface">Creative Styles &amp; Mood Accents</span>
+<div class="flex flex-wrap gap-2.5">
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span>Photorealistic</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</span>
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span>Cinematic</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</span>
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span>Luxury &amp; Premium</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</span>
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span>Minimalist</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</span>
+<span class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-badge text-label-badge flex items-center gap-1">
+<span>Editorial High Fashion</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-outline font-label-badge text-label-badge flex items-center gap-1 transition-colors" type="button">
+<span>Surrealist Caustics</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+<!-- Favored AI Tools / Pipelines -->
+<div class="flex flex-col gap-3">
+<span class="font-label-button text-label-button text-on-surface">Preferred AI Workflows &amp; Tool Stacks</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">movie_filter</span>
+<div class="flex flex-col">
+<span class="font-label-button text-label-button text-xs text-on-surface">Runway Gen-3</span>
+<span class="font-label-caption text-label-caption text-outline text-[11px]">Alpha / Direct</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">brush</span>
+<div class="flex flex-col">
+<span class="font-label-button text-label-button text-xs text-on-surface">Midjourney v6.1</span>
+<span class="font-label-caption text-label-caption text-outline text-[11px]">Photorealism</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">grain</span>
+<div class="flex flex-col">
+<span class="font-label-button text-label-button text-xs text-on-surface">Flux.1 Dev</span>
+<span class="font-label-caption text-label-caption text-outline text-[11px]">Pristine Textures</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">developer_board</span>
+<div class="flex flex-col">
+<span class="font-label-button text-label-button text-xs text-on-surface">ComfyUI / LoRA</span>
+<span class="font-label-caption text-label-caption text-outline text-[11px]">Custom Weights</span>
+</div>
+</div>
+</div>
+</div>
+<!-- General Creative Tone Directives -->
+<div class="flex flex-col gap-2">
+<label class="font-label-button text-label-button text-on-surface">Art Direction Guidelines for Pitch Submissions</label>
+<textarea class="w-full p-4 bg-surface-container-low rounded-xl text-on-surface text-body-md font-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all resize-y" rows="3">We prioritize ultra-realistic liquid physics, organic natural daylight diffusion, frosted glass refraction, and pristine macro dewdrop aesthetics. Avoid neon tropes, overt synthetic noise, and uncanny character hands.</textarea>
+</div>
+</section>
+<!-- Lower Section Sticky Actions Bar (Mobile/Bottom) -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-caption text-label-caption">
+<span class="material-symbols-outlined text-emerald-500 text-[18px]">verified</span>
+<span>Profile adheres to Inomark Verified Marketer Standards</span>
+</div>
+<button class="px-6 py-2.5 rounded-full bg-secondary hover:bg-primary text-on-secondary font-label-button text-label-button shadow-md hover:shadow-lg transition-all" type="button">
+            Save All Updates
+          </button>
+</div>
+</div>
+<!-- ================= SIDEBAR COMPANION (approx 32% -> 4 cols) ================= -->
+<aside class="lg:col-span-4 flex flex-col gap-6 sticky top-24">
+<!-- CARD 1: PROFILE COMPLETION GUIDANCE -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">stars</span>
+<h4 class="font-label-button text-label-button text-on-surface font-bold">Profile Strength</h4>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-badge text-label-badge font-bold">
+              100%
+            </span>
+</div>
+<!-- Progress Bar & Indicator -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-2.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-full"></div>
+</div>
+<div class="flex justify-between items-center text-label-caption font-label-caption text-outline">
+<span>All 5 essentials completed</span>
+<span class="text-secondary font-semibold">Ready for Pitches</span>
+</div>
+</div>
+<!-- Checklist items -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Company name &amp; vertical configured</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">High-resolution brand logo &amp; banner</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Company philosophy &amp; narrative</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Website &amp; verified studio location</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Creative preferences &amp; AI tool specs</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface-variant font-label-caption text-label-caption leading-relaxed">
+<strong class="text-on-surface font-semibold">Tip:</strong> A fully enriched profile attracts 3.4x more tier-one creator submissions on your open briefs.
+          </div>
+</div>
+<!-- CARD 2: PUBLIC CREATOR VIEW PREVIEW CARD -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<h4 class="font-label-button text-label-button text-on-surface font-bold">Live Public Preview</h4>
+</div>
+<span class="text-label-caption font-label-caption text-secondary font-medium">As Seen By Creators</span>
+</div>
+<!-- Mockup Frame -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low flex flex-col shadow-inner">
+<!-- Mock Banner -->
+<div class="h-20 w-full relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="Miniature banner forest mist Nordic landscape preview" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1dO-xKqaerQMP0af7nQ_CvpE-JNwhfd_5Gi3o3qGWTb7AAyCEJ2UOzEkYg3uCn1uzBxGOKkWi1rJvQYKAUAIn1BaQR8OcH0lli5HLTkvBqHWPJQe5KyZ0j69A2kFmo1KgyY60z6__U1GD0rVzsInO_6JZf_davoGcSgvxf6syBEfZ5IQAPFyHZGr6O8Qrk495b2US-k0tX3ts4xhEKsARqdM2HmAWonn69M8hqEafEI_jGueEH6-k')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+</div>
+<!-- Mock Card Info -->
+<div class="p-4 pt-0 flex flex-col gap-2 relative">
+<div class="flex items-end justify-between -mt-6">
+<div class="w-12 h-12 rounded-full p-0.5 bg-surface-container-lowest shadow-md">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Miniature circular emblem luxury skincare logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBh28esarWIIL2tmTdex7kkYyJzuD8xlfYy23m-dlnQU5OY5VZLQMdzTWcAOv5j3KHBDKaTAz8dDCRX8zPn6sdoTT1Ym01We9uXX4iHBm9HHIhb_IDoY1euxMQ8_TtiwqgmLRGHEx-ePFg5Dhnc_CDk5Km1AQpM1NMe80BCFUprU54w0MhwpCSX8rtC16mS4TC_rbbl_KV8-2zeaC-DkUM9mTrSr4h5x-wPfDQoXoNIjrLoJJfjfrF4')"></div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-badge text-[10px]">
+                  2 Active Briefs
+                </span>
+</div>
+<div class="flex flex-col mt-1">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-sm text-on-surface font-bold">Aura Botanica</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+</div>
+<span class="font-label-caption text-label-caption text-outline text-[11px] truncate">
+                  Beauty &amp; Luxury Skincare · Stockholm
+                </span>
+</div>
+<p class="font-body-sm text-xs text-on-surface-variant line-clamp-2 italic">
+                “Formulating pure Nordic botanical care through ethereal cinematic storytelling.”
+              </p>
+<div class="flex items-center gap-1 text-[11px] text-tertiary pt-1 font-label-caption">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+<span>Stockholm &amp; New York</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-full bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-button text-label-button text-center transition-all flex items-center justify-center gap-2" id="modal-trigger-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
+<span>Expand Full Public View</span>
+</button>
+</div>
+<!-- CARD 3: ACTIVE PUBLISHED BRIEFS QUICK LINKS -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment</span>
+<h4 class="font-label-button text-label-button text-on-surface font-bold">Active Inomark Briefs</h4>
+</div>
+<a class="font-label-caption text-label-caption text-primary hover:text-secondary" href="#">View All</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Brief 1 -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 group" href="#">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-badge text-[10px] font-semibold">Active Campaign</span>
+<span class="font-label-badge text-label-badge text-secondary font-bold">$3,500 – $5,000 USD</span>
+</div>
+<h5 class="font-label-button text-label-button text-on-surface group-hover:text-primary transition-colors text-sm font-semibold truncate">
+                Nordic Botanical Serum — Cinematic Specular Launch
+              </h5>
+<div class="flex items-center justify-between text-label-caption font-label-caption text-outline text-xs">
+<span>4 Creator Pitches in Review</span>
+<span class="flex items-center gap-1 text-primary">
+<span>Manage</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Brief 2 -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 group" href="#">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-[10px] font-semibold">Draft In Review</span>
+<span class="font-label-badge text-label-badge text-outline text-[11px]">Target: Nov 12</span>
+</div>
+<h5 class="font-label-button text-label-button text-on-surface group-hover:text-primary transition-colors text-sm font-semibold truncate">
+                Botanical Serum Macro Stills &amp; Social Cuts
+              </h5>
+<div class="flex items-center justify-between text-label-caption font-label-caption text-outline text-xs">
+<span>Awaiting Creative Lead Approval</span>
+<span class="flex items-center gap-1 text-primary">
+<span>Edit Draft</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</span>
+</div>
+</a>
+</div>
+<button class="w-full py-2.5 rounded-full bg-surface-container-low hover:bg-surface-container text-secondary font-label-button text-label-button transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create New Campaign Brief</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+<!-- Interactive Public Profile Modal Mockup -->
+<div class="fixed inset-0 z-50 bg-on-surface/50 backdrop-blur-sm hidden items-center justify-center p-4" id="preview-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col">
+<div class="relative h-44 w-full bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center" data-alt="High quality Scandinavian pine landscape banner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwnk_pRitvNwvFN9PEEDF_xqiyM1d5fP1qqP7w1JoCcNH1lWut-2HzDMTWnVPopbffUFqa3rYeXgqR-af2kcIVKHccZ6_CP6PPDKJ7eBp0ew-bRPnopBJLuIa7UKU3kC9iInq6gVop2VNmnjmOXLwqABic5qtRVl_zWvLgFIE7q2l3QLtSI7yJNLMqF68-ehCvf3HPLXLZVBKlkcoVPvocyE_YaVn4wGLCWJjAqRZqr1O5ZBEgQsda')"></div>
+<button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface flex items-center justify-center hover:bg-surface-container-lowest transition-colors" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-6 -mt-12 relative z-10">
+<div class="flex items-end justify-between">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest p-1 shadow-xl">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Aura botanica circular logo gold icon" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhqUSQwxeH6ZcAcY8BobaKS8UbpvtQ9xs-esF7ySL0nf9nVn-DO1j3gvZ2yp9cJhCkKAX8Zn2C9UVC-MSnLWyvqwIPAzfyPMuODs-jbsELBun79Srbm27nyHq7W7fIYcDxnnk7RIWad5y0mHQmA_zKff9wZTyHqLhQHeImHccHHWvT2gFB_RyJC9Od3zAL8FVweZFaZXlSo6jDSZiV1Eavr5oB2d6xqRewn4GIQGCMXy2rU52Yupn5')"></div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-label-badge text-label-badge">
+            Verified Enterprise Brand
+          </span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md text-on-surface">Aura Botanica</h3>
+<p class="font-body-md italic text-secondary text-body-md">“Formulating pure Nordic botanical care through ethereal cinematic storytelling.”</p>
+<span class="font-label-caption text-label-caption text-outline">Stockholm, Sweden · Beauty &amp; Luxury Skincare · Direct-to-Consumer</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low text-body-sm text-on-surface-variant leading-relaxed">
+          Founded between Stockholm and New York, Aura Botanica formulates clean botanical treatments driven by glacial spring waters and cold-pressed Arctic cloudberry extracts.
+        </div>
+<div class="flex flex-col gap-2">
+<span class="font-label-button text-label-button text-on-surface">Preferred AI Visual Direction</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-badge text-xs">Runway Gen-3</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-badge text-xs">Midjourney v6.1</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-badge text-xs">Macro Caustics</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-badge text-xs">Photorealistic Specular</span>
+</div>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-button text-label-button" id="modal-done-btn" type="button">
+            Close Preview
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions for save button and preview modal
+    const previewModal = document.getElementById('preview-modal');
+    const openBtn = document.getElementById('open-preview-btn');
+    const modalTriggerBtn = document.getElementById('modal-trigger-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+    const modalDoneBtn = document.getElementById('modal-done-btn');
+    const saveMainBtn = document.getElementById('save-main-btn');
+
+    function openModal() {
+      if (previewModal) {
+        previewModal.classList.remove('hidden');
+        previewModal.classList.add('flex');
+      }
+    }
+
+    function closeModal() {
+      if (previewModal) {
+        previewModal.classList.add('hidden');
+        previewModal.classList.remove('flex');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (modalTriggerBtn) modalTriggerBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modalDoneBtn) modalDoneBtn.addEventListener('click', closeModal);
+
+    if (saveMainBtn) {
+      saveMainBtn.addEventListener('click', () => {
+        const originalText = saveMainBtn.innerHTML;
+        saveMainBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Saving...</span>';
+        setTimeout(() => {
+          saveMainBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Saved!</span>';
+          setTimeout(() => {
+            saveMainBtn.innerHTML = originalText;
+          }, 2000);
+        }, 600);
+      });
+    }
+  </script>
+</div></main></div></body></html>

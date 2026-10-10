@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "primary-container": "#6063ee", "tertiary-container": "#007da9", "surface-container-high": "#e2e7ff", "secondary-container": "#8a4cfc", "on-tertiary-fixed-variant": "#004c69", "tertiary-fixed-dim": "#7bd0ff", "surface": "#faf8ff", "primary-fixed": "#e1e0ff", "inverse-on-surface": "#eef0ff", "secondary": "#712ae2", "on-secondary": "#ffffff", "surface-container": "#eaedff", "secondary-fixed": "#eaddff", "surface-bright": "#faf8ff", "on-error-container": "#93000a", "on-secondary-container": "#fffbff", "secondary-fixed-dim": "#d2bbff", "surface-container-highest": "#dae2fd", "on-surface": "#131b2e", "primary": "#4648d4", "surface-tint": "#494bd6", "outline": "#767586", "primary-fixed-dim": "#c0c1ff", "on-secondary-fixed-variant": "#5a00c6", "on-tertiary-container": "#fcfcff", "surface-container-low": "#f2f3ff", "on-background": "#131b2e", "inverse-primary": "#c0c1ff", "surface-container-lowest": "#ffffff", "inverse-surface": "#283044", "on-primary-fixed": "#07006c", "surface-variant": "#dae2fd", "outline-variant": "#c7c4d7", "error-container": "#ffdad6", "error": "#ba1a1a", "on-tertiary-fixed": "#001e2c", "background": "#faf8ff", "tertiary": "#006387", "on-secondary-fixed": "#25005a", "on-primary-fixed-variant": "#2f2ebe", "on-primary-container": "#fffbff", "tertiary-fixed": "#c4e7ff", "on-surface-variant": "#464554", "surface-dim": "#d2d9f4", "on-error": "#ffffff", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-md": "1rem", "space-2xl": "4rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-lg": "1.5rem", "space-3xl": "6rem", "gutter": "1.5rem", "margin": "4rem", "gutter-mobile": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "label-badge": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "headline-sm": [ "Plus Jakarta Sans" ], "label-button": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "display-hero-mobile": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "headline-lg-mobile": [ "Playfair Display" ], "label-caption": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-badge": [ "0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" } ], "headline-lg": [ "3rem", { "lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-sm": [ "0.875rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.6", "fontWeight": "400" } ], "headline-md": [ "2rem", { "lineHeight": "1.3", "fontWeight": "500" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.4", "fontWeight": "600" } ], "label-button": [ "0.9375rem", { "lineHeight": "1", "fontWeight": "600" } ], "body-md": [ "1rem", { "lineHeight": "1.5", "fontWeight": "400" } ], "display-hero-mobile": [ "2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero": [ "4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-caption": [ "0.75rem", { "lineHeight": "1.4", "fontWeight": "500" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen relative overflow-x-hidden"><div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-[20%] -left-[10%] w-[55vw] h-[55vw] rounded-full bg-secondary-fixed/30 blur-[130px]"></div><div class="absolute top-[30%] -right-[15%] w-[50vw] h-[50vw] rounded-full bg-primary-fixed/35 blur-[140px]"></div><div class="absolute -bottom-[20%] left-[25%] w-[45vw] h-[45vw] rounded-full bg-surface-container-high/40 blur-[120px]"></div></div><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-6 px-4"><div class="flex flex-col gap-8"><div class="flex items-center gap-3 px-4"><div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-sm tracking-tight text-on-surface">Inomark</span><span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-widest">AI Creator Hub</span></div></div><nav class="flex flex-col gap-1.5" data-active-classes="bg-surface-container-lowest text-secondary shadow-[0_4px_20px_-2px_rgba(99,102,241,0.08)]"><a aria-current="page" class="flex items-center gap-3.5 px-4 py-3 rounded-full font-label-button transition-all group bg-surface-container-lowest text-secondary shadow-[0_4px_20px_-2px_rgba(99,102,241,0.08)]" data-path="home" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">grid_view</span><span class="flex-1">Home</span><span class="w-1.5 h-1.5 rounded-full bg-secondary opacity-0 group-[.active]:opacity-100"></span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-full font-label-button text-label-button text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="discover-creators" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">explore</span><span class="flex-1">Discover Creators</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-full font-label-button text-label-button text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="my-briefs" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">description</span><span class="flex-1">My Briefs</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-full font-label-button text-label-button text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="saved-creators" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">bookmark</span><span class="flex-1">Saved Creators</span></a><a class="flex items-center gap-3.5 px-4 py-3 rounded-full font-label-button text-label-button text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="brand-profile" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">storefront</span><span class="flex-1">Brand Profile</span></a></nav></div><div class="flex flex-col gap-3 pt-4"><div class="flex items-center gap-3 p-2.5 rounded-full bg-surface-container-low/70 backdrop-blur-md"><div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-button text-label-button shadow-sm"><span class="material-symbols-outlined text-[20px]">spa</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-button text-body-sm text-on-surface font-semibold truncate">Aura Botanica</span><span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Brand Account</span></div></div><div class="flex flex-col gap-1 px-2"><a class="flex items-center gap-3 px-3 py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Settings</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="log-out" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Log Out</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/70 backdrop-blur-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-6 flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-11 pl-11 pr-4 rounded-full bg-surface-container-low/70 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all shadow-[0_2px_12px_rgba(0,0,0,0.02)]" placeholder="Search creators, skills, or AI tools…" type="text"/></div></div><div class="flex items-center gap-4"><button class="w-10 h-10 rounded-full bg-surface-container-low/80 hover:bg-surface-container-high hover:text-on-surface text-on-surface-variant flex items-center justify-center transition-colors relative shadow-[0_2px_8px_rgba(0,0,0,0.02)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-2.5 pl-2 pr-3 py-1.5 rounded-full bg-surface-container-low/80 hover:bg-surface-container hover:text-on-surface text-on-surface cursor-pointer transition-colors shadow-[0_2px_8px_rgba(0,0,0,0.02)]"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-label-button text-label-button text-on-surface hidden md:inline-block">Aura Botanica</span><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="w-full pt-20 px-8 bg-transparent min-h-screen"><div class="flex flex-col w-full pb-24 gap-14">
+<!-- HERO / WELCOME BANNER SECTION -->
+<section class="relative w-full rounded-lg bg-surface-container-lowest/80 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(99,102,241,0.06)] p-8 md:p-12 overflow-hidden">
+<!-- Ambient mesh glow inside container -->
+<div class="absolute -top-24 -right-12 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-[90px] pointer-events-none"></div>
+<div class="absolute -bottom-20 left-1/3 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 w-fit">
+<span class="material-symbols-outlined text-primary text-[14px]">auto_awesome</span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">Brand Atelier Workspace</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight">
+          Welcome back, <span class="font-normal italic text-secondary">Aura Botanica</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          What are you creating today? Discover vanguard AI creators, explore hyper-realistic portfolios, or commission your next global campaign brief.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-primary text-on-primary font-label-button text-label-button shadow-[0_8px_24px_-4px_rgba(70,72,212,0.35)] hover:bg-primary-container transition-all group" href="#">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span>Discover Creators</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-button text-label-button transition-all shadow-[0_2px_8px_rgba(0,0,0,0.02)]" href="#">
+<span class="material-symbols-outlined text-[18px] text-secondary">edit_document</span>
+<span>Create a Brief</span>
+</a>
+</div>
+</div>
+<!-- Quick Metrics Pill Group -->
+<div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto">
+<div class="flex items-center gap-4 px-5 py-4 rounded-DEFAULT bg-surface-container-low/70 backdrop-blur-md shadow-sm min-w-[220px]">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">4 New</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Creator Pitches</span>
+</div>
+</div>
+<div class="flex items-center gap-4 px-5 py-4 rounded-DEFAULT bg-surface-container-low/70 backdrop-blur-md shadow-sm min-w-[220px]">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bookmarks</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">12 Saved</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-wider">Roster Talent</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: GET STARTED (QUICK ACTION CARDS) -->
+<section class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Get Started</h2>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase tracking-widest">3 Instant Workflows</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group relative rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl p-6 flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(99,102,241,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(99,102,241,0.12)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">travel_explore</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Discover Creators</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Explore creator profiles, review AI portfolios, and find vanguard artists with the exact visual models you need.
+            </p>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center justify-between w-full px-5 py-3 rounded-full bg-surface-container-low text-on-surface group-hover:bg-primary group-hover:text-on-primary font-label-button text-label-button transition-colors" href="#">
+<span>Browse Creators</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl p-6 flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(99,102,241,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(99,102,241,0.12)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">post_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Create a Campaign Brief</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Describe the content you need, your preferred creative direction, multi-channel deliverables, and deadlines.
+            </p>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center justify-between w-full px-5 py-3 rounded-full bg-surface-container-low text-on-surface group-hover:bg-secondary group-hover:text-on-secondary font-label-button text-label-button transition-colors" href="#">
+<span>Create Brief</span>
+<span class="material-symbols-outlined text-[16px]">add</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl p-6 flex flex-col justify-between shadow-[0_4px_20px_-2px_rgba(99,102,241,0.04)] hover:shadow-[0_16px_32px_-8px_rgba(99,102,241,0.12)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">bookmarks</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">View Saved Creators</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Return to standout creators you have bookmarked for upcoming seasonal drops and upcoming production slots.
+            </p>
+</div>
+</div>
+<div class="pt-6">
+<a class="inline-flex items-center justify-between w-full px-5 py-3 rounded-full bg-surface-container-low text-on-surface group-hover:bg-inverse-surface group-hover:text-inverse-on-surface font-label-button text-label-button transition-colors" href="#">
+<span>View Saved</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: DISCOVER AI CREATORS ("Creators You Can Explore") -->
+<section class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+<div>
+<div class="inline-flex items-center gap-1.5 font-label-badge text-label-badge text-primary uppercase tracking-widest mb-1.5">
+<span class="material-symbols-outlined text-[14px]">stars</span> Verified Talent
+        </div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Creators You Can Explore</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Top-rated generative artists specialized in photoreal commercial execution.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-secondary font-label-button text-label-button transition-colors group" href="#">
+<span>View All Creators</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- 4 Rich Creator Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Creator 1: Elena Vance -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(15,23,42,0.12)] transition-all group">
+<!-- Visual Showcase Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic fashion film still of a radiant woman looking skyward surrounded by ethereal volumetric purple and warm golden light, hyperrealistic generative AI aesthetic, ultra high definition 8k, photorealistic textures, soft bloom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUDjCq7Yp6UDf6YYj32iRmcp4u2rIT82RguDyPnS-wZb6FkUVoh7tx-Fy7dfsFmiiCRlvvI5-Hhl-BVbkuPTml28e0yxE0Xr8ZVNtW2qgHWgPSMWycCKkzvKJJhJtbTNwbr2E1pv_9BckLeAYecQpUSu1ZQlLMEu0zU_1P-tVO_sRn4rtiA3894nH3pGFS62eMvrc5Hot8ge9dYrrKCBZUHmnUvUcrY1JmJZeJ1p_3UBEQlGdvNKsU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<!-- Aspect Tag -->
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-caption text-label-caption text-on-surface font-semibold shadow-sm">
+            16:9 4K Film
+          </div>
+<!-- Bookmark Action -->
+<button aria-label="Save Creator" class="bookmark-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<!-- Status Chip -->
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span>Available</span>
+</div>
+</div>
+<!-- Creator Info -->
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of a creative female director with sleek dark hair and gentle studio lighting, pastel violet soft background, high-end editorial look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL-rGK7i7mqZx6oIQ8PU5l_RLTjVTACRylfPHIUyOwFSbydBLXXMSAGlqAcjSCyf7FoDfooJiDHIiAO1O3caC6AXV-vIhSzb9z8PyXIG9x8g0m0FUL1fUHDiZr-5zJsDGB8n7RybrwRhYW1XiTK-FIx-umNer4kyte9y_auuIrM_1fWl5PnDbBIEfgbgtiMaEEQdhHHX8aILjLjfyNr6k1FLrkKM9nlYxZLcNwtPebinDVGfDFG_NB"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md font-bold text-on-surface truncate">Elena Vance</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Cinematic Commercials &amp; Spec Ads</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Award-winning director specializing in generative narrative video and high-end luxury cosmetic aesthetics.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Runway Gen-3</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Midjourney v6</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">ComfyUI</span>
+</div>
+</div>
+<a class="w-full py-2.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface text-center font-label-button text-label-button transition-colors" href="#">
+            View Profile
+          </a>
+</div>
+</div>
+<!-- Creator 2: Kenji Sato -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(15,23,42,0.12)] transition-all group">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Extreme macro shot of an organic skincare bottle resting on a wet river stone with morning dew drops, eucalyptus leaves, warm natural daylight, commercial luxury cosmetic photography, photorealistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfS7knoPXS_7c5ots3nXoGmXCDXNxIwziX0BCI1I4pBgLpjHsxGPdo0C32ClLcoHG-4tXaIOJZhPztuImFrjOrDuALqbJ0B7KAw6eLzHLQvHDUlL3XaJL4lo4rQ-1aeeY0zVIrnQ40OmPG349ZnQqBPuZRIplEXwigxFmTaCed1Cv9uvrDgP5DE_dJcWCY1gD5HzMBZK28YwtBFNmCJ3vd7gTuuL_CdOEemdXqmh1Qlq0OtOo35hOp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-caption text-label-caption text-on-surface font-semibold shadow-sm">
+            8K Stills
+          </div>
+<button aria-label="Save Creator" class="bookmark-btn active absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span>Available</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Minimalist portrait of an Asian male digital artist with clear glasses, sharp clean lighting, minimalist grey and lavender gradient backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh5nxCYDkRlDV0SMofOmpznPO7HqhJFZ6zhBYtgpSj_tjAVgRCksfKFMqzqwAOddMzwyOI71HolUzJF5c9aclulXv4OaqSRdo4UN5r6KUkhfElftLbjXkX9C2hr4hr0bo9GJWs15EjRYVYdlzVnrlDyKr5OClgzla7jKiFCo7A_IGc2K_NuK8-_OUiFIRxckcZsy316Evzi3xSfk98XcChuH59YQgctg877xoNjB5ajhJRuK466kU4"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md font-bold text-on-surface truncate">Kenji Sato</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Hyper-realistic Brand Visuals</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Pioneer in custom LoRA training for brand consistency, physical material accuracy, and macro packaging.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Flux.1 Dev</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">LoRA Tuning</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Photoshop</span>
+</div>
+</div>
+<a class="w-full py-2.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface text-center font-label-button text-label-button transition-colors" href="#">
+            View Profile
+          </a>
+</div>
+</div>
+<!-- Creator 3: Maya Lin -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(15,23,42,0.12)] transition-all group">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Avant-garde futuristic fashion visual featuring an iridescent fluid fabric flowing around a model against a soft pastel sky, dreamlike surrealism, soft lilac and cyan accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRYVdOjopD4ofhQT4QziC9m5bkeyIdZMuDk2Mllgik5Q9vMcEwxRDbNuEVHJBFWBz28G79z9-qtMwJjB2Jk1MIEMdYhR8a2nTRK8-IG9bxh-X7T4SJPt_c1RbrtX9gOjhb3w12TEqZMgTTZqUn5xwguDWViZMIiFJcqj_1XKovBKuh83ylnok2CnEN4224yeB_cCz0CQxEJxRVtAHZyUgl08fxxDrgy0cG82IEmfDbtwVz7dclR4bM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-caption text-label-caption text-on-surface font-semibold shadow-sm">
+            Motion Loop
+          </div>
+<button aria-label="Save Creator" class="bookmark-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+<span>Booking Q2</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of a creative director woman with sculptural hair and soft ambient lighting, gentle futuristic styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaofJ4Fxq87m4HoOE9waxxyCUludHa3hsfSbLXpdHKCTAtBF-38OnD_13hf7dAS80yx2lLsocoFTRkbDr6NGa8rNEH39XevbMqDvfQyAqesj9Ry8K-z3SJcj2GwQVsp-wpVhv24YviB3JZhRd4sTtE7BiLMRimGaVBqdnh1g-ZcjYLDteQc4jUM6IKlDo4k-Dp4kEePyrZsJRao_aVrCAhQBYdUJi0B2lR9iVHzNy-PF8t3n_wIBtU"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md font-bold text-on-surface truncate">Maya Lin</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Surrealist Fashion &amp; Motion</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Transforming runway trends and couture moodboards into dynamic, impossible generative choreography.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Kling 1.5</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Midjourney v6</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">After Effects</span>
+</div>
+</div>
+<a class="w-full py-2.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface text-center font-label-button text-label-button transition-colors" href="#">
+            View Profile
+          </a>
+</div>
+</div>
+<!-- Creator 4: Marcus Brody -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl overflow-hidden shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(15,23,42,0.12)] transition-all group">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Vast architectural concept art of a futuristic eco-sanctuary with lush floating terraced gardens, glass domes, bathed in golden hour atmosphere, ultra-detailed matte painting style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRsfZCDQViNOQtBfhjCqODmUmaU0sd9ar9RsCddm-UT789Yn-0nAZqgnujLRd32ALWcc8_D1NXON3zGRwe03ZMIaEKvF3JRzwOD95sq7cfptbJ1xi5SNG0zThH08TtdYdRLVCqtYcKWUOv37aASLqyEahdU5G3anpdaWI6dLnhwv4XPyqS_F5wPapcyau6jKScQRyesaYT-1cB4S5p2458qwkvyQ7xY7yo-tfe0W348TwlIXUMfn4e"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-caption text-label-caption text-on-surface font-semibold shadow-sm">
+            3D / Spatial
+          </div>
+<button aria-label="Save Creator" class="bookmark-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-caption text-label-caption text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span>Available</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Studio portrait of a male 3D generative environment artist with short beard, thoughtful expression, ambient lavender neon glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnvVFACM7K7xY2FJNHwrp4jtLcFnyZtPTlG3krVTImYvtg9MXsui9bsNXyf0Lj_ILZge-77_fMJPv_ESsAGjEe97aMOlaeLchQmrVUC4-eRbb4uZbrYXU0FFFlO2idkqmwxksAtAwHFtTqP0WTcgEK42bnxnBziUvCEIv15fNPef1VRvO5Z_sO3MTT0Sud6CUgsU8A9P9s26WJAvM_ksPTBtwTnUybYeEyh2zp8_b04E8Yu9DJyHvT"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-body-md font-bold text-on-surface truncate">Marcus Brody</span>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">AI Worldbuilding &amp; Unreal 5</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Building photoreal 3D stages and ambient background universes for commercial campaigns and spatial experiences.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">ComfyUI</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">Unreal Engine 5</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low font-label-caption text-label-caption text-on-surface-variant">ControlNet</span>
+</div>
+</div>
+<a class="w-full py-2.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface text-center font-label-button text-label-button transition-colors" href="#">
+            View Profile
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: EXPLORE BY CREATIVE CATEGORY ("What Kind of Content Do You Need?") -->
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">What Kind of Content Do You Need?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Explore verified talent curated across specific production outputs.</p>
+</div>
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-widest hidden sm:inline-block">6 Specialized Niches</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Category 1 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Cinematic frame from a generative AI sci-fi movie featuring glowing neon atmospheric lighting and high contrast camera blur." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlGVpZPE3NzCAAxB5AKTSouly1YtMYlziBuiNt09PUauFjyT3I93tOz0oKNposjDF_RHtbGZzKdBr5vDlPtcc-yGMG2Xj7-p9LdpOTd_jZg3dZh_44TYWxEtSfOpxp5X7S1Dg6OcaQwxqDb8OhZqqWtvtRdIRTvtcJnHOigvLzzz_WaX1Dcx3JfA-0Sa6b_v8auoGuYw2jYcou4jSDpogs1MfaS_2f8IDn1oy5BKxM48gQHWjtjE6L"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">AI Videos &amp; Film</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">240+ creators</span>
+</a>
+<!-- Category 2 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Luxury perfume glass bottle with soft refraction and rose petals on a travertine podium, soft morning shadows, hyperrealistic commercial visual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD94JZVKCskS04NeXYoWdLgoB8bec2KNmRN2m-IN--ProP6-WmmJaIWTZ8YYNPsiAo3GwTMTqFudBUvrXzc55COFPApFeBhOchTyaQ3tZBI37SWZFK8yGK40Ydka5o8BU3bJ8CeGs2aitjvaf-ctTAbeRnkKei6fd9MWR7cJG_my6V4btvXVWu_33Nskqa_LvgI1kklVnYZC_H-KICBmomjVJvIID60Uq9dOdziP6BxThF-VIQfkBJG"/>
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Product Ads</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">180+ creators</span>
+</a>
+<!-- Category 3 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Stylized generative 3D claymation animated character with whimsical expressive eyes in a dreamy pastel forest setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhV0kcpVDqUbqrb7o6SjCje4w6V6MdMFKNf7IzjNIzd1N-JpDUXxA4M2Ucd8-TdLbVIecuxdHG9zb107XyRTreEKVyyzpKBY7DgUcu7k2QE_Wdhn5vb6sOM6ClodGOG_ooKYskx7X7HsjznPKTJTiJLL3NQFxl9LHXK20I1rqOeeqE5ATnTEFE1PEkKM94gYmFW72Oz4pqF9vc7PHodtBhaWNBtdabXy3gKhFI6XlfWsLL5--mOz1I"/>
+<div class="absolute inset-0 bg-tertiary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">AI Animation</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">95+ creators</span>
+</a>
+<!-- Category 4 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Vibrant modern digital oil painting of botanical surreal flowers blooming with iridescent liquid pigments, fine art editorial composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATwPISX3HV2UG3WuNiIJ1WdaHBbv5xpCG-4L6N6G-mTnvyPYvvaZJaAddoard-HeB6srrv9cMhL-IABM12yZu4UKX8KEJ9cToALEuXzMjCTkOaxBZvl7vOCZlUm99HBpK-uLPCGp3NBCSSNv1_37RPW6MX-bRBKXCqKdUahi48cJhQgYZ-Z7PZvWNhwff7thUUCrAkGbsF7nSCM3vFFvfUt3RDqYpDuNS_VGCFMsKc4CZOiaijFI_2"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Illustration &amp; Art</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">310+ creators</span>
+</a>
+<!-- Category 5 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Futuristic cybernetic character design with porcelain skin texture, elegant minimal robotic elements, high fashion cyberpunk style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACCcpMm13bj2TcjqT73hlccj3kEApfoF1-7ph7ch1pRTKNJFZ7vPwYfgmyxN7usagZnNKhqAJbP_P7Vk2ki9UyBz3pmnlrHeVXJmteJYUPnX-nbKwmb0_ka2xUqJxR7-4tVENozUrNdZnx8P6BONwt9KXVR27ud47mRCqa7V6pQYk-TeNOFrLiQ1UTB2ng7UmfD1ih2O04pRvNDZoYC9GAsyl-T8rJpUop9w9YLv5ZzurUxOM5nFss"/>
+<div class="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Character Design</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">140+ creators</span>
+</a>
+<!-- Category 6 -->
+<a class="group flex flex-col p-4 rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl hover:bg-surface-container-lowest shadow-[0_2px_12px_rgba(99,102,241,0.03)] hover:shadow-[0_12px_24px_-4px_rgba(99,102,241,0.1)] transition-all" href="#">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container mb-3.5">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" data-alt="Epic matte painting of floating island cities surrounded by clouds and soft sunset mist, architectural concept landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDu3Q58s_cMc1aqasfyCi-qExtjioSHjdWcBQ98OdJYdY7wlzl9qKLDS-wXosLOk152PFyQBt2JphqbAiqYQ_0ANGO412mDN2sdeprZ55u42s_7FqCp555duQ10gL6_ZVqxWPrsrYr-mgBH7ZajvpSb-hTnNTY6uvQcZmCeY_KO6h4-PIZUmu5TQJPw9FQiJD9e02j8NMvvLaMAer1wdrGeO8pFG7YxpLyQkYySFWSLA5II2YWXMTv"/>
+<div class="absolute inset-0 bg-tertiary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Concept Worlds</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">115+ creators</span>
+</a>
+</div>
+</section>
+<!-- SECTION: YOUR CAMPAIGN BRIEFS -->
+<section class="flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Your Campaign Briefs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Track deliverables, proposals, and pipeline milestones.</p>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-primary hover:text-secondary font-label-button text-label-button transition-colors" href="#">View All Briefs →</a>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-button text-label-button shadow-sm hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>New Brief</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Brief Card 1: Active/Published -->
+<div class="flex flex-col justify-between p-6 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_12px_28px_-6px_rgba(99,102,241,0.09)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Published · Accepting Pitches
+            </span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Due Oct 28</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Aura Botanica — Fall Global Launch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Photorealistic CPG commercial film showcasing our cold-pressed serum line in atmospheric Nordic biomes.
+            </p>
+</div>
+<!-- Metadata Chips -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<div class="flex flex-col p-2.5 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Format</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold mt-0.5">9:16 &amp; 16:9 4K Video</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Budget</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold mt-0.5">$3,500 – $5,000 USD</span>
+</div>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center font-label-badge text-label-badge text-on-primary-fixed">EV</div>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center font-label-badge text-label-badge text-on-secondary-fixed">KS</div>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center font-label-badge text-label-badge text-on-tertiary-fixed">+2</div>
+</div>
+<span class="font-label-caption text-label-caption text-primary font-semibold">4 Proposals</span>
+</div>
+<a class="px-4 py-2 rounded-full bg-primary/10 hover:bg-primary hover:text-on-primary text-primary font-label-button text-label-button transition-colors" href="#">
+            Review Pitches
+          </a>
+</div>
+</div>
+<!-- Brief Card 2: Draft -->
+<div class="flex flex-col justify-between p-6 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(99,102,241,0.05)] hover:shadow-[0_12px_28px_-6px_rgba(99,102,241,0.09)] transition-all">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-badge text-label-badge">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+              Draft · Not Published
+            </span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Target Nov 12</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Botanical Serum Macro Stills &amp; Social Cuts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Product packshots with microscopic water emulsion details for Instagram carousel and seasonal lookbook.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-2">
+<div class="flex flex-col p-2.5 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Format</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold mt-0.5">4:5 &amp; 1:1 Hi-Res</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-DEFAULT bg-surface-container-low">
+<span class="font-label-caption text-label-caption text-on-surface-variant uppercase">Budget</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold mt-0.5">$1,800 USD</span>
+</div>
+</div>
+</div>
+<div class="pt-6 flex items-center justify-between">
+<span class="font-label-caption text-label-caption text-on-surface-variant italic">Last edited 3 hours ago</span>
+<a class="px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-button text-label-button transition-colors" href="#">
+            Continue Draft
+          </a>
+</div>
+</div>
+<!-- Brief Card 3: Create New Inline Template Tile -->
+<a class="group flex flex-col items-center justify-center text-center p-8 rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low backdrop-blur-xl transition-all shadow-[0_2px_8px_rgba(0,0,0,0.02)] min-h-[260px]" href="#">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary flex items-center justify-center transition-all duration-300 mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">add_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Post a Custom Campaign Brief</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-2 leading-relaxed">
+          Set deliverables, attach moodboards, and receive curated spec concepts from top AI creators within 24 hours.
+        </p>
+<span class="mt-4 px-4 py-2 rounded-full bg-surface-container-lowest text-primary font-label-button text-label-button group-hover:shadow-md transition-shadow">
+          Start New Brief +
+        </span>
+</a>
+</div>
+</section>
+<!-- SECTION: SAVED CREATORS PREVIEW ("Your Saved Creators") -->
+<section class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Your Saved Creators</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Quick access to bookmarked talent shortlisted for Aura Botanica.</p>
+</div>
+<a class="text-primary hover:text-secondary font-label-button text-label-button transition-colors" href="#">
+        View All Saved Creators →
+      </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Saved Creator 1 -->
+<div class="flex items-center justify-between p-4 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up face portrait of a modern Japanese photographer and digital creator with focused expression, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZvsyzqu_3DpLEAaRZPrpnohMJKBRA7cKxiUR1bBZzsWCH9vWdSmNdNZ_z0IzTDCFNTvTuOwt0we2S0I9jxL7fk9yGkRFrBOTv_fe8sUt5HPUhzhk05bLdNOb08CC9EYzFnXXcxJ2q1sXupFUHl0BwmwLWF2WJkdAvaOLaqcU_nnaURmSEaKnICTUQuaPR2Rm5TyKqbAGSzgtSwPWOyr2yfV8xbFxq7JouDAdIWKGTuah7vN5VyWK2"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-body-sm text-on-surface font-bold truncate">Kenji Sato</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Flux &amp; Luxury Packshots · Tokyo</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Available Now</span>
+</div>
+</div>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-button text-label-caption transition-colors shrink-0" href="#">
+          Profile
+        </a>
+</div>
+<!-- Saved Creator 2 -->
+<div class="flex items-center justify-between p-4 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of a stylish Italian female visual designer with warm bronze ambient background, elegant attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSCgSeNrPu7GC9kFy_lJpEH0LQKC727-OJUzp2CIEYYB5xuzXseOozawKENoKD0ainh_nZNJ-yV7lM5t-gp3_mSk-bNu7dist5Liyuk9uMQUAgvVEhyhkhSz2T7zHW8A5FIyHigRtdwBReEvmU_AKETObQM10CC2H-NRNZ_OpfIYIiGMOzlJnfzuf289YID-unKi1fgfU_ehUH21-qJW00_-aVy_HX32QXd-o_J9POk5rnQpr7KqK8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-body-sm text-on-surface font-bold truncate">Sofia Rossi</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Food &amp; Beverage Photorealism · Milan</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Available Now</span>
+</div>
+</div>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-button text-label-caption transition-colors shrink-0" href="#">
+          Profile
+        </a>
+</div>
+<!-- Saved Creator 3 -->
+<div class="flex items-center justify-between p-4 rounded-lg bg-surface-container-lowest/90 backdrop-blur-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of a young creative technologist male in San Francisco with ambient blue backlighting, friendly engaging smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAruXcwkPa_iyPJ6Xa_9yKcbFAZoYg3hEVzPBBbBZ9yzcWDU4Pj_ObLq-hXa3_h0q0D7h38KjTxWNH3Rk6oKQq-nIlJD8nUfC0o9AJKpqdSD-FT6RBHsTz6e05FBVlPEqJy7kRBwdV2ADaMCN3Xkf2QdPgoknlwJJRkuuJi0Lipwd7LLnyqaLPpNp9bv3clpIceZgbJRheLXBxEcKKn-KIBsDATq8zgZRzWUq-fSeheCMyu1GaQJ6qr"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-button text-body-sm text-on-surface font-bold truncate">Liam Chen</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant truncate">Short-Form &amp; Lip-Sync · San Francisco</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+<span class="font-label-caption text-label-caption text-on-surface-variant">Booking Nov</span>
+</div>
+</div>
+</div>
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container-low hover:bg-primary hover:text-on-primary text-on-surface font-label-button text-label-caption transition-colors shrink-0" href="#">
+          Profile
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION: GETTING STARTED GUIDE ("Make the Most of Inomark") -->
+<section class="relative rounded-lg bg-surface-container-lowest/80 backdrop-blur-xl p-8 overflow-hidden shadow-[0_4px_24px_-4px_rgba(99,102,241,0.06)]">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex flex-col gap-1 max-w-xs">
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-widest">Brand Playbook</span>
+<h3 class="font-headline-md text-headline-sm text-on-surface font-semibold">Make the Most of Inomark</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Follow three simple principles to optimize creator partnerships.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 flex-1">
+<div class="flex flex-col gap-2 p-3.5 rounded-DEFAULT bg-surface-container-low/70">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-badge text-label-badge font-bold">1</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold">Discover &amp; Filter</span>
+</div>
+<p class="font-body-sm text-label-caption text-on-surface-variant leading-relaxed">
+            Discover creators whose model stack matches your exact creative look and technical requirements.
+          </p>
+</div>
+<div class="flex flex-col gap-2 p-3.5 rounded-DEFAULT bg-surface-container-low/70">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary/10 text-secondary flex items-center justify-center font-label-badge text-label-badge font-bold">2</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold">Curate Your Roster</span>
+</div>
+<p class="font-body-sm text-label-caption text-on-surface-variant leading-relaxed">
+            Bookmark promising profiles to build dedicated talent pools for future campaign activations.
+          </p>
+</div>
+<div class="flex flex-col gap-2 p-3.5 rounded-DEFAULT bg-surface-container-low/70">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary/10 text-tertiary flex items-center justify-center font-label-badge text-label-badge font-bold">3</span>
+<span class="font-label-button text-body-sm text-on-surface font-semibold">Publish Clear Briefs</span>
+</div>
+<p class="font-body-sm text-label-caption text-on-surface-variant leading-relaxed">
+            Attach detailed reference visuals, aspect ratios, and turnaround deadlines for precise creator bids.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Vanilla JS for micro-interactions (e.g. interactive bookmark button toggle) -->
+<script>
+  document.querySelectorAll('.bookmark-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const icon = button.querySelector('.material-symbols-outlined');
+      const isSaved = icon.textContent === 'bookmark';
+      
+      if (isSaved) {
+        icon.textContent = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        button.classList.remove('text-secondary');
+        button.classList.add('text-on-surface');
+      } else {
+        icon.textContent = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        button.classList.remove('text-on-surface');
+        button.classList.add('text-secondary');
+      }
+    });
+  });
+</script></main></div></body></html>

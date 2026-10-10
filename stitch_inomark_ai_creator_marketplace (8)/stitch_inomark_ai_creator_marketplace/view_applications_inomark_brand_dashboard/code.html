@@ -1,0 +1,1109 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#faf8ff",
+          "secondary-fixed": "#eaddff",
+          "on-error-container": "#93000a",
+          "tertiary": "#006387",
+          "on-tertiary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "error": "#ba1a1a",
+          "on-primary-fixed": "#07006c",
+          "secondary-fixed-dim": "#d2bbff",
+          "surface-container-low": "#f2f3ff",
+          "on-secondary": "#ffffff",
+          "on-surface": "#131b2e",
+          "on-primary": "#ffffff",
+          "tertiary-fixed": "#c4e7ff",
+          "surface-container-highest": "#dae2fd",
+          "surface-tint": "#494bd6",
+          "primary-fixed-dim": "#c0c1ff",
+          "on-primary-container": "#fffbff",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed": "#25005a",
+          "surface-container-high": "#e2e7ff",
+          "surface-variant": "#dae2fd",
+          "on-primary-fixed-variant": "#2f2ebe",
+          "surface-dim": "#d2d9f4",
+          "inverse-surface": "#283044",
+          "secondary-container": "#8a4cfc",
+          "inverse-on-surface": "#eef0ff",
+          "outline": "#767586",
+          "outline-variant": "#c7c4d7",
+          "tertiary-container": "#007da9",
+          "on-secondary-fixed-variant": "#5a00c6",
+          "on-secondary-container": "#fffbff",
+          "surface-container": "#eaedff",
+          "secondary": "#712ae2",
+          "primary-container": "#6063ee",
+          "on-tertiary-fixed-variant": "#004c69",
+          "on-tertiary-fixed": "#001e2c",
+          "primary-fixed": "#e1e0ff",
+          "inverse-primary": "#c0c1ff",
+          "tertiary-fixed-dim": "#7bd0ff",
+          "on-error": "#ffffff",
+          "on-background": "#131b2e",
+          "surface": "#faf8ff",
+          "surface-bright": "#faf8ff",
+          "primary": "#4648d4",
+          "on-surface-variant": "#464554",
+          "on-tertiary-container": "#fcfcff"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-3xl": "6rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1.25rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin": "4rem",
+          "space-md": "1rem",
+          "space-2xl": "4rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "label-button": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Playfair Display"
+          ],
+          "display-hero-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-badge": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "2rem",
+            {
+              "lineHeight": "1.25",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "2rem",
+            {
+              "lineHeight": "1.3",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1.125rem",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caption": [
+            "0.75rem",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "3rem",
+            {
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-button": [
+            "0.9375rem",
+            {
+              "lineHeight": "1",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "4.5rem",
+            {
+              "lineHeight": "1.1",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero-mobile": [
+            "2.75rem",
+            {
+              "lineHeight": "1.15",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "1.25rem",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "600"
+            }
+          ],
+          "label-badge": [
+            "0.75rem",
+            {
+              "lineHeight": "1",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.875rem",
+            {
+              "lineHeight": "1.5",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "1rem",
+            {
+              "lineHeight": "1.5",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between p-space-lg"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-sm px-space-xs"><span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span><span class="font-headline-md text-headline-md text-on-surface tracking-tight font-semibold">Inomark</span><span class="ml-auto bg-surface-container px-space-xs py-0.5 rounded-full font-label-badge text-label-badge text-primary uppercase">Brand</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="">Home</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="discover-creators" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="">Discover Creators</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="my-briefs" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="">My Briefs</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-full transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="applications" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="">Applications</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="saved-creators" href="#"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="">Saved Creators</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-full font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="brand-profile" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="">Brand Profile</span></a></nav></div><div class="pt-space-md"><div class="bg-surface-container-low p-space-sm rounded-full flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-headline-sm font-semibold"><span class="material-symbols-outlined text-on-secondary-container text-[18px]">spa</span></div><div class="flex flex-col text-left"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Aura Botanica</span><span class="font-label-caption text-label-caption text-on-surface-variant">Enterprise Brand</span></div></div><button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center w-full max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-11 pr-space-md py-space-sm rounded-full focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search creators, generative styles, briefs..." type="text"></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-20 px-space-xl pb-space-2xl min-h-screen bg-background"><div class="flex flex-col w-full relative">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-16 right-12 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -left-12 w-80 h-80 rounded-full bg-secondary/5 blur-3xl pointer-events-none -z-10"></div>
+<!-- TOP BAR & VIEW STATE PREVIEW SWITCHER -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg">
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#"><span class="material-symbols-outlined text-[18px]">how_to_reg</span><span class="">Applications</span></a><span class="text-outline-variant font-medium">/</span><span class="text-on-surface font-semibold bg-surface-container px-space-sm py-0.5 rounded-full text-label-caption font-label-caption max-w-xs truncate" title="Nordic Botanical Serum — Specular Video Reel">Nordic Botanical Serum — Specular Video Reel</span></nav>
+<!-- State Preview Switcher for QA / Reviewing states -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-full shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px] ml-2 mr-1">tune</span>
+<span class="text-label-caption font-label-caption uppercase tracking-wider text-on-surface-variant font-semibold mr-2">Preview Mode:</span>
+<div class="flex items-center gap-1" id="state-switcher-group">
+<button class="px-space-md py-1 rounded-full font-label-caption transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" id="btn-state-standard" onclick="setViewState('standard')" type="button">
+          Standard List
+        </button>
+<button class="px-space-md py-1 rounded-full font-label-caption transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-modal" onclick="setViewState('modal')" type="button">
+          Detail Drawer
+        </button>
+<button class="px-space-md py-1 rounded-full font-label-caption transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-dialog" onclick="setViewState('dialog')" type="button">
+          Confirm Acceptance
+        </button>
+<button class="px-space-md py-1 rounded-full font-label-caption transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-empty" onclick="setViewState('empty')" type="button">
+          Empty State
+        </button>
+</div>
+</div>
+</div>
+<!-- PAGE HEADER & NARRATIVE TITLE -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-primary font-headline-sm text-headline-sm">✦</span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-semibold">Curated Talent Pipeline</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-semibold">
+        Applications
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">Review creator proposals, explore their work, and find the right creative partner for your brief.</p>
+</div>
+<!-- Quick Stats Bar -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-full shadow-sm self-start md:self-auto"><div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container rounded-full text-label-caption font-label-caption font-semibold text-on-surface"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="">14 Total Applications</span></div></div>
+</div>
+<!-- COMPACT BRIEF SUMMARY CARD (Elevated Banner) -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-lg mb-space-xl shadow-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary-container to-tertiary-container"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<!-- Left: Brief Meta & Badges -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-secondary-fixed/50 text-on-secondary-fixed font-label-badge text-label-badge uppercase font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Published • Accepting Applications
+          </span>
+<span class="bg-surface-container text-on-surface-variant font-label-badge text-label-badge uppercase font-medium px-2.5 py-1 rounded-full">
+            AI Video (9:16 Reel)
+          </span>
+<span class="bg-surface-container text-on-surface-variant font-label-badge text-label-badge uppercase font-medium px-2.5 py-1 rounded-full">
+            Beauty &amp; Skincare
+          </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+          Nordic Botanical Serum — Specular Video Reel
+        </h2>
+<!-- Spec Highlights Grid -->
+<div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-body-sm font-body-sm text-on-surface-variant mt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">payments</span>
+<span class="">Allocated Budget: <strong class="text-on-surface font-semibold">$4,500 USD</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">calendar_today</span>
+<span class="">Final Deadline: <strong class="text-on-surface font-semibold">Oct 24, 2025</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-outline">history</span>
+<span class="">Published: <span class="">Oct 02, 2025</span></span>
+</div>
+</div>
+</div>
+<!-- Right: Submissions Status Pill & CTA -->
+<div class="flex flex-col sm:flex-row lg:flex-col items-start lg:items-end justify-between gap-space-md border-t lg:border-t-0 pt-space-md lg:pt-0">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-1.5 rounded-full">
+<span class="text-label-caption font-label-caption font-semibold text-on-surface">14 Received</span>
+<span class="text-outline-variant">•</span>
+<span class="text-label-caption font-label-caption text-primary font-bold">4 New</span>
+<span class="text-outline-variant">•</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">6 In Review</span>
+<span class="text-outline-variant">•</span>
+<span class="text-label-caption font-label-caption text-secondary font-semibold">3 Accepted</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-button text-label-button text-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span class="">Edit Brief</span>
+</button>
+<a class="flex items-center gap-1.5 px-space-lg py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all font-label-button text-label-button text-xs shadow-sm group" href="#"><span class="">View Brief</span><span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">north_east</span></a>
+</div>
+</div>
+</div>
+</div>
+<!-- APPLICATION STATUS TABS -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-space-sm mb-space-lg overflow-x-auto">
+<div class="flex items-center gap-space-xs min-w-max" id="application-status-tabs">
+<button class="tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-primary text-on-primary shadow-sm flex items-center gap-2 transition-all" data-tab="all" onclick="filterByTab('all')" type="button">
+<span class="">All Applications</span>
+<span class="bg-primary-container text-on-primary-container px-2 py-0.5 rounded-full text-label-caption font-label-caption text-xs">14</span>
+</button>
+<button class="tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2" data-tab="new" onclick="filterByTab('new')" type="button">
+<span class="">New</span>
+<span class="bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full text-label-caption font-label-caption text-xs font-semibold">4</span>
+</button>
+<button class="tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2" data-tab="in-review" onclick="filterByTab('in-review')" type="button">
+<span class="">In Review</span>
+<span class="bg-surface-container-highest text-on-surface px-2 py-0.5 rounded-full text-label-caption font-label-caption text-xs">6</span>
+</button>
+<button class="tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2" data-tab="accepted" onclick="filterByTab('accepted')" type="button">
+<span class="">Accepted</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full text-label-caption font-label-caption text-xs font-semibold">3</span>
+</button>
+<button class="tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2" data-tab="declined" onclick="filterByTab('declined')" type="button">
+<span class="">Declined</span>
+<span class="bg-surface-container-highest text-outline px-2 py-0.5 rounded-full text-label-caption font-label-caption text-xs">1</span>
+</button>
+</div>
+<!-- Quick Count Metric Label -->
+<span class="text-label-caption font-label-caption text-on-surface-variant hidden md:block">
+      Showing <strong>14</strong> creators ready for production
+    </span>
+</div>
+<!-- SEARCH, FILTERS & SORTING TOOLBAR -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm mb-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-11 pr-space-md py-2.5 rounded-full focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" id="search-input" placeholder="Search creators by name, generative pipeline, or keywords (e.g. ComfyUI, caustics)..." type="text">
+</div>
+<!-- Filters Row -->
+<div class="flex flex-wrap items-center gap-2">
+<!-- Filter: Specialization -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-space-md pr-9 py-2.5 rounded-full cursor-pointer hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>All Disciplines</option>
+<option>Commercial 3D Product</option>
+<option>Generative Macro Video</option>
+<option>Hyperreal VFX &amp; Color</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: AI Tools -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-space-md pr-9 py-2.5 rounded-full cursor-pointer hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>AI Tools: All Models</option>
+<option>Runway Gen-3 Alpha</option>
+<option>FLUX.1 Dev / Schnell</option>
+<option>ComfyUI Custom Workflows</option>
+<option>Kling 1.5</option>
+<option>Midjourney v6.1</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Filter: Industry Focus -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-space-md pr-9 py-2.5 rounded-full cursor-pointer hover:bg-surface-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option>Industry: Beauty &amp; CPG</option>
+<option>Luxury Fashion</option>
+<option>Architectural &amp; Spatial</option>
+<option>Wellness &amp; Botanicals</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Sort Select -->
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-body-sm text-body-sm pl-space-md pr-9 py-2.5 rounded-full cursor-pointer hover:bg-surface-container-high transition-colors focus:outline-none font-semibold"><option class="">Newest Applications First</option><option class="">Oldest Applications</option><option class="">Creator Name A–Z</option><option class="">Creator Name Z–A</option></select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px] pointer-events-none">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Active Filter Tags Ribbon -->
+<div class="flex flex-wrap items-center gap-2 pt-2 border-t border-surface-container">
+<span class="text-label-caption font-label-caption text-on-surface-variant font-medium">Active filters:</span>
+<span class="inline-flex items-center gap-1 bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full">
+<span class="">Discipline: Commercial 3D / Gen Video</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full">
+<span class="">Delivery: 4K Master ProRes</span>
+<button class="hover:text-error transition-colors" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="text-label-caption font-label-caption text-primary hover:underline ml-1 font-semibold" type="button">Clear Filters</button>
+</div>
+</div>
+<!-- MAIN LIST CONTAINER -->
+<div class="flex flex-col gap-space-lg" id="applications-list-view">
+<!-- ============================================================ -->
+<!-- CARD 1: Elena Vance (Top Proposal - In Review) -->
+<!-- ============================================================ -->
+<article class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all relative group" data-status="in-review">
+<!-- Glow indicator on left edge -->
+<div class="absolute left-0 top-6 bottom-6 w-1.5 bg-primary rounded-r-full"></div>
+<div class="flex flex-col xl:flex-row items-start justify-between gap-space-lg pl-space-xs">
+<!-- Left Column: Creator Identity & Proposal Breakdown -->
+<div class="flex-1 min-w-0">
+<div class="flex items-start gap-space-md mb-space-md">
+<!-- Creator Avatar with Verified Badge -->
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-primary/20" data-alt="Editorial portrait of female creative director Elena Vance with soft directional lighting, muted beige backdrop, elegant minimalist studio aesthetic, sharp focus and fine art styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmGlorsdJW1jiiifK2fRt4FZrs03Ja_k1zIlgYb509ln615XT3NYhfg8bVpMqxCD7kPlxOstPeIPB4G8TjVBL1Xy8J3DrOZnv2XTp13PojOs5_Z7IOC4fgHXFEpmjMTtXGlsFmAs6btpoCuCKwoIWM_1V3mhHxbY56XYSAFpuKDPVGwV6RP7Lj1WapKmHdVNMDfVtHunXojhpFef5jXrzHZfQ03g8bMXOWnw0cL_JyO3OUuW7qtLkk">
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary rounded-full w-5 h-5 flex items-center justify-center shadow-sm" title="Verified Pro Studio">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</div>
+</div>
+<!-- Creator Name, Title & Location -->
+<div class="flex-1 min-w-0"><div class="flex flex-wrap items-center gap-x-3 gap-y-1"><h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Elena Vance</h3><span class="bg-surface-container-high text-on-surface font-label-badge text-label-badge uppercase font-semibold px-2.5 py-0.5 rounded-full flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>In Review</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cinematic Luxury Commercial Director • <span class="text-on-surface">Munich, Germany</span></p><div class="flex items-center gap-3 text-label-caption font-label-caption text-outline mt-1"><span class="">Submitted 2 days ago (Oct 12, 2025)</span></div></div>
+</div>
+<!-- Tool Badges Ribbon -->
+<div class="flex flex-wrap items-center gap-1.5 mb-space-md">
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Runway Gen-3 Alpha
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              ComfyUI Custom LoRA
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              4K Master EXR
+            </span>
+<span class="bg-secondary-fixed/40 text-on-secondary-fixed font-label-caption px-2.5 py-1 rounded-full font-semibold">
+              Beauty &amp; Skincare Commercials
+            </span>
+</div>
+<!-- Proposal Excerpt Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center gap-1.5 text-label-caption font-label-caption text-primary font-bold uppercase tracking-wider mb-1.5">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+<span class="">Proposal Statement</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              “For Nordic Botanical Serum, I propose an ultra-precise macro fluid simulation pipeline using ComfyUI LoRAs trained on Nordic flora caustics combined with Runway Gen-3 camera controls. We will render 3 distinct 15s cuts with seamless looping droplets and authentic glass refraction without generic AI artifacts.”
+            </p>
+<!-- Brief Question Callout -->
+<div class="mt-3 pt-3 border-t border-surface-container-high flex flex-col gap-1">
+<span class="font-label-caption text-label-caption font-semibold text-on-surface-variant">
+                Q: Can you deliver uncompressed 4K master ProRes with color grading?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+                A: “Yes, fully color graded in DaVinci Resolve with separate audio stems and depth passes.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Portfolio Showcase & Action Hub -->
+<div class="w-full xl:w-96 flex flex-col justify-between shrink-0">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant font-semibold">
+                Relevant Portfolio Artifacts
+              </span>
+<span class="text-label-caption font-label-caption text-primary font-medium">2 Case Studies</span>
+</div>
+<!-- Portfolio Cards Grid -->
+<div class="grid grid-cols-2 gap-2 mb-space-md">
+<!-- Item 1 -->
+<div class="group/thumb relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container-high cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover/thumb:scale-105" data-alt="Macro cinematic still of alpine moss and dew drops with sunlight caustics refracting through clean water spheres, 8k hyperreal beauty campaign, soft mint and emerald reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeXj-lGC0UKfzi1N4vMKyzeTD2j7J9rLrDJkDk3ok2v9KuJcwZnJwqES3g8bL9r3hghsxS-NzrIhnM5C-p4GePr8xumjcqQZ1Gqre5Y21Y3thLxu9T90E_poHc9gsbicbf9VJFBa_BrC2xktxmybmv8HvesdPmu_xd5-bMlcoKkS9vR-fG_DiU1fPEJ46WIu3DqXfXJNIQRyAs6FHxYKu6MAKWWG2oBoGcZKJrMJku3YAX2lGj-V2W">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-2 text-inverse-on-surface">
+<div class="flex items-center gap-1 text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">play_circle</span>
+<span class="">0:15 Reel</span>
+</div>
+<span class="text-[10px] text-surface-container-highest truncate">Alpine Flora Caustics</span>
+</div>
+<span class="absolute top-1.5 right-1.5 bg-inverse-surface/75 text-inverse-on-surface px-1.5 py-0.5 rounded text-[9px] font-semibold backdrop-blur-sm">
+                  4K ProRes
+                </span>
+</div>
+<!-- Item 2 -->
+<div class="group/thumb relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container-high cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover/thumb:scale-105" data-alt="Photorealistic amber and frosted glass serum bottle with suspended golden micro bubbles, macro lens view, commercial cosmetics advertising studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAC0mdUEgYYedXYxFJwyxEBammWNfzn8coYbqzClx_2KGdBIcK9WJ0UzRIW5_DfeOVqxRl_54INWhKkYFiUwmU7YKeSRPDEmqbpZOHpZ9eJYiNMGCa9xoBsvUnR1JCeC_c5_0YdnfYa782y9yhC-iIs5sBBEaRn6Wb98cK4R3nnf4joFQ56lhBX2jQHVilpJpTiDdn-AIvm082X9Cl3K-V14YDuEA3dv8_r2_vxjCwNtnpR9hUymnB">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-2 text-inverse-on-surface">
+<div class="flex items-center gap-1 text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">view_in_ar</span>
+<span class="">FLUX.1 + LoRA</span>
+</div>
+<span class="text-[10px] text-surface-container-highest truncate">Serum Fluid Dynamics</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex flex-col gap-2 pt-space-xs border-t border-surface-container">
+<div class="flex items-center gap-2">
+<button class="flex-1 bg-primary text-on-primary hover:bg-primary-container font-label-button text-label-button py-2.5 px-space-md rounded-full shadow-sm hover:shadow transition-all flex items-center justify-center gap-1.5 group/btn" onclick="openModal()" type="button"><span class="">View Application</span><span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span></button>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark Elena Vance" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-2">
+<button class="text-body-sm font-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 px-1" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="">View Profile</span>
+</button>
+<div class="flex items-center gap-1">
+<button class="px-space-sm py-1 rounded-full text-label-caption font-label-caption text-error hover:bg-error-container transition-colors" onclick="triggerDeclineDialog('Elena Vance')" type="button">
+                  Decline
+                </button>
+<button class="px-space-md py-1 rounded-full text-label-caption font-label-caption font-semibold bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors" onclick="triggerAcceptDialog('Elena Vance')" type="button">
+                  Accept
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- ============================================================ -->
+<!-- CARD 2: Kaelen Mori (New Applicant) -->
+<!-- ============================================================ -->
+<article class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all relative group" data-status="new">
+<!-- Blue indicator on left edge -->
+<div class="absolute left-0 top-6 bottom-6 w-1.5 bg-tertiary-container rounded-r-full"></div>
+<div class="flex flex-col xl:flex-row items-start justify-between gap-space-lg pl-space-xs">
+<!-- Left Column: Creator Identity & Proposal Breakdown -->
+<div class="flex-1 min-w-0">
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-tertiary/20" data-alt="Creative headshot of male digital artist Kaelen Mori with architectural glasses, clean monochrome portrait lighting against warm grey studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-fqx2VGWb4UvQnZcIVuRzCRPdbeFjolsVpu0A0_We9pMKZgEWxXGl0xwifLKr78x51b298OtIymZl4bwz2dpmS8JKhM28HmL2ZMvaBEQWGOo0Nr5GhylAQR3kP4PO35DpF_OqmI2AidwcfiPYlGmNs3FjGEy8kfY5CqE4xOgVLtEUB8NI8T2zNscb3IdcU05lz_cpZB0ln0178LJ_P_6vc1KmyF5s-0DoigFRaWSIxd9cGmqq6MpL">
+<div class="absolute -bottom-1 -right-1 bg-tertiary text-on-tertiary rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]">bolt</span>
+</div>
+</div>
+<div class="flex-1 min-w-0"><div class="flex flex-wrap items-center gap-x-3 gap-y-1"><h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Kaelen Mori</h3><span class="bg-primary-fixed text-on-primary-fixed font-label-badge text-label-badge uppercase font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>New</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Packshot Neural 3D Lead • <span class="text-on-surface">Tokyo, Japan</span></p><div class="flex items-center gap-3 text-label-caption font-label-caption text-outline mt-1"><span class="">Submitted Yesterday (Oct 13, 2025)</span></div></div>
+</div>
+<!-- Tool Badges Ribbon -->
+<div class="flex flex-wrap items-center gap-1.5 mb-space-md">
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              FLUX.1 Dev
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Blender 4.2 Cycles
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Magnific AI
+            </span>
+<span class="bg-tertiary-fixed/40 text-on-tertiary-fixed-variant font-label-caption px-2.5 py-1 rounded-full font-semibold">
+              Macro Product 3D
+            </span>
+</div>
+<!-- Proposal Excerpt Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center gap-1.5 text-label-caption font-label-caption text-tertiary font-bold uppercase tracking-wider mb-1.5">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+<span class="">Proposal Statement</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              “Specializing in procedural bottle caustics and photorealistic label typography. I will supply the trained LoRA checkpoint and raw Blender lighting scene along with the final commercial video outputs.”
+            </p>
+<div class="mt-3 pt-3 border-t border-surface-container-high flex flex-col gap-1">
+<span class="font-label-caption text-label-caption font-semibold text-on-surface-variant">
+                Q: Can you deliver uncompressed 4K master ProRes with color grading?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+                A: “Yes, master delivery includes 10-bit ProRes 422 HQ plus baked Alpha transparency channels.”
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Portfolio Showcase & Action Hub -->
+<div class="w-full xl:w-96 flex flex-col justify-between shrink-0">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface-variant font-semibold">
+                Relevant Portfolio Artifacts
+              </span>
+<span class="text-label-caption font-label-caption text-tertiary font-medium">2 Works Attached</span>
+</div>
+<!-- Portfolio Cards Grid -->
+<div class="grid grid-cols-2 gap-2 mb-space-md">
+<div class="group/thumb relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container-high cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover/thumb:scale-105" data-alt="Ultra clean Japanese cosmetic packaging set on wet slate with soft water ripples and morning mist, hyper detailed product photography in soft blue daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRS-zlEkABn_k8Afsv4xbr2jkYBHrAL1MD02AnC2JJrHqxVcB4G3-YnbRE1In8GnSnjZH3mBJ7vVvTHm_g4BoXJGfYRV44AJz3PD_VBZjrmPenRdpceIv9AICmjhA_9SQkdiH6CcGPARtXTc_66N6ks-wc7DW2CPGfPaRBXnICxJmWj3Ar5FEhThTdv4chMXippSVlAF2IqCUCHtH5iq5_mP1AsvL2j8eKn5g_j1ETdtk0Ff-CwGCt">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-2 text-inverse-on-surface">
+<span class="text-[10px] text-surface-container-highest truncate">Cosmetic Key Visuals</span>
+</div>
+<span class="absolute top-1.5 right-1.5 bg-inverse-surface/75 text-inverse-on-surface px-1.5 py-0.5 rounded text-[9px] font-semibold backdrop-blur-sm">
+                  FLUX.1 Dev
+                </span>
+</div>
+<div class="group/thumb relative rounded-xl overflow-hidden aspect-[4/3] bg-surface-container-high cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover/thumb:scale-105" data-alt="3D render study of frosted glass texture with caustic light dispersion patterns on gradient pastel surface, clean contemporary aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpYW5AiMlBgVPVpVHFaUa-y-yCCEmCEIpughWcuxiI0Oeior-bItpq0SD42uZOHIAv7kCijDhVL42HjwL5fvxl3TCsK19qglNtksNwOc8Qpipe9DbH9rU6byQbj64-zZRti7BWpS_eKOt9qDQQLA74RYT1lmiIN1q-2rKJE3jvxkPtBiOmL-hGfggeH7cz0h8lIxoP0K2yV520pBcL7SLvAwL_jojLRby_7V__h9PP2JbGNxnmbVGl">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-2 text-inverse-on-surface">
+<span class="text-[10px] text-surface-container-highest truncate">Frosted Glass Study</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex flex-col gap-2 pt-space-xs border-t border-surface-container"><div class="flex items-center gap-2"><button class="flex-1 bg-primary text-on-primary hover:bg-primary-container font-label-button text-label-button py-2.5 px-space-md rounded-full shadow-sm hover:shadow transition-all flex items-center justify-center gap-1.5 group/btn" onclick="openModal()" type="button"><span class="">View Application</span><span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span></button><button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Save Creator" type="button"><span class="material-symbols-outlined text-[18px]">bookmark_border</span></button></div><div class="flex items-center justify-between gap-2"><button class="text-body-sm font-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 px-1" type="button"><span class="material-symbols-outlined text-[16px]">visibility</span><span class="">View Profile</span></button><div class="flex items-center gap-1"><button class="px-space-sm py-1 rounded-full text-label-caption font-label-caption text-error hover:bg-error-container transition-colors" onclick="triggerDeclineDialog('Kaelen Mori')" type="button">Decline</button><button class="px-space-md py-1 rounded-full text-label-caption font-label-caption font-semibold bg-surface-container text-primary hover:bg-surface-container-high transition-colors" onclick="updateCardStatus(this, 'In Review')" type="button">Mark In Review</button></div></div></div>
+</div>
+</div>
+</article>
+<!-- ============================================================ -->
+<!-- CARD 3: Maya Lin (Accepted Creator) -->
+<!-- ============================================================ -->
+<article class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm hover:shadow-md transition-all relative group" data-status="accepted">
+<!-- Secondary Purple Accent Indicator -->
+<div class="absolute left-0 top-6 bottom-6 w-1.5 bg-secondary rounded-r-full"></div>
+<div class="flex flex-col xl:flex-row items-start justify-between gap-space-lg pl-space-xs">
+<!-- Left Column: Creator Identity & Acceptance Info -->
+<div class="flex-1 min-w-0">
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-secondary/20" data-alt="Editorial portrait of Maya Lin, creative technologist, elegant black turtleneck, warm natural light against an art gallery wall, soft contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkWmDa0kMud5oC0yZRoIbmigbW1v6gJL7fBe2IRRQ8hgEvHgwK67xqhuFdzBOhEUi2F-r7gQ9gp754UJhnn9nfw5lDId1RaXfb435hbo-JFWzDryItYOtsI8XIRTw5uh6nSBVkTpg_-faPu8gM9Yy8KCvN77YOdlWUjqyQH1yv4yebuXoWv6I_Eg--m_NNAuNCvRzPKZNJzOI0WaEZRmnqlX1wS9mH8a6-jzcpYSwLa98tyMTW77W_">
+<div class="absolute -bottom-1 -right-1 bg-secondary text-on-secondary rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">
+                  Maya Lin
+                </h3>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-badge text-label-badge uppercase font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+                  Accepted
+                </span>
+<span class="text-label-caption font-label-caption text-secondary font-semibold">
+                  Official Creative Partner
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Surreal Haute Couture &amp; Commercial Motion • <span class="text-on-surface">Paris, France</span>
+</p>
+<div class="flex items-center gap-3 text-label-caption font-label-caption text-outline mt-1">
+<span class="">Submitted Oct 08, 2025</span>
+<span class="">•</span>
+<span class="">Accepted Oct 11, 2025</span>
+<span class="">•</span>
+<span class="text-secondary font-semibold">Milestone 1 Active</span>
+</div>
+</div>
+</div>
+<!-- Tool Badges Ribbon -->
+<div class="flex flex-wrap items-center gap-1.5 mb-space-md">
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Kling 1.5
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Midjourney v6.1
+            </span>
+<span class="bg-surface-container text-on-surface font-label-caption px-2.5 py-1 rounded-full font-medium">
+              Cloth Dynamics
+            </span>
+</div>
+<!-- Proposal Excerpt Box -->
+<div class="bg-secondary-fixed/20 rounded-xl p-space-md mb-space-md">
+<div class="flex items-center gap-1.5 text-label-caption font-label-caption text-secondary font-bold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="">Accepted Concept</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              “Ethereal Nordic mist aesthetics with slow-motion botanical blooming. Generating a symbiotic flow between the glacial spring water elements and wild cloudberry extract visuals.”
+            </p>
+</div>
+</div>
+<!-- Right Column: Status & Acceptance Summary -->
+<div class="w-full xl:w-96 flex flex-col justify-between shrink-0">
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-on-surface font-semibold">Agreement Status</span>
+<span class="text-label-caption font-label-caption text-secondary font-semibold">Escrow Funded</span>
+</div>
+<div class="space-y-1.5 text-body-sm font-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span class="">Contract Total:</span>
+<span class="font-semibold text-on-surface">$4,500.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="">First Cut Due:</span>
+<span class="font-semibold text-on-surface">Oct 19, 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2"><div class="flex flex-col gap-2 w-full"><div class="flex items-center gap-2"><button class="flex-1 bg-surface-container text-on-surface hover:bg-surface-container-high font-label-button text-label-button py-2.5 px-space-md rounded-full shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="openModal()" type="button"><span class="">View Application</span></button><button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Save Creator" type="button"><span class="material-symbols-outlined text-[18px]">bookmark_border</span></button></div><div class="flex items-center justify-between gap-2"><button class="text-body-sm font-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 px-1" type="button"><span class="material-symbols-outlined text-[16px]">visibility</span><span class="">View Profile</span></button><div class="flex items-center gap-1.5"><button class="px-space-md py-1 rounded-full bg-secondary text-on-secondary hover:bg-secondary-container font-label-button text-label-button text-xs transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">description</span><span class="">Agreement</span></button><button class="px-space-md py-1 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-button text-label-button text-xs transition-colors" type="button">Chat</button></div></div></div></div>
+</div>
+</div>
+</article>
+<!-- ============================================================ -->
+<!-- CARD 4: Devon Chen (Declined Applicant) -->
+<!-- ============================================================ -->
+<article class="bg-surface-container-lowest/70 rounded-lg p-space-lg shadow-sm hover:shadow transition-all relative group opacity-85 hover:opacity-100" data-status="declined">
+<div class="flex flex-col xl:flex-row items-start justify-between gap-space-lg pl-space-xs">
+<!-- Left Column: Creator Identity -->
+<div class="flex-1 min-w-0">
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="relative shrink-0 grayscale opacity-80">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Casual studio headshot of Devon Chen against dark futuristic neon accents and studio monitor backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_KhQk-m_6c_2F1ZNQW62ltD-dQSiyB-nY8zBWQscQjVV7fNlPjpTf_y9LsbUHophPg5hd9ThgvCMCh-i2IyVtqKNbMSDCss8VGk8eRkCwzfpFijD6kbNpO4XW9tASD1e3f1LrAM9hiVJQN1y7oCJADifi6_fRe7UF_Xw_8LkZjunAUyi_nGm-zwkm_8nyoZNZ2FUrwWkJJjSJ4csdczfqeJfBk1LbAx_QQHzGuk4jmiwWCmZ1c9cc">
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant truncate">
+                  Devon Chen
+                </h3>
+<span class="bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase font-semibold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">block</span>
+                  Declined
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Anamorphic Automotive &amp; CGI Lead • <span class="text-outline">Singapore</span>
+</p>
+<div class="flex items-center gap-3 text-label-caption font-label-caption text-outline mt-1">
+<span class="">Submitted Oct 06, 2025</span>
+<span class="">•</span>
+<span class="">Archived</span>
+</div>
+</div>
+</div>
+<!-- Decline Reason Callout -->
+<div class="bg-surface-container rounded-xl p-space-md">
+<span class="text-label-caption font-label-caption text-outline font-bold uppercase tracking-wider block mb-1">
+              Feedback Reason
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              “Style focused primarily on hard-surface automotive lighting and high-speed motion rather than organic skincare fluid dynamics and botanical macro fidelity.”
+            </p>
+</div>
+</div>
+<!-- Right Column: Secondary Actions -->
+<div class="w-full xl:w-96 flex flex-col justify-end shrink-0">
+<div class="flex items-center justify-end gap-2 pt-space-md">
+<button class="px-space-md py-2 rounded-full text-label-button text-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+              View Profile
+            </button>
+<button class="px-space-md py-2 rounded-full text-label-button text-xs bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="updateCardStatus(this, 'In Review')" type="button">
+              Reconsider Proposal
+            </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- ============================================================ -->
+<!-- EMPTY STATE CONTAINER (Hidden by default, toggled via switcher) -->
+<!-- ============================================================ -->
+<div class="hidden bg-surface-container-lowest rounded-lg p-space-3xl text-center shadow-sm flex flex-col items-center justify-center my-space-lg" id="applications-empty-view">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-lg shadow-sm">
+<span class="material-symbols-outlined text-[36px]">mark_email_unread</span>
+</div>
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary font-bold mb-2">No Applications Found</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold max-w-lg mb-2">
+      No applications yet
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-xl">Creators haven't applied to this brief yet. Check back as your campaign reaches more creators.</p>
+<div class="flex items-center gap-space-md">
+<a class="px-space-xl py-3 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-button text-label-button shadow-sm transition-all flex items-center gap-2" href="#">
+<span class="">View Brief Details</span>
+<span class="material-symbols-outlined text-[18px]">north_east</span>
+</a>
+<button class="px-space-lg py-3 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-button text-label-button transition-colors" onclick="setViewState('standard')" type="button">
+        Reset Filters
+      </button>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- MODAL / DRAWER: FULL APPLICATION REVIEW (ELENA VANCE) -->
+<!-- ============================================================ -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-end bg-inverse-surface/40 backdrop-blur-sm transition-opacity" id="application-detail-modal">
+<!-- Drawer Container (Spacious Editorial Side-Sheet) -->
+<div class="w-full max-w-3xl h-full bg-surface-container-lowest shadow-2xl flex flex-col justify-between overflow-hidden animate-in slide-in-from-right duration-300">
+<!-- Drawer Header Bar -->
+<div class="p-space-lg border-b border-surface-container flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur sticky top-0 z-20">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" onclick="closeModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold tracking-wider">Application Review</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Elena Vance</h2>
+</div>
+</div>
+<!-- Live Status Selector -->
+<div class="flex items-center gap-2 bg-surface-container-low p-1 rounded-full">
+<span class="text-label-caption font-label-caption text-on-surface-variant px-2 font-semibold">Status:</span>
+<select class="bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-1 rounded-full focus:outline-none shadow-sm cursor-pointer font-medium">
+<option>In Review</option>
+<option>New</option>
+<option>Accept</option>
+<option>Decline</option>
+</select>
+</div>
+</div>
+<!-- Scrollable Drawer Body -->
+<div class="flex-1 overflow-y-auto p-space-xl space-y-space-xl">
+<!-- SECTION A: Creator Overview & Bio -->
+<section class="flex flex-col sm:flex-row items-start gap-space-lg bg-surface-container-low p-space-lg rounded-2xl">
+<img class="w-20 h-20 rounded-2xl object-cover shadow-sm ring-2 ring-primary/20 shrink-0" data-alt="Editorial portrait of Elena Vance female director, cinematic lighting, modern minimalist studio setting, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTDj50zWbO3z61CZBScR5QcFKQrnsAjtG66iF3MhXFUaXeO_EiXvxz5QcINS4BUPc8u_T2WnaL-HKY5n9ADy8dI3FbHfsNkaO7TvmbA9LGK9M5Q41sYa-uk8hAUAgrX7RBsxkBy30lA8Qbr5Erte9v9jMum4jb2G7yU5YfB4sYx-EbiZwkjkC24LERhrVRWIqUuRpUry_dBfd1yodgxE9sxfPpR6oX8kzfYVaMCY68qe02-w8OajAZ">
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Elena Vance</h3>
+<span class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Featured</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Cinematic Luxury Commercial Director • Munich, Germany
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 leading-relaxed">
+              Specialized in hyper-tactile beauty macro commercial visual effects, procedural water fluid dynamics, and generative prompt synthesis with high-end post-production color science.
+            </p>
+<div class="flex flex-wrap gap-2 mt-3 text-label-caption font-label-caption text-on-surface-variant"><span class="bg-surface-container px-2.5 py-1 rounded-full">Munich, Germany</span><span class="bg-surface-container px-2.5 py-1 rounded-full">ACES Color Space</span><span class="bg-surface-container px-2.5 py-1 rounded-full">4K ProRes &amp; EXR</span></div>
+</div>
+</section>
+<!-- SECTION B: Complete Submitted Proposal -->
+<section class="space-y-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Submitted Proposal Details</h4>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm border border-surface-container">
+<h5 class="font-label-badge text-label-badge uppercase tracking-wider text-outline mb-2">Creative Treatment &amp; Pipeline</h5>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed mb-4">
+              “For Nordic Botanical Serum, I propose an ultra-precise macro fluid simulation pipeline using ComfyUI LoRAs trained on Nordic flora caustics combined with Runway Gen-3 camera controls. We will render 3 distinct 15s cuts with seamless looping droplets and authentic glass refraction without generic AI artifacts.”
+            </p>
+<h5 class="font-label-badge text-label-badge uppercase tracking-wider text-outline mb-2">Scope &amp; Deliverables Breakdown</h5>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class=""><strong>Deliverable 1:</strong> 3x Master 15s 9:16 Vertical Cuts in 4K ProRes 4444 (Color graded)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class=""><strong>Deliverable 2:</strong> Master Audio Stems (Ambient Nordic foley + spatial fluid SFX)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">check_circle</span>
+<span class=""><strong>Deliverable 3:</strong> Clean Alpha Depth Passes &amp; Raw LoRA weights for brand archive</span>
+</li>
+</ul>
+<div class="mt-space-lg pt-space-md border-t border-surface-container">
+<h5 class="font-label-badge text-label-badge uppercase tracking-wider text-outline mb-2">Screening Questions</h5>
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2">
+<p class="font-label-caption text-label-caption font-bold text-on-surface">
+                  Q: Can you deliver uncompressed 4K master ProRes with color grading?
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  “Yes, fully color graded in DaVinci Resolve with separate audio stems and depth passes. I work strictly with ACES color space workflows.”
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION C: Selected Portfolio Projects -->
+<section class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">collections</span>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Attached Showcase Pieces</h4>
+</div>
+<span class="text-label-caption font-label-caption text-outline">High-res inspection</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low rounded-2xl overflow-hidden p-space-sm group">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Microscopic fluid dynamics with light shimmering through pure glacial water bubbles on moss petals, fine art beauty video still" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq9kdCBWMFdJKkwt1QWLOZfMhhccVkB6L_tqHIMvENfxNMjQYzNRMW9WCs2i3Xa9_fO8Hx524uI7UrD8aU6H0CnnuobxhcEvpWTySKxbDHsaOeB1IkPUn3o4N5EOMJF_ur6o7LJqD7y0NUj4dZp1FaoqL8huja2svIG0gVwGtXdF-WCuYoxTQgG6FcTy1KPKnDs0dVEgXWFNg7lq0c-2NbN_BW4GKjJjwdpr2sWDLSfraW1OxrRE65">
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded text-[11px] font-semibold backdrop-blur-sm">
+                  0:15 Cut • 4K EXR
+                </div>
+</div>
+<div class="p-2">
+<h6 class="font-headline-sm text-headline-sm text-sm font-semibold text-on-surface">Alpine Flora Caustics Reel</h6>
+<p class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">Workflow: ComfyUI + Runway Gen-3 + Resolve</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl overflow-hidden p-space-sm group">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ultra luxury botanical skincare dropper releasing glowing golden oil droplet with subtle caustic reflection, commercial still" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoHMtd1jh8fXpeUkhs8vJPeQTCuiAisoP-EJV_pa5412l2W3JLBgqw1hUolyblXbd2dxEQY8lb_k8wdqUhZar9hi8w-0WRq4pHOEWV7O_FLmtt4q-N52B0dJfHMvcih_H0rNzoiC9m-LPHvLcmGPqSLurFEo_9pKbkyZpTqDPLtC7PuaXjcVzJ101yQa-oPy-x-9WLsPKkJyfGTNxLds_kLpeZMi0SfT9ZtwqjTMl323tyH61oYgpV">
+<div class="absolute bottom-2 left-2 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded text-[11px] font-semibold backdrop-blur-sm">
+                  FLUX.1 + LoRA
+                </div>
+</div>
+<div class="p-2">
+<h6 class="font-headline-sm text-headline-sm text-sm font-semibold text-on-surface">Serum Droplet Dynamics</h6>
+<p class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">Procedural refraction &amp; volumetric scattering</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION D: Original Brief Summary Reference -->
+<section class="bg-surface-container-low p-space-lg rounded-2xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-primary uppercase font-bold">Original Campaign Brief Reference</span>
+<span class="text-label-caption font-label-caption text-on-surface-variant">Brief #NB-2025-09</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-base font-semibold text-on-surface">Nordic Botanical Serum — Specular Video Reel</h5>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-label-caption font-label-caption">
+<div>
+<span class="text-outline block">Budget</span>
+<span class="font-semibold text-on-surface">$4,500 USD</span>
+</div>
+<div>
+<span class="text-outline block">Deadline</span>
+<span class="font-semibold text-on-surface">Oct 24, 2025</span>
+</div>
+<div>
+<span class="text-outline block">Format</span>
+<span class="font-semibold text-on-surface">9:16 Vertical 4K</span>
+</div>
+<div>
+<span class="text-outline block">Usage Rights</span>
+<span class="font-semibold text-on-surface">Global Commercial</span>
+</div>
+</div>
+</section>
+<!-- SECTION E: Application Timeline -->
+<section class="space-y-space-sm pb-space-lg">
+<h5 class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Application Timeline</h5>
+<div class="flex items-center gap-space-md text-label-caption font-label-caption">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="">Submitted: Oct 12, 2025 (14:32 CET)</span>
+</div>
+<span class="text-outline-variant">→</span>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="">Moved to In Review: Oct 13, 2025 (09:15 CET)</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Decision Bar at Bottom -->
+<div class="p-space-lg border-t border-surface-container bg-surface-container-lowest sticky bottom-0 z-20 flex items-center justify-between gap-space-md">
+<button class="px-space-lg py-3 rounded-full text-error hover:bg-error-container font-label-button text-label-button transition-colors flex items-center gap-1.5" onclick="triggerDeclineDialog('Elena Vance')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="">Decline Proposal</span>
+</button>
+<div class="flex items-center gap-3">
+<button class="px-space-lg py-3 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-button text-label-button transition-colors" onclick="closeModal()" type="button">
+            Keep In Review
+          </button>
+<button class="px-space-xl py-3 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-button text-label-button shadow-md transition-all flex items-center gap-2" onclick="triggerAcceptDialog('Elena Vance')" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="">Accept Proposal ($4,500)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================================ -->
+<!-- CONFIRMATION DIALOG MODAL (Accept Creator) -->
+<!-- ============================================================ -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/50 backdrop-blur-sm p-4 transition-opacity" id="confirmation-dialog">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl p-space-xl shadow-2xl animate-in zoom-in-95 duration-200">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">
+        Accept this application?
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+        Confirm that you want to commission <strong class="text-on-surface" id="confirm-creator-name">Elena Vance</strong> for <strong class="text-on-surface">Nordic Botanical Serum — Specular Video Reel</strong>. This will allocate $4,500 USD into escrow, generate production milestone agreements, and notify the creator.
+      </p>
+<div class="bg-surface-container-low p-space-md rounded-xl mb-space-lg text-body-sm font-body-sm space-y-1">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Commissioned Creator:</span>
+<span class="font-semibold text-on-surface" id="confirm-creator-sub">Elena Vance</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Escrow Commitment:</span>
+<span class="font-semibold text-primary">$4,500.00 USD</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Milestone Delivery Date:</span>
+<span class="font-semibold text-on-surface">Oct 24, 2025</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-md">
+<button class="px-space-lg py-2.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-button text-label-button transition-colors" onclick="closeConfirmationDialog()" type="button">
+          Cancel
+        </button>
+<button class="px-space-xl py-2.5 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-button text-label-button shadow-md transition-all flex items-center gap-1.5" onclick="confirmAcceptanceAction()" type="button">
+<span class="">Confirm Acceptance</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Behaviors -->
+<script>
+  // State management for view preview switcher
+  function setViewState(state) {
+    const listView = document.getElementById('applications-list-view');
+    const emptyView = document.getElementById('applications-empty-view');
+    const modal = document.getElementById('application-detail-modal');
+    const dialog = document.getElementById('confirmation-dialog');
+    
+    // Switcher button styling
+    const buttons = ['standard', 'modal', 'dialog', 'empty'];
+    buttons.forEach(b => {
+      const btn = document.getElementById(`btn-state-${b}`);
+      if (btn) {
+        if (b === state) {
+          btn.className = 'px-space-md py-1 rounded-full font-label-caption font-label-caption transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold';
+        } else {
+          btn.className = 'px-space-md py-1 rounded-full font-label-caption font-label-caption transition-all text-on-surface-variant hover:text-on-surface';
+        }
+      }
+    });
+
+    if (state === 'standard') {
+      listView.classList.remove('hidden');
+      emptyView.classList.add('hidden');
+      modal.classList.add('hidden');
+      dialog.classList.add('hidden');
+    } else if (state === 'empty') {
+      listView.classList.add('hidden');
+      emptyView.classList.remove('hidden');
+      modal.classList.add('hidden');
+      dialog.classList.add('hidden');
+    } else if (state === 'modal') {
+      listView.classList.remove('hidden');
+      emptyView.classList.add('hidden');
+      modal.classList.remove('hidden');
+      dialog.classList.add('hidden');
+    } else if (state === 'dialog') {
+      listView.classList.remove('hidden');
+      emptyView.classList.add('hidden');
+      modal.classList.add('hidden');
+      dialog.classList.remove('hidden');
+    }
+  }
+
+  // Filter application cards by status tabs
+  function filterByTab(tabName) {
+    const tabs = document.querySelectorAll('#application-status-tabs .tab-btn');
+    tabs.forEach(tab => {
+      const isSelected = tab.getAttribute('data-tab') === tabName;
+      if (isSelected) {
+        tab.className = 'tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-primary text-on-primary shadow-sm flex items-center gap-2 transition-all';
+      } else {
+        tab.className = 'tab-btn px-space-md py-2 rounded-full font-label-button text-label-button bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all flex items-center gap-2';
+      }
+    });
+
+    const cards = document.querySelectorAll('#applications-list-view article');
+    cards.forEach(card => {
+      const status = card.getAttribute('data-status');
+      if (tabName === 'all' || status === tabName) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  // Modal handlers
+  function openModal() {
+    document.getElementById('application-detail-modal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('application-detail-modal').classList.add('hidden');
+  }
+
+  // Confirmation dialog triggers
+  function triggerAcceptDialog(creatorName) {
+    document.getElementById('confirm-creator-name').innerText = creatorName;
+    document.getElementById('confirm-creator-sub').innerText = creatorName;
+    document.getElementById('confirmation-dialog').classList.remove('hidden');
+  }
+
+  function closeConfirmationDialog() {
+    document.getElementById('confirmation-dialog').classList.add('hidden');
+  }
+
+  function triggerDeclineDialog(creatorName) {
+    if (confirm(`Decline proposal from ${creatorName}? You can include structured feedback.`)) {
+      alert(`Proposal from ${creatorName} marked as declined.`);
+    }
+  }
+
+  function confirmAcceptanceAction() {
+    alert("Application successfully accepted! Production milestone generated and funded in escrow.");
+    closeConfirmationDialog();
+    closeModal();
+  }
+
+  function updateCardStatus(btn, newStatus) {
+    btn.innerText = `Status: ${newStatus}`;
+    btn.classList.add('bg-surface-container-highest', 'text-on-surface');
+  }
+
+  // Search filter simple implementation
+  document.getElementById('search-input')?.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase();
+    const cards = document.querySelectorAll('#applications-list-view article');
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(query)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+</script></main></div>
+
+</body></html>

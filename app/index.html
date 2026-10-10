@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inomark — AI Content Creator Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e2e7ff",
+              "tertiary": "#006387",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "surface-variant": "#dae2fd",
+              "on-primary": "#ffffff",
+              "background": "#faf8ff",
+              "inverse-primary": "#c0c1ff",
+              "outline-variant": "#c7c4d7",
+              "outline": "#767586",
+              "surface-dim": "#d2d9f4",
+              "tertiary-fixed-dim": "#7bd0ff",
+              "on-secondary-container": "#fffbff",
+              "secondary-fixed-dim": "#d2bbff",
+              "inverse-on-surface": "#eef0ff",
+              "surface": "#faf8ff",
+              "surface-container-highest": "#dae2fd",
+              "on-surface": "#131b2e",
+              "on-background": "#131b2e",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#5a00c6",
+              "on-surface-variant": "#464554",
+              "on-tertiary-container": "#fcfcff",
+              "primary-fixed-dim": "#c0c1ff",
+              "secondary-container": "#8a4cfc",
+              "primary-fixed": "#e1e0ff",
+              "primary-container": "#6063ee",
+              "surface-container-low": "#f2f3ff",
+              "on-primary-container": "#fffbff",
+              "tertiary-fixed": "#c4e7ff",
+              "inverse-surface": "#283044",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#004c69",
+              "on-secondary-fixed": "#25005a",
+              "on-primary-fixed": "#07006c",
+              "surface-bright": "#faf8ff",
+              "surface-tint": "#494bd6",
+              "on-secondary": "#ffffff",
+              "surface-container": "#eaedff",
+              "secondary": "#712ae2",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#eaddff",
+              "on-tertiary-fixed": "#001e2c",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "primary": "#4648d4",
+              "tertiary-container": "#007da9",
+              brand: {
+                50: '#faf8ff',
+                100: '#f2f3ff',
+                200: '#e1e0ff',
+                300: '#c4b5fd',
+                400: '#a78bfa',
+                500: '#7c3aed',
+                600: '#712ae2',
+                700: '#5b1fc2',
+                800: '#5b21b6',
+                900: '#131b2e'
+              }
+            },
+            borderRadius: {
+              "DEFAULT": "1rem",
+              "lg": "2rem",
+              "xl": "3rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "space-xs": "0.25rem",
+              "margin": "4rem",
+              "space-sm": "0.5rem",
+              "gutter-mobile": "1rem",
+              "space-lg": "1.5rem",
+              "space-2xl": "4rem",
+              "space-xl": "2.5rem",
+              "gutter": "1.5rem",
+              "space-md": "1rem",
+              "space-3xl": "6rem",
+              "margin-mobile": "1.25rem"
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              "headline-md": ["Playfair Display"],
+              "headline-lg": ["Playfair Display"],
+              "headline-lg-mobile": ["Playfair Display"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "label-caption": ["Plus Jakarta Sans"],
+              "display-hero": ["Playfair Display"],
+              "label-button": ["Plus Jakarta Sans"],
+              "display-hero-mobile": ["Playfair Display"],
+              "headline-sm": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-badge": ["Plus Jakarta Sans"]
+            },
+            fontSize: {
+              "headline-md": ["2rem", { "lineHeight": "1.3", "fontWeight": "500" }],
+              "headline-lg": ["3rem", { "lineHeight": "1.2", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+              "headline-lg-mobile": ["2rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+              "body-sm": ["0.875rem", { "lineHeight": "1.5", "fontWeight": "400" }],
+              "label-caption": ["0.75rem", { "lineHeight": "1.4", "fontWeight": "500" }],
+              "display-hero": ["4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+              "label-button": ["0.9375rem", { "lineHeight": "1", "fontWeight": "600" }],
+              "display-hero-mobile": ["2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+              "headline-sm": ["1.25rem", { "lineHeight": "1.4", "fontWeight": "600" }],
+              "body-md": ["1rem", { "lineHeight": "1.5", "fontWeight": "400" }],
+              "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+              "label-badge": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "600" }]
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+      }
+      .glass-card-hover {
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass-card-hover:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.16);
+        border-color: rgba(196, 181, 253, 0.8);
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.85);
+        box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.07), 0 0 0 1px rgba(226, 232, 240, 0.6);
+      }
+      .glass-chip {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+      .mesh-gradient-bg {
+        background-color: #faf9ff;
+        background-image: 
+          radial-gradient(at 10% 20%, rgba(221, 214, 254, 0.5) 0px, transparent 50%),
+          radial-gradient(at 85% 15%, rgba(196, 181, 253, 0.35) 0px, transparent 55%),
+          radial-gradient(at 50% 80%, rgba(237, 233, 254, 0.6) 0px, transparent 60%),
+          radial-gradient(at 90% 85%, rgba(216, 180, 254, 0.25) 0px, transparent 50%);
+      }
+      .hero-glow {
+        box-shadow: inset 0 0 80px rgba(124, 58, 237, 0.08);
+      }
+      .custom-input:focus {
+        outline: none;
+        border-color: #7c3aed;
+        box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+      }
+    </style>
+  </head>
+  <body class="bg-background font-body-md text-on-surface antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
